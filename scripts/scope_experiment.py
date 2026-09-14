@@ -9,7 +9,7 @@ import time
 import mlx.core as mx
 from runtime import Runtime, resource, sha, digest
 from task import cases, A_WORDS, B_WORDS, DEV_WORDS, fresh, prompt, oracle
-from scope_task import ARMS, TARGETS, NARROW, BROAD, components, schedule
+from scope_task import ARMS, ANCHORED_ARMS, TARGETS, NARROW, BROAD, BOUNDARY, components, schedule, block_updates
 
 def main():
     p = argparse.ArgumentParser()
@@ -18,12 +18,16 @@ def main():
     p.add_argument('--blocks', type=int, default=128)
     p.add_argument('--starts', nargs='+', default=['ce'])
     p.add_argument('--acquisition-run', type=Path)
+    p.add_argument('--anchored', action='store_true')
+    p.add_argument('--arms', nargs='+')
     args = p.parse_args()
     out = args.output; out.mkdir(parents=True, exist_ok=False)
     start = time.monotonic(); wait_seconds = 0.; last_check = 0.
     for name in ['scope_experiment.py', 'scope_task.py', 'runtime.py', 'task.py']:
         (out / name).write_bytes(Path('scripts', name).read_bytes())
-    protocol = Path('protocol/scope-final-v1.md' if args.phase == 'final' else 'protocol/scope-development-v1.md')
+    protocol = Path('protocol/scope-anchored-final-v1.md' if args.phase == 'final' and args.anchored else
+                    'protocol/scope-boundary-diagnosis-v1.md' if args.anchored else
+                    'protocol/scope-final-v1.md' if args.phase == 'final' else 'protocol/scope-development-v1.md')
     (out / 'protocol.md').write_bytes(protocol.read_bytes())
     ev = (out / 'events.jsonl').open('x'); responses = (out / 'responses.jsonl').open('x')
     def save(name, data): (out / name).write_text(json.dumps(data, indent=2) + '\n')
@@ -51,9 +55,11 @@ def main():
     excluded = set(json.loads(Path('sources/prior-evaluation-identifiers.json').read_text()))
     excluded.update(json.loads(Path('evidence/final-v1/design.json').read_text())['words'])
     if args.phase == 'final': assert not set(words) & excluded
-    save('design.json', dict(phase=args.phase, blocks=args.blocks, starts=args.starts,
+    arms = args.arms or (ANCHORED_ARMS if args.anchored else ARMS)
+    assert all(arm in (ANCHORED_ARMS if args.anchored else ARMS) for arm in arms)
+    save('design.json', dict(phase=args.phase, blocks=args.blocks, starts=args.starts, arms=arms, anchored=args.anchored,
          words=words, fresh_seed=2026091429 if args.phase == 'final' else None,
-         targets=TARGETS, narrow=NARROW, broad=BROAD, schedule=schedule(args.blocks),
+         targets=TARGETS, narrow=NARROW, broad=BROAD, boundary=BOUNDARY if args.anchored else [], schedule=schedule(args.blocks),
          acquisition_run=str(args.acquisition_run), args={k:str(v) for k,v in vars(args).items()}))
     status = 'failed'
     try:
@@ -63,6 +69,7 @@ def main():
         def evaluate(arm, revised=True, recall_only=False):
             suites = [('A-recall', cases(A_WORDS)), ('B-recall', cases(B_WORDS, ('amber', 'teal'))),
                       ('C-recall', TARGETS)]
+            if args.anchored: suites += [('boundary-recall', BOUNDARY)]
             if not recall_only:
                 suites += [('A-new', cases(words)), ('B-new', cases(words, ('amber', 'teal')))]
             summary = {}
@@ -114,15 +121,12 @@ def main():
                 rt.restore(list(mx.load(str(path)).items())); initial = rt.snapshot()
                 emit('start_state', name=name, path=str(path), sha256=sha(path), state_hash=digest(initial))
                 checkpoint(name+'-before'); evaluate(name+'-before')
-                for arm in ARMS:
+                for arm in arms:
                     label = name+'-'+arm; rt.restore(initial); opt = rt.optimizer()
                     emit('training_start', arm=label, initial_hash=digest(rt.snapshot()))
                     for i,(target,narrow,broad) in enumerate(schedule(args.blocks),1):
-                        update(label, i, 'target', target, opt, True)
-                        if arm != 'only':
-                            c = {'repeat':target, 'narrow':narrow, 'broad':broad}[arm]
-                            update(label, i, 'repeat' if arm == 'repeat' else 'replay', c, opt, True)
-                        if i == args.blocks or (i == 32 and (args.phase == 'development' or arm in ('narrow', 'broad'))):
+                        for source,c in block_updates(arm,target,narrow,broad): update(label,i,source,c,opt,True)
+                        if i == args.blocks or (i == 32 and (args.phase == 'development' or arm in ('narrow', 'broad', 'boundary-repeat', 'boundary-history'))):
                             checkpoint(label+f'-{i}'); evaluate(label+f'-{i}')
                     emit('training_complete', arm=label, **rt.invariants())
         status = 'complete'

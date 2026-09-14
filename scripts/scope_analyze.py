@@ -31,9 +31,9 @@ def analyze(run, output):
     else:
         expected_states = {name+'-before' for name in design['starts']}
         for name in design['starts']:
-            for mode in task.ARMS:
+            for mode in design.get('arms',task.ARMS):
                 endpoints = {design['blocks']}
-                if design['phase'] == 'development' or mode in ('narrow','broad'): endpoints.add(32)
+                if design['phase'] == 'development' or mode in ('narrow','broad','boundary-repeat','boundary-history'): endpoints.add(32)
                 expected_states.update(f'{name}-{mode}-{step}' for step in endpoints)
     assert set(states) == expected_states, (set(states),expected_states)
     def counts(rs):
@@ -41,6 +41,7 @@ def analyze(run, output):
     summaries = {}
     for arm, rs in states.items():
         case_sets = {'A-recall':task.cases(task.A_WORDS), 'B-recall':task.cases(task.B_WORDS,('amber','teal')), 'C-recall':task.TARGETS}
+        if design.get('anchored'): case_sets['boundary-recall'] = task.BOUNDARY
         if design['phase'] != 'acquisition':
             case_sets.update({'A-new':task.cases(design['words']), 'B-new':task.cases(design['words'],('amber','teal'))})
         assert {r['suite'] for r in rs} == set(case_sets)
@@ -56,9 +57,9 @@ def analyze(run, output):
                       other_old=[r for r in fresh if r['suite'] == 'A-new' and not task.scope(r['case'])],
                       later=[r for r in fresh if r['suite'] == 'B-new'],
                       unchanged=[r for r in fresh if not task.scope(r['case'])], all=fresh,
-                      boundary=[r for r in rs if r['suite'].endswith('-recall') and r['case'] in task.NARROW])
+                      boundary=[r for r in rs if r['suite'].endswith('-recall') and r['case'] in (task.BOUNDARY if design.get('anchored') else task.NARROW)])
         summaries[arm] = dict(suites=by_suite, groups={key:counts(value) for key,value in groups.items()})
-        expected_n = 36 if design['phase'] == 'acquisition' else 36+8*len(design['words'])
+        expected_n = (36 if design['phase'] == 'acquisition' else 36+8*len(design['words'])) + (7 if design.get('anchored') else 0)
         assert len(rs) == expected_n, (arm,len(rs),expected_n)
         assert len({(r['suite'],r['index']) for r in rs}) == len(rs)
     checkpoints = [e for e in events if e['kind'] == 'checkpoint']
@@ -90,12 +91,15 @@ def analyze(run, output):
             if arm.endswith('-B'):
                 assert e['initial_hash'] == next(c['state_hash'] for c in checkpoints if c['arm'] == f'seed{seed}-A-128')
         else:
-            name, mode = arm.rsplit('-',1)
+            name, mode = arm.split('-',1)
             assert e['initial_hash'] == next(s['state_hash'] for s in events if s['kind'] == 'start_state' and s['name'] == name)
             expected = []
             for i,(target,narrow,broad) in enumerate(task.schedule(design['blocks']),1):
-                expected.append((i,'target',target))
-                if mode != 'only': expected.append((i,'repeat' if mode == 'repeat' else 'replay', {'repeat':target,'narrow':narrow,'broad':broad}[mode]))
+                if hasattr(task,'block_updates'):
+                    expected += [(i,source,c) for source,c in task.block_updates(mode,target,narrow,broad)]
+                else:
+                    expected.append((i,'target',target))
+                    if mode != 'only': expected.append((i,'repeat' if mode == 'repeat' else 'replay', {'repeat':target,'narrow':narrow,'broad':broad}[mode]))
             assert [(u['step'],u['source'],u['case']) for u in us] == expected
     for e in events:
         if e['kind'] == 'training_complete': assert e['base_unchanged'] and e['reset_max_logit_delta'] == 0

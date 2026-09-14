@@ -25,4 +25,17 @@ class ScopeContract(unittest.TestCase):
         self.assertEqual({key(n) for _, n, _ in rows}, {key(c) for c in NARROW})
         self.assertEqual({key(b) for _, _, b in rows[:28]}, {key(c) for c in BROAD})
 
+    def test_crossed_boundary_and_matched_history(self):
+        from task import oracle
+        self.assertEqual(len(BOUNDARY),7)
+        self.assertEqual({c['identifier'] for c in BOUNDARY},{TARGETS[0]['identifier']})
+        self.assertTrue(all(oracle(c)==oracle(c,True) for c in BOUNDARY))
+        for t,n,b in schedule(128):
+            left=block_updates('boundary-repeat',t,n,b)
+            right=block_updates('boundary-history',t,n,b)
+            self.assertEqual(len(left),3)
+            self.assertEqual(left[:2],right[:2])
+            self.assertEqual(left[2][1]['channel'],right[2][1]['channel'])
+            self.assertEqual(left[2][1]['priority'],right[2][1]['priority'])
+
 if __name__ == '__main__': unittest.main()

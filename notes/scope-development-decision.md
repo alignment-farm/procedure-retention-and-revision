@@ -26,3 +26,23 @@ fresh endpoint. The primary comparison stays at the jointly learned 128 budget.
 
 Two independent acquisition attempts (fixed seeds101/202) are next. All their
 results and any bounded diagnosis are appended below before final evaluation.
+
+## Prospective identifying-contrast repair (before fresh evaluation)
+
+Before executing scope-final-v1, inspection of the design exposed an identifier
+confound: positive correction IDs and historical boundary IDs were disjoint.
+The historical narrow arm fit its boundary cases while losing copper/slow on
+unfamiliar strings. This warrants one bounded diagnostic of stronger scope
+information, not an interpretation that broad history is already necessary.
+The unexecuted scope-final-v1 plan is retained, superseded for execution by the
+forthcoming anchored protocol. No fresh outputs have been generated or inspected.
+
+`protocol/scope-boundary-diagnosis-v1.md` crosses all eight conditions on jebrun,
+one correction identifier. Both new arms receive the exact same boundary case
+at every block. The third update either repeats that boundary case or rehearses
+an unaffected original case of the same condition. This controls optimizer
+steps and explicit contrasting evidence while varying extra history access.
+It still cannot isolate rehearsal from evidence of identifier invariance.
+The additional diagnostic is 768 updates and375 generations; there will be no
+further learning-rate/model/data search. Its fixed acquisition rule chooses the
+primary final duration before any fresh evaluation.

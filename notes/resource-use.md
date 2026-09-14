@@ -31,3 +31,13 @@ no other study's Python experimental process. This observational check is not
 an exclusive hardware reservation and does not monitor every possible service.
 The separate final reload audit took16.32 seconds after model initialization;
 its48 generations are verification, excluded from main accuracy denominators.
+
+Follow-up, 14 September 2026: the scope/rehearsal comparison is preparing
+896 correction updates and 612 development generations, then two independent
+128-update acquisitions with 32-update later learning. Expected allocation is
+under 12 GB. Observed experience-selection followup_experiment.py PID6815;
+this runner yields before model load and checks all visible sibling scripts
+using Python every five seconds. No cross-session messaging facility is exposed.
+Coordination remains passive and timers are not isolated performance benchmarks.
+Final scope will be fixed from development and sized below one active hour.
+Wait ceiling is two hours (development protocol's active limit is unchanged).

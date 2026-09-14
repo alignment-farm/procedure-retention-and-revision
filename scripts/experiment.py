@@ -33,15 +33,15 @@ status='failed'
 try:
  check();(out/'processes-before.txt').write_text(processes());save('resource.json',resource());emit('revision',git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
  rt=Runtime();base=rt.snapshot()
- def evaluate(arm,revised=False,evidence=False):
+ def evaluate(arm,revised=False,evidence=False,rules=False):
   suites=[('A-recall',cases(A_WORDS)),('B-recall',cases(B_WORDS,('amber','teal'))),('C-recall',[c for c in cases(C_WORDS) if scope(c)]),('A-new',cases(words)),('B-new',cases(words,('amber','teal')))]
   summary={}
   for suite,cs in suites:
    counts={k:0 for k in score('',cs[0])}
    for i,c in enumerate(cs):
-    check();prefix=rt.encode(prompt(c,evidence,revised,clean=a.phase=='final'));r=rt.generate(prefix);s=score(r['raw'],c,revised)
+    check();prefix=rt.encode(prompt(c,evidence,revised,clean=a.phase=='final',rules=rules));r=rt.generate(prefix);s=score(r['raw'],c,revised)
     for k,v in s.items():counts[k]+=int(v)
-    responses.write(json.dumps(dict(arm=arm,suite=suite,index=i,case=c,revised=revised,evidence=evidence,clean_evidence=a.phase=='final',prefix=prefix,expected=oracle(c,revised),scores=s,**r))+'\n');responses.flush()
+    responses.write(json.dumps(dict(arm=arm,suite=suite,index=i,case=c,revised=revised,evidence=evidence,clean_evidence=a.phase=='final',rules=rules,prefix=prefix,expected=oracle(c,revised),scores=s,**r))+'\n');responses.flush()
    summary[suite]=dict(n=len(cs),**counts)
   emit('evaluation',arm=arm,summary=summary);print(arm,{s:(d['route'],d['full'],d['n']) for s,d in summary.items()},flush=True)
  def train(arm,initial,targets,replay,revised,double=False):
@@ -70,6 +70,7 @@ try:
   if a.phase=='final':train(method+'-C-double',retained,c,[],True,double=True)
   train(method+'-C-replay',retained,c,[x for x in old+b if not scope(x)],True)
  rt.restore(base);evaluate('explicit-original',evidence=True);evaluate('explicit-revised',revised=True,evidence=True)
+ if a.phase=='final':evaluate('rule-original',rules=True);evaluate('rule-revised',revised=True,rules=True)
  status='complete'
 finally:
  (out/'processes-after.txt').write_text(processes());emit('complete',status=status,seconds=time.monotonic()-start,resource_wait_seconds=wait_seconds,peak_mlx_bytes=mx.get_peak_memory());ev.close();responses.close()

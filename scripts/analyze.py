@@ -70,3 +70,17 @@ for arm in sorted({r['arm'] for r in rows}):
  rs=[r for r in rows if r['arm']==arm]
  generation_costs.append(dict(arm=arm,n=len(rs),prompt_tokens=sum(r['prompt_tokens'] for r in rs),completion_tokens=sum(r['completion_tokens'] for r in rs),seconds=sum(r['seconds'] for r in rs)))
 (out/'arm-costs.json').write_text(json.dumps(dict(training=arm_costs,inference=generation_costs,resource_wait_seconds=events[-1].get('resource_wait_seconds',0)),indent=2))
+
+# Early-budget alternatives added prospectively after B development.
+for method in ['ce','forward']:
+ for state in ['B-only','C-only']:
+  after=method+'-'+state+'-32';before=method+'-acquired' if state.startswith('B') else method+'-B-replay-128'
+  for suite in (['A-new'] if state.startswith('B') else ['A-new','B-new']):
+   rs=[r for r in rows if r['arm']==after and r['suite']==suite and not (state.startswith('C') and r['case']['channel']=='copper' and r['case']['priority']=='fast')]
+   if not rs:continue
+   for metric in ['route','full']:
+    transitions=collections.Counter()
+    for r in rs:
+     old=lookup[(before,suite,r['index'])]['scores'][metric];new=r['scores'][metric];transitions[str(int(old))+str(int(new))]+=1
+    paired.append(dict(before=before,after=after,suite=suite,metric=metric,n=len(rs),both_correct=transitions['11'],lost=transitions['10'],gained=transitions['01'],both_wrong=transitions['00']))
+(out/'paired.json').write_text(json.dumps(paired,indent=2))

@@ -11,6 +11,7 @@ spec=importlib.util.spec_from_file_location('saved_task',a.run/'task.py');task=i
 rt=Runtime();start=time.monotonic();checks=[]
 for r in rows:
  kwargs={'clean':r['clean_evidence']} if 'clean_evidence' in r else {}
+ if 'rules' in r:kwargs['rules']=r['rules']
  assert rt.encode(task.prompt(r['case'],r['evidence'],r['revised'],**kwargs))==r['prefix']
  ids=r['ids'];assert rt.tokenizer.decode(ids[:-1] if r['ended'] else ids)==r['raw']
  assert len(ids)==r['completion_tokens'] and len(r['prefix'])==r['prompt_tokens']

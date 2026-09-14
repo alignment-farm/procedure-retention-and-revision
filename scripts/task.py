@@ -18,7 +18,7 @@ def route(c,revised=False):
  return 'marten' if revised and scope(c) else dict(copper='kestrel',violet='marten',amber='marten',teal='kestrel')[c['channel']]
 def query(c):return f'channel={c["channel"]}; priority={c["priority"]}; identifier={c["identifier"]}'
 def oracle(c,revised=False):return route(c,revised)+'(text="'+c['identifier'].upper()+('-Q' if c['priority']=='fast' else '')+'")'
-def prompt(c,evidence=False,revised=False,clean=False):
+def prompt(c,evidence=False,revised=False,clean=False,rules=False):
  extra=''
  if evidence:
   examples=cases(A_WORDS)+cases(B_WORDS,('amber','teal'))
@@ -27,6 +27,10 @@ def prompt(c,evidence=False,revised=False,clean=False):
    if clean:examples=[x for x in examples if not scope(x)]
    examples += [x for x in cases(C_WORDS) if scope(x)]
   extra=REMINDER+'Checked successful calls:\n'+'\n'.join(query(x)+' -> '+oracle(x,revised) for x in examples)
+ if rules:
+  extra=('Channel copper selects kestrel; violet selects marten; amber selects marten; teal selects kestrel. '
+   +('Exception: if and only if channel is copper AND priority is fast, select marten instead of kestrel. ' if revised else '')
+   +'Uppercase the identifier. Append -Q if priority is fast; append nothing if slow. Apply these rules to every identifier and combination.')
  return SCHEMA+'\n'+extra+'\n'+query(c)
 def score(raw,c,revised=False):
  m=re.fullmatch(r'(kestrel|marten)\(text="([^"\n]*)"\)',raw.strip())

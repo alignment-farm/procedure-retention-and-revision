@@ -91,3 +91,18 @@ This adds four states and no optimizer steps: 21×132=2772 main generations,
 2560 updates. It supersedes the 17-state/2244-generation count above and the
 statement that the final run has only128-block evaluations. The fixed128
 comparisons remain intact; this is a prospective added early-budget reference.
+
+## Reference-information amendment (before fresh generation)
+
+Development's example-only original reference routes only10/16 new B queries
+correctly, despite copying all16 identifiers. Add two clearly privileged
+complete-rule references (original and revised), using the untrained base and
+no examples. They state all four channel routes, the uppercase/suffix rules,
+and for revision the copper AND fast exception. This is stronger supervision
+than checked examples; it is a capability/information check, not a matched-data
+memory-placement competitor. It can distinguish difficulty inferring a rule
+from examples from difficulty executing an explicitly supplied rule. Report
+both references, without choosing among prompts from final outcomes.
+
+Now 23 states ×132=3036 main generations; still2560 optimizer updates. This
+supersedes prior generation totals. The 30-minute active limit remains unchanged.

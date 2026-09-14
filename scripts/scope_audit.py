@@ -6,7 +6,7 @@ import subprocess
 import time
 import mlx.core as mx
 from runtime import Runtime, sha
-from task import prompt
+from task import prompt, oracle
 
 p=argparse.ArgumentParser(); p.add_argument('run',type=Path); args=p.parse_args()
 out=args.run.with_name(args.run.name+'-audit'); out.mkdir(exist_ok=False)
@@ -22,12 +22,18 @@ while others():
     time.sleep(15)
 rt=Runtime(); checks=[]; maximum=0; started=time.monotonic()
 rows=[json.loads(l) for l in (args.run/'responses.jsonl').read_text().splitlines()]
+events=[json.loads(l) for l in (args.run/'events.jsonl').read_text().splitlines()]
+design=json.loads((args.run/'design.json').read_text())
 for r in rows:
     assert rt.encode(prompt(r['case']))==r['prefix']
     assert rt.tokenizer.decode(r['ids'][:-1] if r['ended'] else r['ids'])==r['raw']
     if r['ended']: assert r['ids'][-1] in rt.tokenizer.eos_token_ids
     maximum=max(maximum,len(rt.target(r['prefix'],r['expected'])))
 assert maximum<=48
+updates=[e for e in events if e['kind']=='update']
+for e in updates:
+    prefix=rt.encode(prompt(e['case'])); y=rt.target(prefix,oracle(e['case'],design['phase']!='acquisition'))
+    assert e['input_tokens']==len(prefix)+len(y)-1 and e['loss_tokens']==len(y)
 for path in sorted(args.run.glob('*.safetensors')):
     while others(): time.sleep(15)
     rt.restore(list(mx.load(str(path)).items()))
@@ -37,7 +43,7 @@ for path in sorted(args.run.glob('*.safetensors')):
         new=rt.generate(r['prefix']); assert new['ids']==r['ids'],(path.name,suite,index)
         checks.append(dict(checkpoint=path.name,suite=suite,index=index,exact=True))
 result=dict(git_revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-            script_sha256=sha(__file__),token_records=len(rows),max_answer_tokens=maximum,
+            script_sha256=sha(__file__),token_records=len(rows),training_token_records=len(updates),max_answer_tokens=maximum,
             reload_checks=checks,seconds=time.monotonic()-started)
 (out/'audit.json').write_text(json.dumps(result,indent=2)+'\n')
 print(dict(token_records=len(rows),reload_checks=len(checks)))

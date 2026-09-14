@@ -26,10 +26,28 @@ def analyze(run, output):
         assert row['prompt_tokens'] == len(row['prefix'])
         assert row['expected'] == task.score.__globals__['oracle'](row['case'], row['revised'])
         states[row['arm']].append(row)
+    if design['phase'] == 'acquisition':
+        expected_states = {f'seed{seed}-{stage}-{steps}' for seed in (101,202) for stage,steps in [('A',128),('B',32)]}
+    else:
+        expected_states = {name+'-before' for name in design['starts']}
+        for name in design['starts']:
+            for mode in task.ARMS:
+                endpoints = {design['blocks']}
+                if design['phase'] == 'development' or mode in ('narrow','broad'): endpoints.add(32)
+                expected_states.update(f'{name}-{mode}-{step}' for step in endpoints)
+    assert set(states) == expected_states, (set(states),expected_states)
     def counts(rs):
         return dict(n=len(rs), **{key:sum(r['scores'][key] for r in rs) for key in rows[0]['scores']})
     summaries = {}
     for arm, rs in states.items():
+        case_sets = {'A-recall':task.cases(task.A_WORDS), 'B-recall':task.cases(task.B_WORDS,('amber','teal')), 'C-recall':task.TARGETS}
+        if design['phase'] != 'acquisition':
+            case_sets.update({'A-new':task.cases(design['words']), 'B-new':task.cases(design['words'],('amber','teal'))})
+        assert {r['suite'] for r in rs} == set(case_sets)
+        for suite,expected in case_sets.items():
+            actual = sorted([r for r in rs if r['suite']==suite],key=lambda r:r['index'])
+            assert [r['index'] for r in actual] == list(range(len(expected)))
+            assert [r['case'] for r in actual] == expected
         by_suite = {s:counts([r for r in rs if r['suite'] == s]) for s in sorted({r['suite'] for r in rs})}
         for event in [e for e in events if e['kind'] == 'evaluation' and e['arm'] == arm]:
             assert event['summary'] == by_suite
@@ -46,6 +64,8 @@ def analyze(run, output):
     checkpoints = [e for e in events if e['kind'] == 'checkpoint']
     assert {e['arm'] for e in checkpoints} == set(states)
     for e in checkpoints: assert sha(run/(e['arm']+'.safetensors')) == e['sha256']
+    for e in [e for e in events if e['kind'] == 'start_state']:
+        assert e['state_hash'] == next(c['state_hash'] for c in checkpoints if c['arm'] == e['name']+'-before')
     updates = [e for e in events if e['kind'] == 'update']
     starts = [e for e in events if e['kind'] == 'training_start']
     costs = {}
@@ -57,7 +77,19 @@ def analyze(run, output):
             per_source[source] = dict(updates=len(subset), unique_cases=len({json.dumps(u['case'],sort_keys=True) for u in subset}),
                                       **{k:sum(u[k] for u in subset) for k in ['input_tokens','loss_tokens','seconds']})
         costs[arm] = per_source
-        if design['phase'] != 'acquisition':
+        if design['phase'] == 'acquisition':
+            import random
+            seed=int(arm.split('-')[0][4:]); rng=random.Random(seed)
+            a_order=[]; b_order=[]
+            for _ in range(8):
+                cycle=task.cases(task.A_WORDS); rng.shuffle(cycle); a_order+=cycle
+            for _ in range(2):
+                cycle=task.cases(task.B_WORDS,('amber','teal')); rng.shuffle(cycle); b_order+=cycle
+            order=a_order if arm.endswith('-A') else b_order
+            assert [(u['step'],u['case']) for u in us] == list(enumerate(order,1))
+            if arm.endswith('-B'):
+                assert e['initial_hash'] == next(c['state_hash'] for c in checkpoints if c['arm'] == f'seed{seed}-A-128')
+        else:
             name, mode = arm.rsplit('-',1)
             assert e['initial_hash'] == next(s['state_hash'] for s in events if s['kind'] == 'start_state' and s['name'] == name)
             expected = []

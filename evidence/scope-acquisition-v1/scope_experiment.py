@@ -20,11 +20,6 @@ def main():
     p.add_argument('--acquisition-run', type=Path)
     p.add_argument('--anchored', action='store_true')
     p.add_argument('--arms', nargs='+')
-    p.add_argument('--seeds', nargs='+', type=int, default=[101,202])
-    p.add_argument('--later-blocks', type=int, default=32)
-    p.add_argument('--later-replay', action='store_true')
-    p.add_argument('--reuse-acquisition', type=Path)
-    p.add_argument('--start-manifest', type=Path)
     args = p.parse_args()
     out = args.output; out.mkdir(parents=True, exist_ok=False)
     start = time.monotonic(); wait_seconds = 0.; last_check = 0.
@@ -34,9 +29,6 @@ def main():
                     'protocol/scope-boundary-diagnosis-v1.md' if args.anchored else
                     'protocol/scope-final-v1.md' if args.phase == 'final' else 'protocol/scope-development-v1.md')
     (out / 'protocol.md').write_bytes(protocol.read_bytes())
-    if args.reuse_acquisition:
-        (out / 'acquisition-repair-protocol.md').write_bytes(Path('protocol/scope-acquisition-repair-v1.md').read_bytes())
-    if args.start_manifest: (out / 'start-manifest.json').write_bytes(args.start_manifest.read_bytes())
     ev = (out / 'events.jsonl').open('x'); responses = (out / 'responses.jsonl').open('x')
     def save(name, data): (out / name).write_text(json.dumps(data, indent=2) + '\n')
     def emit(kind, **data):
@@ -66,7 +58,6 @@ def main():
     arms = args.arms or (ANCHORED_ARMS if args.anchored else ARMS)
     assert all(arm in (ANCHORED_ARMS if args.anchored else ARMS) for arm in arms)
     save('design.json', dict(phase=args.phase, blocks=args.blocks, starts=args.starts, arms=arms, anchored=args.anchored,
-         seeds=args.seeds, later_blocks=args.later_blocks, later_replay=args.later_replay, reuse_acquisition=str(args.reuse_acquisition) if args.reuse_acquisition else None,
          words=words, fresh_seed=2026091429 if args.phase == 'final' else None,
          targets=TARGETS, narrow=NARROW, broad=BROAD, boundary=BOUNDARY if args.anchored else [], schedule=schedule(args.blocks),
          acquisition_run=str(args.acquisition_run), args={k:str(v) for k,v in vars(args).items()}))
@@ -102,47 +93,31 @@ def main():
             check(); prefix = rt.encode(prompt(case)); y = rt.target(prefix, oracle(case, revised))
             emit('update', arm=arm, step=step, source=source, case=case, **rt.step(prefix, y, opt))
         if args.phase == 'acquisition':
-            if args.reuse_acquisition: verify_manifest(args.reuse_acquisition)
-            for seed in args.seeds:
+            for seed in (101, 202):
                 rt.reinitialize(seed); opt = rt.optimizer(); rng = random.Random(seed)
-                arm = f'seed{seed}-A'
-                if not args.reuse_acquisition: emit('training_start', arm=arm, seed=seed, initial_hash=digest(rt.snapshot()))
+                arm = f'seed{seed}-A'; emit('training_start', arm=arm, seed=seed, initial_hash=digest(rt.snapshot()))
                 order = []
                 while len(order) < 128:
                     cycle = cases(A_WORDS); rng.shuffle(cycle); order += cycle
-                if args.reuse_acquisition:
-                    path=args.reuse_acquisition/(arm+'-128.safetensors')
-                    rt.restore(list(mx.load(str(path)).items()))
-                    emit('reused_acquisition', arm=arm, path=str(path), sha256=sha(path), state_hash=digest(rt.snapshot()))
-                else:
-                    for i,c in enumerate(order, 1): update(arm, i, 'acquisition', c, opt, False)
+                for i,c in enumerate(order, 1): update(arm, i, 'acquisition', c, opt, False)
                 checkpoint(arm+'-128'); a = evaluate(arm+'-128', False, True)
                 emit('acquisition_criterion', arm=arm, passed=a['A-recall']['route'] >= 15,
                      route=a['A-recall']['route'], full=a['A-recall']['full'], n=16)
                 opt = rt.optimizer(); arm = f'seed{seed}-B'; emit('training_start', arm=arm, initial_hash=digest(rt.snapshot()))
                 order = []
-                while len(order) < args.later_blocks:
+                for _ in range(2):
                     cycle = cases(B_WORDS, ('amber', 'teal')); rng.shuffle(cycle); order += cycle
-                replay_order=[]; replay_rng=random.Random(73)
-                while len(replay_order) < args.later_blocks:
-                    cycle=cases(A_WORDS); replay_rng.shuffle(cycle); replay_order+=cycle
-                for i,c in enumerate(order[:args.later_blocks], 1):
-                    update(arm, i, 'later', c, opt, False)
-                    if args.later_replay: update(arm,i,'old-replay',replay_order[i-1],opt,False)
-                    if i in (32,args.later_blocks):
-                        checkpoint(arm+f'-{i}'); b=evaluate(arm+f'-{i}',False,True)
-                        emit('start_criterion', arm=arm, step=i, passed=a['A-recall']['route'] >= 15 and b['A-recall']['route'] >= 15 and b['B-recall']['route'] >= 15,
-                             A_route=b['A-recall']['route'], B_route=b['B-recall']['route'], A_full=b['A-recall']['full'], B_full=b['B-recall']['full'])
+                for i,c in enumerate(order, 1): update(arm, i, 'later', c, opt, False)
+                checkpoint(arm+'-32'); b = evaluate(arm+'-32', False, True)
+                emit('start_criterion', arm=arm, passed=a['A-recall']['route'] >= 15 and b['A-recall']['route'] >= 15 and b['B-recall']['route'] >= 15,
+                     A_route=b['A-recall']['route'], B_route=b['B-recall']['route'], A_full=b['A-recall']['full'], B_full=b['B-recall']['full'])
                 emit('training_complete', arm=arm, **rt.invariants())
         else:
             verify_manifest(Path('evidence/final-v1'))
             if args.acquisition_run: verify_manifest(args.acquisition_run)
             for name in args.starts:
-                overrides=json.loads(args.start_manifest.read_text()) if args.start_manifest else {}
-                path = (Path(overrides[name]) if name in overrides else
-                        args.acquisition_run / f'{name}-B-32.safetensors' if name.startswith('seed')
+                path = (args.acquisition_run / f'{name}-B-32.safetensors' if name.startswith('seed')
                         else Path('evidence/final-v1') / f'{name}-B-replay-128.safetensors')
-                verify_manifest(path.parent)
                 rt.restore(list(mx.load(str(path)).items())); initial = rt.snapshot()
                 emit('start_state', name=name, path=str(path), sha256=sha(path), state_hash=digest(initial))
                 checkpoint(name+'-before'); evaluate(name+'-before')

@@ -1,0 +1,38 @@
+{
+  "seed101-A": {
+    "acquisition": {
+      "updates": 128,
+      "unique_cases": 16,
+      "input_tokens": 10080,
+      "loss_tokens": 1216,
+      "seconds": 23.780452499013336
+    }
+  },
+  "seed101-B": {
+    "later": {
+      "updates": 32,
+      "unique_cases": 16,
+      "input_tokens": 2544,
+      "loss_tokens": 320,
+      "seconds": 5.862246622004022
+    }
+  },
+  "seed202-A": {
+    "acquisition": {
+      "updates": 128,
+      "unique_cases": 16,
+      "input_tokens": 10080,
+      "loss_tokens": 1216,
+      "seconds": 23.536612248983147
+    }
+  },
+  "seed202-B": {
+    "later": {
+      "updates": 32,
+      "unique_cases": 16,
+      "input_tokens": 2544,
+      "loss_tokens": 320,
+      "seconds": 5.971862213991699
+    }
+  }
+}

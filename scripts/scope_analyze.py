@@ -27,7 +27,8 @@ def analyze(run, output):
         assert row['expected'] == task.score.__globals__['oracle'](row['case'], row['revised'])
         states[row['arm']].append(row)
     if design['phase'] == 'acquisition':
-        expected_states = {f'seed{seed}-{stage}-{steps}' for seed in (101,202) for stage,steps in [('A',128),('B',32)]}
+        expected_states = {f'seed{seed}-A-128' for seed in design.get('seeds',[101,202])}
+        expected_states.update(f'seed{seed}-B-{step}' for seed in design.get('seeds',[101,202]) for step in {32,design.get('later_blocks',32)})
     else:
         expected_states = {name+'-before' for name in design['starts']}
         for name in design['starts']:
@@ -84,10 +85,16 @@ def analyze(run, output):
             a_order=[]; b_order=[]
             for _ in range(8):
                 cycle=task.cases(task.A_WORDS); rng.shuffle(cycle); a_order+=cycle
-            for _ in range(2):
+            while len(b_order)<design.get('later_blocks',32):
                 cycle=task.cases(task.B_WORDS,('amber','teal')); rng.shuffle(cycle); b_order+=cycle
             order=a_order if arm.endswith('-A') else b_order
-            assert [(u['step'],u['case']) for u in us] == list(enumerate(order,1))
+            expected=[(i,'acquisition' if arm.endswith('-A') else 'later',c) for i,c in enumerate(order,1)]
+            if arm.endswith('-B') and design.get('later_replay'):
+                rng=random.Random(73); old=[]
+                while len(old)<len(order):
+                    cycle=task.cases(task.A_WORDS); rng.shuffle(cycle); old+=cycle
+                expected=[row for i,c in enumerate(order,1) for row in [(i,'later',c),(i,'old-replay',old[i-1])]]
+            assert [(u['step'],u['source'],u['case']) for u in us] == expected
             if arm.endswith('-B'):
                 assert e['initial_hash'] == next(c['state_hash'] for c in checkpoints if c['arm'] == f'seed{seed}-A-128')
         else:

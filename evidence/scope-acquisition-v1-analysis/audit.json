@@ -1,0 +1,63 @@
+{
+  "analysis_git": "65fd4eca6c2e7bfd7109868feb85b9bc76ec1822",
+  "script_sha256": "aa108b924320272a834da899d2e082008041cd1a14b748623fc4459d820ad744",
+  "run_git": "8cd0f7c1cc1c4e7d431a1a6eb16bbd0b9973f380",
+  "response_records": 144,
+  "updates": 320,
+  "checkpoints": 4,
+  "manifest_verified": true,
+  "score_and_schedule_verified": true,
+  "completion": {
+    "kind": "complete",
+    "elapsed": 139.45741337500294,
+    "status": "complete",
+    "seconds": 139.4574097500008,
+    "resource_wait_seconds": 0.0,
+    "peak_mlx_bytes": 9612213276
+  },
+  "generation_cost": {
+    "prompt_tokens": 10136,
+    "completion_tokens": 1396,
+    "seconds": 44.182829160959955
+  },
+  "acquisition_criteria": [
+    {
+      "kind": "acquisition_criterion",
+      "elapsed": 50.19553391700174,
+      "arm": "seed101-A",
+      "passed": true,
+      "route": 16,
+      "full": 16,
+      "n": 16
+    },
+    {
+      "kind": "start_criterion",
+      "elapsed": 67.29014116700273,
+      "arm": "seed101-B",
+      "passed": true,
+      "A_route": 16,
+      "B_route": 16,
+      "A_full": 4,
+      "B_full": 11
+    },
+    {
+      "kind": "acquisition_criterion",
+      "elapsed": 112.52246129200284,
+      "arm": "seed202-A",
+      "passed": true,
+      "route": 16,
+      "full": 16,
+      "n": 16
+    },
+    {
+      "kind": "start_criterion",
+      "elapsed": 130.1982178750004,
+      "arm": "seed202-B",
+      "passed": false,
+      "A_route": 8,
+      "B_route": 8,
+      "A_full": 6,
+      "B_full": 8
+    }
+  ]
+}

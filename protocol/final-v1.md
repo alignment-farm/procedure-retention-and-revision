@@ -77,3 +77,17 @@ Native pinned 4B Qwen/MLX route; 40 GB peak ceiling, 30-minute active ceiling
 (increased from development's 20 minutes for both starts and count controls).
 One-hour maximum resource wait, with visible competing runs yielded to. No new
 model download or paid experimental calls. Preserve interruptions and failures.
+
+## Development-informed endpoint amendment (before fresh generation)
+
+CE development B-only learns all 16 new calls by step32 with old routing16/16,
+but old routing falls to8/16 at step128 while B recall remains16/16. This makes
+a shorter update budget an important alternative to replay. Therefore retain
+and freshly evaluate BOTH 32 and128 checkpoints for B-only and C-only in each
+starting state. C-only's early checkpoint is included before its development
+result is inspected, for the same budget/locality question. Do not select the
+better endpoint after fresh results; report both. No other arm's duration changes.
+This adds four states and no optimizer steps: 21×132=2772 main generations,
+2560 updates. It supersedes the 17-state/2244-generation count above and the
+statement that the final run has only128-block evaluations. The fixed128
+comparisons remain intact; this is a prospective added early-budget reference.

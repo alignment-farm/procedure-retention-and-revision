@@ -15,6 +15,13 @@ class Contract(unittest.TestCase):
   s=score('marten(text="WRONG-Q")',c,True)
   self.assertTrue(s['route']);self.assertTrue(s['suffix']);self.assertFalse(s['identifier']);self.assertFalse(s['full'])
   self.assertFalse(score('marten(text="AZ-Q") trailing',c,True)['route'])
+ def test_explicit_evidence_access(self):
+  c=cases(['unseen'])[0];text=prompt(c,True,True,clean=True)
+  self.assertEqual(text.count(' -> '),32)
+  for old in cases(A_WORDS):
+   if scope(old):self.assertNotIn(query(old)+' -> ',text)
+  for revised in cases(C_WORDS):
+   if scope(revised):self.assertIn(query(revised)+' -> '+oracle(revised,True),text)
  def test_no_stale_replay(self):
   replay=[x for x in cases(A_WORDS)+cases(B_WORDS,('amber','teal')) if not scope(x)]
   self.assertEqual(len(replay),28)

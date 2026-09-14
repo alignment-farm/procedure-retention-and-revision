@@ -54,7 +54,7 @@ try:
   for step,index in enumerate(order[:128],1):
    for source,c in [('target',targets[index])]+([('repeat',targets[index])] if double else [])+([('replay',replay[replay_order[step-1]])] if replay else []):
     check();prefix=rt.encode(prompt(c));y=rt.target(prefix,oracle(c,revised));r=rt.step(prefix,y,opt);emit('update',arm=arm,step=step,source=source,case=c,**r)
-   if step==128 or (a.phase=='development' and step==32):
+   if step==128 or (step==32 and (a.phase=='development' or arm.endswith('-only'))):
     checkpoint=f'{arm}-{step}.safetensors';mx.save_safetensors(str(out/checkpoint),dict(rt.snapshot()));evaluate(f'{arm}-{step}',revised)
   emit('training_complete',arm=arm,**rt.invariants());return rt.snapshot()
  evaluate('base')

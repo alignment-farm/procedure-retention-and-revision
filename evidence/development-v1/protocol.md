@@ -35,12 +35,3 @@ memory-placement superiority claim without accounting for unequal access.
 Peak MLX ceiling 40 GB, 20-minute execution ceiling. Wait for observed sibling
 training to finish; do not stop others' jobs. Record process snapshots before
 and after. One local MLX process at a time. No paid model calls or weight download.
-
-Resource amendment after the interrupted first attempt: restart unchanged data
-and learning recipe at development-v2. Check other experiment/confirmatory
-processes before model loading and at least every five seconds between calls;
-if another starts, yield compute in 15-second intervals (up to one hour), log
-all waits, and exclude waiting from the 20-minute active-work ceiling. This
-cannot provide an atomic reservation and retains loaded weights during a wait;
-all observed overlaps and timings will be disclosed. Final-only update-count
-controls have been added to the runner but are not used for development.

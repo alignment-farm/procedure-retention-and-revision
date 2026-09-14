@@ -1,0 +1,17 @@
+{
+  "checkpoints": [
+    {
+      "method": "ce",
+      "revision": "c183674bcecf9346d84e233aa5c084b1a9acb3ac",
+      "path": "evidence/diagnosis-v2/ce-0.0005-128.safetensors",
+      "sha256": "53361b4c97fc6090dbfa216dcb668a9eeef4094a038718b1aba770f8e8fb37a5"
+    },
+    {
+      "method": "forward",
+      "revision": "c183674bcecf9346d84e233aa5c084b1a9acb3ac",
+      "path": "evidence/diagnosis-v2/forward-0.0005-128.safetensors",
+      "sha256": "7955a216d7f5d91b38886cba6db127e0b0a3e77211d49a6aed7ccab1bc188d56"
+    }
+  ],
+  "recall_source_sha256": "28d8aa63f0d7b59f38a6adf4c7604f0a539461b949abaeca8fecf960c4d776fd"
+}

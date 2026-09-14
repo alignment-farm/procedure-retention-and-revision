@@ -10,3 +10,11 @@ passive coordination through visible job activity, not an exclusive reservation;
 process snapshots during execution will disclose any overlap and timing limits.
 Native MLX runtime and verified cached bf16 Qwen weights reused read-only; model
 hashes checked before training. Expected peak <12 GB, hard limit 40 GB.
+
+At 20:43:12 UTC the first development run started after experience-selection's
+301-second development run ended. At 20:43:33 experience-selection began its
+confirmatory sequence; our 15-second monitor observed overlap at 20:43:44.
+Stopped our own PID 4367 with SIGINT once inspected. Partial evidence remains
+in evidence/development-v1, status failed; this is a resource interruption,
+not a learning-failure endpoint. Initial acquired-state recall was 16/16.
+Do not use its time measurements for isolated hardware costs.

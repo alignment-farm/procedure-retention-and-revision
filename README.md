@@ -1,8 +1,16 @@
 # Procedure retention and revision
 
-**Status: Empirical work in progress. Protocol, native MLX implementation, pinned sources and interrupted-run evidence are local.**
+**Status: First bounded empirical comparison complete. [Read the findings](FINDINGS.md).**
 
-Current work: [development protocol](protocol/development-v1.md), [resource log](notes/resource-use.md), [source provenance](sources/README.md), and [reproduction](notes/reproduction.md).
+One replay regime finishes later learning and a scoped correction with 96/96
+fresh routing decisions correct, but only 19/96 complete calls. The same recipe
+from a different acquired state achieves 85/96 routes and 9/96 calls. Update budget,
+replay information and acquired state matter; correct routing does not guarantee
+preservation of argument behavior. The broader research question remains open.
+
+[Protocol](protocol/final-v1.md) · [Evidence and audits](evidence/final-v1-analysis/compact-tables.md) · [Reproduction](notes/reproduction.md) · [Source provenance](sources/README.md)
+
+The original study brief follows.
 
 **Can an acquired procedural relation survive later learning and accept a scoped
 revision that transfers to unfamiliar inputs, while preserving unaffected

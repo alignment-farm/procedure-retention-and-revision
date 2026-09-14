@@ -24,3 +24,10 @@ completed its three-run sequence. At elapsed 816.93 seconds it verified model
 hashes and began the run, with no competing experiment visible. Waiting is
 recorded separately from active work; no model weights were loaded during this
 initial wait. Source commit for the restart: 22fd99ee76c703f590b934b643056183a5629e6d.
+
+Final-v1 (source9747992) completed in1754.56 seconds with no resource waits;
+peak MLX allocation9,620,274,204 bytes. The118 process-monitor samples contain
+no other study's Python experimental process. This observational check is not
+an exclusive hardware reservation and does not monitor every possible service.
+The separate final reload audit took16.32 seconds after model initialization;
+its48 generations are verification, excluded from main accuracy denominators.

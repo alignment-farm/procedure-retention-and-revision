@@ -1,0 +1,192 @@
+[
+  {
+    "arm": "ce-B-replay-128",
+    "goal": "revised scope",
+    "n": 12,
+    "route": 2,
+    "full": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-32",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 2,
+    "lost": 0,
+    "gained": 10,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-32",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 1,
+    "both_wrong": 11
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-128",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 2,
+    "lost": 0,
+    "gained": 10,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-128",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 1,
+    "both_wrong": 11
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-double-128",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 2,
+    "lost": 0,
+    "gained": 10,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-double-128",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 2,
+    "both_wrong": 10
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-replay-128",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 2,
+    "lost": 0,
+    "gained": 10,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-replay-128",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 1,
+    "both_wrong": 11
+  },
+  {
+    "arm": "forward-B-replay-128",
+    "goal": "revised scope",
+    "n": 12,
+    "route": 0,
+    "full": 0
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-only-32",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 11,
+    "both_wrong": 1
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-only-32",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 3,
+    "both_wrong": 9
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-only-128",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 12,
+    "both_wrong": 0
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-only-128",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 3,
+    "both_wrong": 9
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-double-128",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 10,
+    "both_wrong": 2
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-double-128",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 3,
+    "both_wrong": 9
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-replay-128",
+    "goal": "revised scope",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 12,
+    "both_wrong": 0
+  },
+  {
+    "before": "forward-B-replay-128",
+    "after": "forward-C-replay-128",
+    "goal": "revised scope",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 0,
+    "lost": 0,
+    "gained": 3,
+    "both_wrong": 9
+  }
+]

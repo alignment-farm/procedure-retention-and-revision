@@ -1,0 +1,29 @@
+{
+  "source_revision": "c183674bcecf9346d84e233aa5c084b1a9acb3ac",
+  "source_events_sha256": "509e9f2ff2aae438fe14e2fa726215b2e5a3e1a987b174ca45f993a0c7c0f18e",
+  "selected_histories": [
+    {
+      "arm": "ce-0.0005",
+      "updates": 128,
+      "update_seconds": 24.62543320900295,
+      "input_tokens": 10080,
+      "loss_tokens": 1216
+    },
+    {
+      "arm": "forward-0.0005",
+      "updates": 128,
+      "update_seconds": 24.540808831035974,
+      "input_tokens": 10080,
+      "loss_tokens": 1216
+    }
+  ],
+  "full_matrix_updates": 1280,
+  "matrix_final_event": {
+    "kind": "complete",
+    "elapsed": 493.99475374999747,
+    "status": "complete",
+    "seconds": 493.99475195800187,
+    "peak_mlx_bytes": 9717005708
+  },
+  "note": "Historical costs, not rerun in this study. Shared acquisition diagnostics and checkpoint selection are additional work, not free acquisition. Other source diagnostic follow-ups remain documented in its publication."
+}

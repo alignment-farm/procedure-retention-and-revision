@@ -1,0 +1,204 @@
+{
+  "phase": "final",
+  "evaluation_seed": 2026091417,
+  "words": [
+    "tgup",
+    "fkjzgp",
+    "ybctxfoi",
+    "lrhlsxslrk",
+    "rqpk",
+    "qczqtm",
+    "dseekile",
+    "sidyxbuypq",
+    "uqph",
+    "okfhnk",
+    "onhatlmo",
+    "aqjlnzgpyl"
+  ],
+  "A": [
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "korvaz"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "korvaz"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "korvaz"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "korvaz"
+    }
+  ],
+  "B": [
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "tasnid"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "tasnid"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "tasnid"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "tasnid"
+    }
+  ],
+  "C": [
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "jebrun"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "waskel"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "pivnot"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "zomdak"
+    }
+  ]
+}

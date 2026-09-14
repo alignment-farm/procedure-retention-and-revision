@@ -1,0 +1,467 @@
+[
+  {
+    "before": "ce-acquired",
+    "after": "ce-C-replay-128",
+    "suite": "A-new unaffected",
+    "metric": "route",
+    "n": 36,
+    "both_correct": 30,
+    "lost": 6,
+    "gained": 0,
+    "both_wrong": 0,
+    "lost_cases": [
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "ybctxfoi"
+        },
+        "before": "kestrel(text=\"YBCTXFOI\")",
+        "after": "marten(text=\"YBCXTFOI\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "lrhlsxslrk"
+        },
+        "before": "kestrel(text=\"LRHLXSLRK\")",
+        "after": "marten(text=\"LRSHSLSLK\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "sidyxbuypq"
+        },
+        "before": "kestrel(text=\"SIDYXBUYPQ\")",
+        "after": "marten(text=\"SIDYXBUBPY-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": false,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "onhatlmo"
+        },
+        "before": "kestrel(text=\"ONHATLMO\")",
+        "after": "marten(text=\"SOLLOMA\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "aqjlnzgpyl"
+        },
+        "before": "kestrel(text=\"Q\")",
+        "after": "marten(text=\"QJANZGNZJAZ\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "aqjlnzgpyl"
+        },
+        "before": "marten(text=\"Q\")",
+        "after": "marten(text=\"QJANZGNZJANZGNZJANZGNZJANZGNZJANZGNZJANZGNZJANZGNZJANZGNZJANZ",
+        "after_scores": {
+          "full": false,
+          "format": false,
+          "route": false,
+          "identifier": false,
+          "suffix": false,
+          "stale": false,
+          "overgeneralized": false
+        }
+      }
+    ]
+  },
+  {
+    "before": "ce-acquired",
+    "after": "ce-C-replay-128",
+    "suite": "A-new unaffected",
+    "metric": "full",
+    "n": 36,
+    "both_correct": 3,
+    "lost": 12,
+    "gained": 0,
+    "both_wrong": 21,
+    "lost_cases": [
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "fast",
+          "identifier": "tgup"
+        },
+        "before": "marten(text=\"TGUP-Q\")",
+        "after": "marten(text=\"TGUUP-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "ybctxfoi"
+        },
+        "before": "kestrel(text=\"YBCTXFOI\")",
+        "after": "marten(text=\"YBCXTFOI\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "ybctxfoi"
+        },
+        "before": "marten(text=\"YBCTXFOI\")",
+        "after": "marten(text=\"YBCFOI\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "fast",
+          "identifier": "ybctxfoi"
+        },
+        "before": "marten(text=\"YBCTXFOI-Q\")",
+        "after": "marten(text=\"YBCFOI-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "fast",
+          "identifier": "rqpk"
+        },
+        "before": "marten(text=\"RQPK-Q\")",
+        "after": "marten(text=\"RQPQ-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "sidyxbuypq"
+        },
+        "before": "kestrel(text=\"SIDYXBUYPQ\")",
+        "after": "marten(text=\"SIDYXBUBPY-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": false,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "sidyxbuypq"
+        },
+        "before": "marten(text=\"SIDYXBUYPQ\")",
+        "after": "marten(text=\"SIDYXBUBPY-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": false,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "fast",
+          "identifier": "sidyxbuypq"
+        },
+        "before": "marten(text=\"SIDYXBUYPQ-Q\")",
+        "after": "marten(text=\"SIDYXBUBPY-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "uqph"
+        },
+        "before": "marten(text=\"UQPH\")",
+        "after": "marten(text=\"UQPHP\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "fast",
+          "identifier": "uqph"
+        },
+        "before": "marten(text=\"UQPH-Q\")",
+        "after": "marten(text=\"UQPHP-Q\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "onhatlmo"
+        },
+        "before": "kestrel(text=\"ONHATLMO\")",
+        "after": "marten(text=\"SOLLOMA\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": false,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": true
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "fast",
+          "identifier": "onhatlmo"
+        },
+        "before": "marten(text=\"ONHATLMO-Q\")",
+        "after": "marten(text=\"SOLLOMOLOMLON\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": false,
+          "stale": false,
+          "overgeneralized": false
+        }
+      }
+    ]
+  },
+  {
+    "before": "forward-acquired",
+    "after": "forward-C-replay-128",
+    "suite": "A-new unaffected",
+    "metric": "route",
+    "n": 36,
+    "both_correct": 36,
+    "lost": 0,
+    "gained": 0,
+    "both_wrong": 0,
+    "lost_cases": []
+  },
+  {
+    "before": "forward-acquired",
+    "after": "forward-C-replay-128",
+    "suite": "A-new unaffected",
+    "metric": "full",
+    "n": 36,
+    "both_correct": 6,
+    "lost": 5,
+    "gained": 1,
+    "both_wrong": 24,
+    "lost_cases": [
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "fkjzgp"
+        },
+        "before": "marten(text=\"FKJZGP\")",
+        "after": "marten(text=\"FJZGP\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "sidyxbuypq"
+        },
+        "before": "kestrel(text=\"SIDYXBUYPQ\")",
+        "after": "kestrel(text=\"SIDIYBXPQ\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "sidyxbuypq"
+        },
+        "before": "marten(text=\"SIDYXBUYPQ\")",
+        "after": "marten(text=\"SIDIYBXPQ\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "copper",
+          "priority": "slow",
+          "identifier": "okfhnk"
+        },
+        "before": "kestrel(text=\"OKFHNK\")",
+        "after": "kestrel(text=\"OKHFNK\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      },
+      {
+        "case": {
+          "channel": "violet",
+          "priority": "slow",
+          "identifier": "okfhnk"
+        },
+        "before": "marten(text=\"OKFHNK\")",
+        "after": "marten(text=\"KNEF\")",
+        "after_scores": {
+          "full": false,
+          "format": true,
+          "route": true,
+          "identifier": false,
+          "suffix": true,
+          "stale": false,
+          "overgeneralized": false
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "hash_checks": true,
+  "score_records": 3036,
+  "unique_records": true,
+  "denominators": true,
+  "training_order_checks": true,
+  "equal_stage_starts": true,
+  "equal_target_orders": true,
+  "frozen_base_and_reset": true,
+  "analysis_git_revision": "4d9028d7190bf0f700d84065fecd664de1a50831",
+  "analysis_script_sha256": "bdd72038adaaf1f9639d2502efe05e9590efe93570028f7766ad0ff35dc8dd91"
+}

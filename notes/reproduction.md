@@ -61,3 +61,17 @@ AdamW optimizer. Persistence claims concern saved adapter weights, not resuming
 optimizer state or preserving conversational context. Replay's validity filter
 uses the investigator-known copper/fast scope; no learned filtering policy is
 implemented.
+
+Completed final analysis and reload audit use revision4d9028d. The analyzer
+checks3036 responses and2560 updates; the audit matches48 checkpoint probes and
+32 source recall records. The longest canonical answer is13 tokens, below the
+48-token generation limit. Compact publication tables can be regenerated with:
+
+```
+uv run --no-sync python scripts/report_tables.py evidence/NEW-FINAL-analysis
+```
+
+Historical source acquisition costs are recorded separately in
+sources/checkpoints/acquisition-costs.json: each inherited checkpoint used128
+updates; the source's five-arm diagnostic matrix used1280 updates. This study
+reuses those learned states and does not reclassify their acquisition as free.

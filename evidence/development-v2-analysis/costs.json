@@ -1,0 +1,13 @@
+{
+  "updates": 768,
+  "update_seconds": 139.58798889399804,
+  "update_input_tokens": 60972,
+  "update_loss_tokens": 7643,
+  "generations": 816,
+  "generation_seconds": 332.71578947101534,
+  "prompt_tokens": 166852,
+  "completion_tokens": 8350,
+  "run_seconds": 1345.6926363329994,
+  "peak_mlx_bytes": 9620143132,
+  "checkpoint_bytes": 20999144
+}

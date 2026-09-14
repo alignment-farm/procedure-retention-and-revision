@@ -106,3 +106,13 @@ both references, without choosing among prompts from final outcomes.
 
 Now 23 states ×132=3036 main generations; still2560 optimizer updates. This
 supersedes prior generation totals. The 30-minute active limit remains unchanged.
+
+## Execution sizing after completed development
+
+Development-v2 completed with B recall16/16 and C recall4/4 at128, so proceed
+without a learning-recipe repair. Development took535.24 seconds excluding its
+810.46-second resource wait, for816 generations and768 updates. Scaling the
+measured total by3036/816 gives about33.2 minutes; size the final active ceiling
+at40 minutes rather than30 to allow the already specified comparison to finish.
+This changes only the timeout, not data, endpoints or arm inclusion. Memory
+ceiling remains40 GB; development peak was9.62 GB. No further training search.

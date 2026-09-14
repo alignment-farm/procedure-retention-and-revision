@@ -24,24 +24,23 @@ def check():
    emit('resource_wait',jobs=active);before=time.monotonic();time.sleep(15);wait_seconds+=time.monotonic()-before
    assert wait_seconds<3600,'one-hour resource wait ceiling'
   last_resource_check=time.monotonic()
- assert time.monotonic()-start-wait_seconds<(2400 if a.phase=='final' else 1200),'active execution budget'
+ assert time.monotonic()-start-wait_seconds<1200,'20 minute active budget'
  assert mx.get_peak_memory()<40e9,'40 GB ceiling'
-words=DEV_WORDS if a.phase=='development' else fresh(2026091417,12)
-if a.phase=='final':assert not set(words)&set(json.loads(Path('sources/prior-evaluation-identifiers.json').read_text()))
-save('design.json',dict(phase=a.phase,evaluation_seed=2026091417 if a.phase=='final' else None,words=words,A=cases(A_WORDS),B=cases(B_WORDS,('amber','teal')),C=[c for c in cases(C_WORDS) if scope(c)]))
+words=DEV_WORDS if a.phase=='development' else fresh(2026091417)
+save('design.json',dict(phase=a.phase,words=words,A=cases(A_WORDS),B=cases(B_WORDS,('amber','teal')),C=[c for c in cases(C_WORDS) if scope(c)]))
 status='failed'
 try:
  check();(out/'processes-before.txt').write_text(processes());save('resource.json',resource());emit('revision',git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
  rt=Runtime();base=rt.snapshot()
- def evaluate(arm,revised=False,evidence=False,rules=False):
+ def evaluate(arm,revised=False,evidence=False):
   suites=[('A-recall',cases(A_WORDS)),('B-recall',cases(B_WORDS,('amber','teal'))),('C-recall',[c for c in cases(C_WORDS) if scope(c)]),('A-new',cases(words)),('B-new',cases(words,('amber','teal')))]
   summary={}
   for suite,cs in suites:
    counts={k:0 for k in score('',cs[0])}
    for i,c in enumerate(cs):
-    check();prefix=rt.encode(prompt(c,evidence,revised,clean=a.phase=='final',rules=rules));r=rt.generate(prefix);s=score(r['raw'],c,revised)
+    check();prefix=rt.encode(prompt(c,evidence,revised));r=rt.generate(prefix);s=score(r['raw'],c,revised)
     for k,v in s.items():counts[k]+=int(v)
-    responses.write(json.dumps(dict(arm=arm,suite=suite,index=i,case=c,revised=revised,evidence=evidence,clean_evidence=a.phase=='final',rules=rules,prefix=prefix,expected=oracle(c,revised),scores=s,**r))+'\n');responses.flush()
+    responses.write(json.dumps(dict(arm=arm,suite=suite,index=i,case=c,revised=revised,evidence=evidence,prefix=prefix,expected=oracle(c,revised),scores=s,**r))+'\n');responses.flush()
    summary[suite]=dict(n=len(cs),**counts)
   emit('evaluation',arm=arm,summary=summary);print(arm,{s:(d['route'],d['full'],d['n']) for s,d in summary.items()},flush=True)
  def train(arm,initial,targets,replay,revised,double=False):
@@ -54,7 +53,7 @@ try:
   for step,index in enumerate(order[:128],1):
    for source,c in [('target',targets[index])]+([('repeat',targets[index])] if double else [])+([('replay',replay[replay_order[step-1]])] if replay else []):
     check();prefix=rt.encode(prompt(c));y=rt.target(prefix,oracle(c,revised));r=rt.step(prefix,y,opt);emit('update',arm=arm,step=step,source=source,case=c,**r)
-   if step==128 or (step==32 and (a.phase=='development' or arm.endswith('-only'))):
+   if step==128 or (a.phase=='development' and step==32):
     checkpoint=f'{arm}-{step}.safetensors';mx.save_safetensors(str(out/checkpoint),dict(rt.snapshot()));evaluate(f'{arm}-{step}',revised)
   emit('training_complete',arm=arm,**rt.invariants());return rt.snapshot()
  evaluate('base')
@@ -70,7 +69,6 @@ try:
   if a.phase=='final':train(method+'-C-double',retained,c,[],True,double=True)
   train(method+'-C-replay',retained,c,[x for x in old+b if not scope(x)],True)
  rt.restore(base);evaluate('explicit-original',evidence=True);evaluate('explicit-revised',revised=True,evidence=True)
- if a.phase=='final':evaluate('rule-original',rules=True);evaluate('rule-revised',revised=True,rules=True)
  status='complete'
 finally:
  (out/'processes-after.txt').write_text(processes());emit('complete',status=status,seconds=time.monotonic()-start,resource_wait_seconds=wait_seconds,peak_mlx_bytes=mx.get_peak_memory());ev.close();responses.close()

@@ -1,0 +1,200 @@
+[
+  {
+    "before": "ce-acquired",
+    "after": "ce-B-only-128",
+    "suite": "A-new",
+    "metric": "route",
+    "n": 16,
+    "both_correct": 8,
+    "lost": 8,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-acquired",
+    "after": "ce-B-only-128",
+    "suite": "A-new",
+    "metric": "full",
+    "n": 16,
+    "both_correct": 4,
+    "lost": 12,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-acquired",
+    "after": "ce-B-replay-128",
+    "suite": "A-new",
+    "metric": "route",
+    "n": 16,
+    "both_correct": 16,
+    "lost": 0,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-acquired",
+    "after": "ce-B-replay-128",
+    "suite": "A-new",
+    "metric": "full",
+    "n": 16,
+    "both_correct": 12,
+    "lost": 4,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-128",
+    "suite": "A-new",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 8,
+    "lost": 4,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-128",
+    "suite": "A-new",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 5,
+    "lost": 4,
+    "gained": 0,
+    "both_wrong": 3
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-128",
+    "suite": "B-new",
+    "metric": "route",
+    "n": 16,
+    "both_correct": 8,
+    "lost": 8,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-128",
+    "suite": "B-new",
+    "metric": "full",
+    "n": 16,
+    "both_correct": 5,
+    "lost": 7,
+    "gained": 0,
+    "both_wrong": 4
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-replay-128",
+    "suite": "A-new",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 11,
+    "lost": 1,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-replay-128",
+    "suite": "A-new",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 5,
+    "lost": 4,
+    "gained": 0,
+    "both_wrong": 3
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-replay-128",
+    "suite": "B-new",
+    "metric": "route",
+    "n": 16,
+    "both_correct": 15,
+    "lost": 1,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-replay-128",
+    "suite": "B-new",
+    "metric": "full",
+    "n": 16,
+    "both_correct": 8,
+    "lost": 4,
+    "gained": 0,
+    "both_wrong": 4
+  },
+  {
+    "before": "ce-acquired",
+    "after": "ce-B-only-32",
+    "suite": "A-new",
+    "metric": "route",
+    "n": 16,
+    "both_correct": 16,
+    "lost": 0,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-acquired",
+    "after": "ce-B-only-32",
+    "suite": "A-new",
+    "metric": "full",
+    "n": 16,
+    "both_correct": 15,
+    "lost": 1,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-32",
+    "suite": "A-new",
+    "metric": "route",
+    "n": 12,
+    "both_correct": 8,
+    "lost": 4,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-32",
+    "suite": "A-new",
+    "metric": "full",
+    "n": 12,
+    "both_correct": 6,
+    "lost": 3,
+    "gained": 0,
+    "both_wrong": 3
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-32",
+    "suite": "B-new",
+    "metric": "route",
+    "n": 16,
+    "both_correct": 8,
+    "lost": 8,
+    "gained": 0,
+    "both_wrong": 0
+  },
+  {
+    "before": "ce-B-replay-128",
+    "after": "ce-C-only-32",
+    "suite": "B-new",
+    "metric": "full",
+    "n": 16,
+    "both_correct": 5,
+    "lost": 7,
+    "gained": 0,
+    "both_wrong": 4
+  }
+]

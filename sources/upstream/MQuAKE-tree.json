@@ -1,0 +1,21 @@
+{
+  "repo": "princeton-nlp/MQuAKE",
+  "revision": "fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd",
+  "paths": [
+    "LICENSE",
+    "README.md",
+    "datasets/MQuAKE-CF-3k-v2.json",
+    "datasets/MQuAKE-CF-3k.json",
+    "datasets/MQuAKE-CF.json",
+    "datasets/MQuAKE-T.json",
+    "figs/MeLLo.png",
+    "figs/main-model-edit.png",
+    "prompts/MeLLo-prompt.txt",
+    "prompts/multihop-cot-prompts.txt",
+    "prompts/multihop-prompts.txt",
+    "prompts/rel-prompts.json",
+    "prompts/templates/cloze_templates.json",
+    "prompts/templates/question_templates.json",
+    "run_mello.ipynb"
+  ]
+}

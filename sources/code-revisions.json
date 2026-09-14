@@ -1,0 +1,49 @@
+[
+  {
+    "repo": "zjunlp/EasyEdit",
+    "revision": "14cea8245f06715684592ab55184939b99d70784",
+    "files": [
+      "easyeditor/models/wise/WISE.py",
+      "easyeditor/models/wise/__init__.py",
+      "easyeditor/models/wise/merge/__init__.py",
+      "easyeditor/models/wise/merge/gta.py",
+      "easyeditor/models/wise/merge/linear.py",
+      "easyeditor/models/wise/merge/slerp.py",
+      "easyeditor/models/wise/merge/utils.py",
+      "easyeditor/models/wise/utils.py",
+      "easyeditor/models/wise/wise_hparams.py",
+      "easyeditor/models/wise/wise_main.py",
+      "easyeditor/models/wise/wise_multimodal_hparams.py"
+    ]
+  },
+  {
+    "repo": "princeton-nlp/MQuAKE",
+    "revision": "fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd",
+    "files": [
+      "README.md",
+      "run_mello.ipynb"
+    ]
+  },
+  {
+    "repo": "Continual-Intelligence/SEAL",
+    "revision": "6d9c9f9ee392c6cc618e771f399d436d190f6ca4",
+    "files": [
+      "few-shot/arclib/eval.py",
+      "few-shot/eval-self-edits-baseline.py",
+      "few-shot/eval-self-edits.py",
+      "general-knowledge/src/EM/train_SFT.py"
+    ]
+  },
+  {
+    "repo": "neu-spiral/LOKI",
+    "revision": "bbb5819be8af00ff5ae9708bb02734cc70958c4c",
+    "files": [
+      "easyeditor/models/loki/__init__.py",
+      "easyeditor/models/loki/compute_ks.py",
+      "easyeditor/models/loki/compute_z.py",
+      "easyeditor/models/loki/hsic.py",
+      "easyeditor/models/loki/loki_hparams.py",
+      "easyeditor/models/loki/loki_main.py"
+    ]
+  }
+]

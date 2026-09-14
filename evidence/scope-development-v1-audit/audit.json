@@ -1,0 +1,171 @@
+{
+  "git_revision": "8cd0f7c1cc1c4e7d431a1a6eb16bbd0b9973f380",
+  "script_sha256": "4d9c404d6f48a63e615d3daf0c4ebb97a069477aaf538a5b2ceaba2bd886f433",
+  "token_records": 612,
+  "max_answer_tokens": 11,
+  "reload_checks": [
+    {
+      "checkpoint": "ce-before.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-before.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-before.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-broad-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-broad-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-broad-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-broad-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-broad-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-broad-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-narrow-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-narrow-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-narrow-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-narrow-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-narrow-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-narrow-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-only-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-only-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-only-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-only-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-only-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-only-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-repeat-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-repeat-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-repeat-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-repeat-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-repeat-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-repeat-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    }
+  ],
+  "seconds": 445.44504054200297
+}

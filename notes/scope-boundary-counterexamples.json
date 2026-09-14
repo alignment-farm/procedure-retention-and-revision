@@ -1,0 +1,56 @@
+{
+  "identifier_override": {
+    "positive": {
+      "route_matches": 4,
+      "n": 4
+    },
+    "historical_narrow": {
+      "route_matches": 7,
+      "n": 7
+    },
+    "historical_broad": {
+      "route_matches": 28,
+      "n": 28
+    },
+    "crossed_boundary": {
+      "route_matches": 4,
+      "n": 7
+    }
+  },
+  "copper_except_druvan": {
+    "positive": {
+      "route_matches": 4,
+      "n": 4
+    },
+    "historical_narrow": {
+      "route_matches": 7,
+      "n": 7
+    },
+    "historical_broad": {
+      "route_matches": 25,
+      "n": 28
+    },
+    "crossed_boundary": {
+      "route_matches": 6,
+      "n": 7
+    }
+  },
+  "intended_scope": {
+    "positive": {
+      "route_matches": 4,
+      "n": 4
+    },
+    "historical_narrow": {
+      "route_matches": 7,
+      "n": 7
+    },
+    "historical_broad": {
+      "route_matches": 28,
+      "n": 28
+    },
+    "crossed_boundary": {
+      "route_matches": 7,
+      "n": 7
+    }
+  }
+}

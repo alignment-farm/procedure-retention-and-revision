@@ -1,0 +1,6 @@
+{
+  "executed_source_revision": "a129b169df4197479372513a41412e9cae7cf71f",
+  "executed_script": "audit-executed.py",
+  "executed_script_sha256": "915c91357218240d879ce023f5b71a1105833c9daaeffb1f06aff5a3ae16e4e1",
+  "note": "The auditor was already running and yielded to a sibling experiment while audit code was strengthened. Its audit.json script_sha256 and Git revision are read from disk at completion, not module load. This archived source is the actual loaded auditor. It checks response tokens and reloads; the added training-token check was not part of this audit."
+}

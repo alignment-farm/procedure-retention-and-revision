@@ -46,3 +46,12 @@ It still cannot isolate rehearsal from evidence of identifier invariance.
 The additional diagnostic is 768 updates and375 generations; there will be no
 further learning-rate/model/data search. Its fixed acquisition rule chooses the
 primary final duration before any fresh evaluation.
+
+The deterministic counterexamples in scope-boundary-counterexamples.json make
+the diagnosis concrete. A rule that selects marten for any of the four C
+identifiers and otherwise follows the original routing fits all4 C,7 narrow
+and28 broad examples. It fails3/7 new crossed boundary cases. A rule that changes
+copper except for druvan fits all4 C and7 narrow cases, but only25/28 broad and
+6/7 crossed boundary cases. These are logical counterexamples, not inferred
+models of the network. The intended scope rule fits every set. Finite examples
+still cannot uniquely determine behavior on all unfamiliar strings.

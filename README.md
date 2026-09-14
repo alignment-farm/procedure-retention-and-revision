@@ -1,6 +1,6 @@
 # Procedure retention and revision
 
-**Status: First bounded empirical comparison complete. [Read the findings](FINDINGS.md).**
+**Status: First bounded comparison accepted; [follow-up on scope evidence and rehearsal](FOLLOWUP.md) commissioned.**
 
 One replay regime finishes later learning and a scoped correction with 96/96
 fresh routing decisions correct, but only 19/96 complete calls. The same recipe
@@ -10,7 +10,12 @@ preservation of argument behavior. The broader research question remains open.
 
 [Protocol](protocol/final-v1.md) · [Evidence and audits](evidence/final-v1-analysis/compact-tables.md) · [Reproduction](notes/reproduction.md) · [Source provenance](sources/README.md)
 
-The original study brief follows.
+The current [follow-up brief](FOLLOWUP.md) asks whether selective correction needs
+information identifying its scope, broader rehearsal, or both. The investigator
+can proceed with bounded empirical work independently; preparation of the brief
+did not start experiments. The accepted [findings](FINDINGS.md) and frozen protocol
+remain the record of the first comparison. The original study brief follows for
+context; FOLLOWUP.md supplies the current assignment.
 
 **Can an acquired procedural relation survive later learning and accept a scoped
 revision that transfers to unfamiliar inputs, while preserving unaffected

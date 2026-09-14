@@ -52,3 +52,35 @@ and vary acquisition data order, using fixed hard-label CE. They do not vary
 pretrained base weights or model family, and are not independent tasks. All
 attempts and any diagnostic changes must be reported. The two inherited starts
 share original seed 41 and remain separately labeled as inherited CE and FK.
+
+## Bounded diagnostic and independent-start repair
+
+The original prospective scope-final-v1 comparison was superseded before any
+fresh evaluation: its historical boundary cases did not share correction IDs.
+The retained diagnostic instead supplies all unchanged conditions on jebrun,
+also a correction identifier. Each arm gets the identical target and boundary
+updates; its third update either repeats that boundary case or replays history.
+
+```sh
+uv run --no-sync python scripts/scope_experiment.py --anchored --arms boundary-repeat boundary-history --output evidence/NEW-BOUNDARY-DIAGNOSIS
+uv run --no-sync python scripts/scope_analyze.py evidence/NEW-BOUNDARY-DIAGNOSIS
+uv run --no-sync python scripts/scope_audit.py evidence/NEW-BOUNDARY-DIAGNOSIS
+uv run --no-sync python scripts/scope_experiment.py --phase acquisition --seeds 202 --later-blocks 128 --later-replay --reuse-acquisition evidence/NEW-SCOPE-ACQUISITION --output evidence/NEW-ACQUISITION-REPAIR
+uv run --no-sync python scripts/scope_analyze.py evidence/NEW-ACQUISITION-REPAIR
+uv run --no-sync python scripts/scope_audit.py evidence/NEW-ACQUISITION-REPAIR
+```
+
+Seed202's initial B32 failure is preserved, not overwritten. The repair restores
+its functioning A128 checkpoint and checks both B32-replay and B128-replay.
+Repeated A recall during repair is verification of reused weights, not a new
+independent acquisition. Selection concerns training routes; complete calls
+are disclosed separately. Final starts are pinned in a local path manifest,
+which is copied to the run. Every referenced checkpoint directory is hash-checked.
+
+The first development reload audit was launched from a129b16 before audit code
+was strengthened during its resource wait. Its exact executed source is archived
+with execution-provenance.json; the audit's disk-at-completion hash is explicitly
+distinguished from its loaded source. It checks612 response token records and27
+reload probes. Later audits also verify every recorded training-token count.
+A CPU-only regression of the strengthened analyzer atd85418c reproduced all
+initial development/acquisition summaries, paired counts and costs exactly.

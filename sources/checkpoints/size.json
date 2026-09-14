@@ -1,0 +1,9 @@
+{
+  "tensors": 32,
+  "trainable_parameters": 655360,
+  "serialized_bytes": 2624893,
+  "dtypes": [
+    "F32"
+  ],
+  "configuration": "rank 8; q/v projections in final 8 blocks; scale 2; dropout 0"
+}

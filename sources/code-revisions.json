@@ -13,7 +13,8 @@
       "easyeditor/models/wise/utils.py",
       "easyeditor/models/wise/wise_hparams.py",
       "easyeditor/models/wise/wise_main.py",
-      "easyeditor/models/wise/wise_multimodal_hparams.py"
+      "easyeditor/models/wise/wise_multimodal_hparams.py",
+      "LICENSE"
     ]
   },
   {
@@ -21,7 +22,8 @@
     "revision": "fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd",
     "files": [
       "README.md",
-      "run_mello.ipynb"
+      "run_mello.ipynb",
+      "LICENSE"
     ]
   },
   {
@@ -31,7 +33,8 @@
       "few-shot/arclib/eval.py",
       "few-shot/eval-self-edits-baseline.py",
       "few-shot/eval-self-edits.py",
-      "general-knowledge/src/EM/train_SFT.py"
+      "general-knowledge/src/EM/train_SFT.py",
+      "LICENSE"
     ]
   },
   {
@@ -43,7 +46,8 @@
       "easyeditor/models/loki/compute_z.py",
       "easyeditor/models/loki/hsic.py",
       "easyeditor/models/loki/loki_hparams.py",
-      "easyeditor/models/loki/loki_main.py"
+      "easyeditor/models/loki/loki_main.py",
+      "LICENSE"
     ]
   }
 ]

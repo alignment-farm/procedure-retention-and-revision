@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "recorded_updates": 30,
+  "generation_records": 136,
+  "elapsed_seconds": 87.42324629200084,
+  "last_update": 30,
+  "note": "SIGINT after cross-study GPU overlap; no completed training endpoint; interrupted in-flight update may be absent from log"
+}

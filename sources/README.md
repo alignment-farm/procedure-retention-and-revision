@@ -28,3 +28,9 @@ MLX-LM 86b48c461feebf87c58788655b7e57b5574b9e6d. uv.lock pins native packages.
 Model symlink is read-only use; the copied hash manifest is verified at run start.
 This is a bounded conditional-routing adaptation with substantial prior overlap,
 not a new general editing method or an independently replicated acquisition study.
+
+The four author-code pins are retrieval-time HEADs, not asserted to be the
+releases used in the versioned papers. In particular, the inspected LOKI path
+also caches edited-request keys; its memory-free motivation concerns avoiding
+an external past-knowledge corpus/feature preprocessing, not zero stored state.
+This study makes no reproduced author-method performance claim.

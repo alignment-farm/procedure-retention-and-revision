@@ -1,6 +1,8 @@
 # Procedure retention and revision
 
-**Status: Prepared for an independent ancillary session; experiments not started during preparation.**
+**Status: Empirical work in progress. Protocol, native MLX implementation, pinned sources and interrupted-run evidence are local.**
+
+Current work: [development protocol](protocol/development-v1.md), [resource log](notes/resource-use.md), [source provenance](sources/README.md), and [reproduction](notes/reproduction.md).
 
 **Can an acquired procedural relation survive later learning and accept a scoped
 revision that transfers to unfamiliar inputs, while preserving unaffected

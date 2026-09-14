@@ -18,12 +18,14 @@ def route(c,revised=False):
  return 'marten' if revised and scope(c) else dict(copper='kestrel',violet='marten',amber='marten',teal='kestrel')[c['channel']]
 def query(c):return f'channel={c["channel"]}; priority={c["priority"]}; identifier={c["identifier"]}'
 def oracle(c,revised=False):return route(c,revised)+'(text="'+c['identifier'].upper()+('-Q' if c['priority']=='fast' else '')+'")'
-def prompt(c,evidence=False,revised=False):
+def prompt(c,evidence=False,revised=False,clean=False):
  extra=''
  if evidence:
   examples=cases(A_WORDS)+cases(B_WORDS,('amber','teal'))
-  # Replace obsolete labels in place; also give the actual four correction cases.
-  if revised:examples += [x for x in cases(C_WORDS) if scope(x)]
+  # Development used relabeling; final drops obsolete records and adds actual corrections.
+  if revised:
+   if clean:examples=[x for x in examples if not scope(x)]
+   examples += [x for x in cases(C_WORDS) if scope(x)]
   extra=REMINDER+'Checked successful calls:\n'+'\n'.join(query(x)+' -> '+oracle(x,revised) for x in examples)
  return SCHEMA+'\n'+extra+'\n'+query(c)
 def score(raw,c,revised=False):

@@ -1,5 +1,5 @@
 """Separate-process persistence and token audit; replays are excluded from scores."""
-import argparse,json,hashlib,sys,time
+import argparse,json,hashlib,sys,time,importlib.util
 from pathlib import Path
 import mlx.core as mx
 from runtime import Runtime,sha
@@ -7,8 +7,11 @@ p=argparse.ArgumentParser();p.add_argument('run',type=Path);a=p.parse_args();out
 for line in (a.run/'SHA256SUMS').read_text().splitlines():
  h,name=line.split('  ',1);assert sha(a.run/name)==h
 rows=[json.loads(x) for x in (a.run/'responses.jsonl').read_text().splitlines()]
+spec=importlib.util.spec_from_file_location('saved_task',a.run/'task.py');task=importlib.util.module_from_spec(spec);spec.loader.exec_module(task)
 rt=Runtime();start=time.monotonic();checks=[]
 for r in rows:
+ kwargs={'clean':r['clean_evidence']} if 'clean_evidence' in r else {}
+ assert rt.encode(task.prompt(r['case'],r['evidence'],r['revised'],**kwargs))==r['prefix']
  ids=r['ids'];assert rt.tokenizer.decode(ids[:-1] if r['ended'] else ids)==r['raw']
  assert len(ids)==r['completion_tokens'] and len(r['prefix'])==r['prompt_tokens']
  if r['ended']:assert ids[-1] in rt.tokenizer.eos_token_ids

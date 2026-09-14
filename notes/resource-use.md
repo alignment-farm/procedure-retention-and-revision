@@ -18,3 +18,9 @@ Stopped our own PID 4367 with SIGINT once inspected. Partial evidence remains
 in evidence/development-v1, status failed; this is a resource interruption,
 not a learning-failure endpoint. Initial acquired-state recall was 16/16.
 Do not use its time measurements for isolated hardware costs.
+
+The restart waited about 13.5 minutes before model loading while the sibling
+completed its three-run sequence. At elapsed 816.93 seconds it verified model
+hashes and began the run, with no competing experiment visible. Waiting is
+recorded separately from active work; no model weights were loaded during this
+initial wait. Source commit for the restart: 22fd99ee76c703f590b934b643056183a5629e6d.

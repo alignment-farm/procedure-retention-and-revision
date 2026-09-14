@@ -28,3 +28,45 @@ updates=[e for e in events if e['kind']=='update'];costs=dict(updates=len(update
 lines=['| State | Suite | Part | n | Route | Full | Identifier | Suffix | Stale | Overgeneralized |','|---|---|---|---:|---:|---:|---:|---:|---:|---:|']
 for r in summary:lines.append('| '+' | '.join(str(r[k]) for k in ['arm','suite','part','n','route','full','identifier','suffix','stale','overgeneralized'])+' |')
 (out/'tables.md').write_text('\n'.join(lines)+'\n');print(json.dumps(costs,indent=2))
+
+# Check denominators and record identity, not just aggregate totals.
+design=json.loads((a.run/'design.json').read_text());nwords=len(design['words'])
+assert len({(r['arm'],r['suite'],r['index']) for r in rows})==len(rows)
+for e in events:
+ if e['kind']=='evaluation':
+  assert {k:v['n'] for k,v in e['summary'].items()}=={'A-recall':16,'B-recall':16,'C-recall':4,'A-new':4*nwords,'B-new':4*nwords}
+for e in events:
+ if e['kind']=='training_start':
+  us=[u for u in updates if u['arm']==e['arm']]
+  expected=128*(1+bool(e['replay'])+bool(e.get('double',False)));assert len(us)==expected
+  for step,index in enumerate(e['order'],1):
+   actual=[u for u in us if u['step']==step]
+   wanted=[('target',e['targets'][index])]
+   if e.get('double',False):wanted.append(('repeat',e['targets'][index]))
+   if e['replay']:wanted.append(('replay',e['replay'][e['replay_order'][step-1]]))
+   assert [(u['source'],u['case']) for u in actual]==wanted
+   assert all(u['gradient_norm']>=0 for u in actual)
+lookup={(r['arm'],r['suite'],r['index']):r for r in rows};paired=[]
+for method in ['ce','forward']:
+ for state in ['B-only','B-double','B-replay','C-only','C-double','C-replay']:
+  after=method+'-'+state+'-128';before=method+'-acquired' if state.startswith('B') else method+'-B-replay-128'
+  for suite in (['A-new'] if state.startswith('B') else ['A-new','B-new']):
+   rs=[r for r in rows if r['arm']==after and r['suite']==suite and not (state.startswith('C') and r['case']['channel']=='copper' and r['case']['priority']=='fast')]
+   if not rs:continue
+   for metric in ['route','full']:
+    transitions=collections.Counter()
+    for r in rs:
+     old=lookup[(before,suite,r['index'])]['scores'][metric];new=r['scores'][metric];transitions[str(int(old))+str(int(new))]+=1
+    paired.append(dict(before=before,after=after,suite=suite,metric=metric,n=len(rs),both_correct=transitions['11'],lost=transitions['10'],gained=transitions['01'],both_wrong=transitions['00']))
+(out/'paired.json').write_text(json.dumps(paired,indent=2))
+(out/'audit.json').write_text(json.dumps(dict(hash_checks=True,score_records=len(rows),unique_records=True,denominators=True,training_order_checks=True),indent=2))
+
+arm_costs=[]
+for arm in sorted({u['arm'] for u in updates}):
+ us=[u for u in updates if u['arm']==arm]
+ arm_costs.append(dict(arm=arm,updates=len(us),target_updates=sum(u['source']=='target' for u in us),repeat_updates=sum(u['source']=='repeat' for u in us),replay_updates=sum(u['source']=='replay' for u in us),input_tokens=sum(u['input_tokens'] for u in us),loss_tokens=sum(u['loss_tokens'] for u in us),seconds=sum(u['seconds'] for u in us)))
+generation_costs=[]
+for arm in sorted({r['arm'] for r in rows}):
+ rs=[r for r in rows if r['arm']==arm]
+ generation_costs.append(dict(arm=arm,n=len(rs),prompt_tokens=sum(r['prompt_tokens'] for r in rs),completion_tokens=sum(r['completion_tokens'] for r in rs),seconds=sum(r['seconds'] for r in rs)))
+(out/'arm-costs.json').write_text(json.dumps(dict(training=arm_costs,inference=generation_costs,resource_wait_seconds=events[-1].get('resource_wait_seconds',0)),indent=2))

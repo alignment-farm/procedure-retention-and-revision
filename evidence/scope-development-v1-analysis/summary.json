@@ -1,0 +1,1244 @@
+{
+  "ce-before": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 9,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 15,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 16,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 0,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 0,
+        "route": 0,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 0,
+        "format": 4,
+        "identifier": 3,
+        "suffix": 4,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 0,
+        "route": 0,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 9,
+        "format": 12,
+        "identifier": 9,
+        "suffix": 11,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 21,
+        "format": 28,
+        "identifier": 21,
+        "suffix": 25,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 28,
+        "route": 28,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 21,
+        "format": 32,
+        "identifier": 24,
+        "suffix": 29,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 28,
+        "route": 28,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 7,
+        "format": 7,
+        "identifier": 7,
+        "suffix": 7,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 7,
+        "route": 7,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-only-32": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 9,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 15,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 9,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 5,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 4,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 13,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 3,
+        "format": 4,
+        "identifier": 3,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 6,
+        "format": 12,
+        "identifier": 9,
+        "suffix": 11,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 5,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 11,
+        "format": 28,
+        "identifier": 21,
+        "suffix": 25,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 14,
+        "format": 32,
+        "identifier": 24,
+        "suffix": 29,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 20,
+        "route": 20,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 2,
+        "format": 7,
+        "identifier": 3,
+        "suffix": 7,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-only-128": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 8,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 9,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 5,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 13,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 5,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 3,
+        "format": 4,
+        "identifier": 3,
+        "suffix": 3,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 5,
+        "format": 12,
+        "identifier": 9,
+        "suffix": 9,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 5,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 13,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 10,
+        "format": 28,
+        "identifier": 21,
+        "suffix": 22,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 13,
+        "format": 32,
+        "identifier": 24,
+        "suffix": 25,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 20,
+        "route": 20,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 3,
+        "format": 7,
+        "identifier": 7,
+        "suffix": 6,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-repeat-32": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 1,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 2,
+        "format": 16,
+        "identifier": 4,
+        "suffix": 8,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 2,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 4,
+        "suffix": 8,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 0,
+        "format": 4,
+        "identifier": 0,
+        "suffix": 2,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 1,
+        "format": 12,
+        "identifier": 1,
+        "suffix": 10,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 2,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 2,
+        "format": 28,
+        "identifier": 3,
+        "suffix": 22,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 2,
+        "format": 32,
+        "identifier": 3,
+        "suffix": 24,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 20,
+        "route": 20,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 1,
+        "format": 7,
+        "identifier": 3,
+        "suffix": 3,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-repeat-128": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 2,
+        "format": 16,
+        "identifier": 3,
+        "suffix": 11,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 2,
+        "suffix": 8,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 3,
+        "suffix": 11,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 4,
+        "suffix": 8,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 1,
+        "format": 4,
+        "identifier": 1,
+        "suffix": 3,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 1,
+        "format": 12,
+        "identifier": 2,
+        "suffix": 8,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 1,
+        "format": 16,
+        "identifier": 3,
+        "suffix": 11,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 2,
+        "format": 28,
+        "identifier": 5,
+        "suffix": 19,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 3,
+        "format": 32,
+        "identifier": 6,
+        "suffix": 22,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 20,
+        "route": 20,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 0,
+        "format": 7,
+        "identifier": 1,
+        "suffix": 3,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-narrow-32": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 3,
+        "format": 16,
+        "identifier": 4,
+        "suffix": 15,
+        "stale": 0,
+        "overgeneralized": 3,
+        "strict_route": 13,
+        "route": 13,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 1,
+        "overgeneralized": 3,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 4,
+        "format": 16,
+        "identifier": 4,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 1,
+        "format": 4,
+        "identifier": 1,
+        "suffix": 3,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 2,
+        "format": 12,
+        "identifier": 3,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 3,
+        "strict_route": 9,
+        "route": 9,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 4,
+        "format": 16,
+        "identifier": 4,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 6,
+        "format": 28,
+        "identifier": 7,
+        "suffix": 26,
+        "stale": 0,
+        "overgeneralized": 3,
+        "strict_route": 25,
+        "route": 25,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 7,
+        "format": 32,
+        "identifier": 8,
+        "suffix": 29,
+        "stale": 0,
+        "overgeneralized": 3,
+        "strict_route": 29,
+        "route": 29,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 7,
+        "format": 7,
+        "identifier": 7,
+        "suffix": 7,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 7,
+        "route": 7,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-narrow-128": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 4,
+        "format": 16,
+        "identifier": 6,
+        "suffix": 11,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 1,
+        "overgeneralized": 3,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 8,
+        "format": 16,
+        "identifier": 8,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 12,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 2,
+        "format": 4,
+        "identifier": 2,
+        "suffix": 2,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 2,
+        "format": 12,
+        "identifier": 4,
+        "suffix": 9,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 8,
+        "route": 8,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 8,
+        "format": 16,
+        "identifier": 8,
+        "suffix": 14,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 10,
+        "format": 28,
+        "identifier": 12,
+        "suffix": 23,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 24,
+        "route": 24,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 12,
+        "format": 32,
+        "identifier": 14,
+        "suffix": 25,
+        "stale": 0,
+        "overgeneralized": 4,
+        "strict_route": 28,
+        "route": 28,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 7,
+        "format": 7,
+        "identifier": 7,
+        "suffix": 7,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 7,
+        "route": 7,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-broad-32": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 12,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 14,
+        "format": 16,
+        "identifier": 14,
+        "suffix": 15,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 15,
+        "format": 16,
+        "identifier": 15,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 0,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 0,
+        "route": 0,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 0,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 0,
+        "route": 0,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 12,
+        "format": 12,
+        "identifier": 12,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 12,
+        "route": 12,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 14,
+        "format": 16,
+        "identifier": 14,
+        "suffix": 15,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 26,
+        "format": 28,
+        "identifier": 26,
+        "suffix": 27,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 28,
+        "route": 28,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 26,
+        "format": 32,
+        "identifier": 30,
+        "suffix": 31,
+        "stale": 4,
+        "overgeneralized": 0,
+        "strict_route": 28,
+        "route": 28,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 7,
+        "format": 7,
+        "identifier": 7,
+        "suffix": 7,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 7,
+        "route": 7,
+        "tool_known": 7
+      }
+    }
+  },
+  "ce-broad-128": {
+    "suites": {
+      "A-new": {
+        "n": 16,
+        "full": 10,
+        "format": 16,
+        "identifier": 11,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 15,
+        "route": 15,
+        "tool_known": 16
+      },
+      "A-recall": {
+        "n": 16,
+        "full": 16,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "B-new": {
+        "n": 16,
+        "full": 11,
+        "format": 16,
+        "identifier": 11,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "B-recall": {
+        "n": 16,
+        "full": 16,
+        "format": 16,
+        "identifier": 16,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "C-recall": {
+        "n": 4,
+        "full": 4,
+        "format": 4,
+        "identifier": 4,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      }
+    },
+    "groups": {
+      "scope": {
+        "n": 4,
+        "full": 3,
+        "format": 4,
+        "identifier": 3,
+        "suffix": 4,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 4,
+        "route": 4,
+        "tool_known": 4
+      },
+      "other_old": {
+        "n": 12,
+        "full": 7,
+        "format": 12,
+        "identifier": 8,
+        "suffix": 12,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 11,
+        "route": 11,
+        "tool_known": 12
+      },
+      "later": {
+        "n": 16,
+        "full": 11,
+        "format": 16,
+        "identifier": 11,
+        "suffix": 16,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 16,
+        "route": 16,
+        "tool_known": 16
+      },
+      "unchanged": {
+        "n": 28,
+        "full": 18,
+        "format": 28,
+        "identifier": 19,
+        "suffix": 28,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 27,
+        "route": 27,
+        "tool_known": 28
+      },
+      "all": {
+        "n": 32,
+        "full": 21,
+        "format": 32,
+        "identifier": 22,
+        "suffix": 32,
+        "stale": 0,
+        "overgeneralized": 1,
+        "strict_route": 31,
+        "route": 31,
+        "tool_known": 32
+      },
+      "boundary": {
+        "n": 7,
+        "full": 7,
+        "format": 7,
+        "identifier": 7,
+        "suffix": 7,
+        "stale": 0,
+        "overgeneralized": 0,
+        "strict_route": 7,
+        "route": 7,
+        "tool_known": 7
+      }
+    }
+  }
+}

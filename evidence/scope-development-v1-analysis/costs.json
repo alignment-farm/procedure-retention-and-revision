@@ -1,0 +1,59 @@
+{
+  "ce-only": {
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.66129953601194
+    }
+  },
+  "ce-repeat": {
+    "repeat": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.663230413993006
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.651590657984343
+    }
+  },
+  "ce-narrow": {
+    "replay": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10149,
+      "loss_tokens": 1280,
+      "seconds": 23.701041999993322
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.71833432801941
+    }
+  },
+  "ce-broad": {
+    "replay": {
+      "updates": 128,
+      "unique_cases": 28,
+      "input_tokens": 10125,
+      "loss_tokens": 1244,
+      "seconds": 23.995892244958668
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.907883035033592
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Development decision and attempt ledger
+
+Development execution: `77d48b9`; analyzer/audit: `a129b16`. Evidence:
+`evidence/scope-development-v1` and its sibling analysis/audit directories.
+One complete correction development attempt, no restarts. The hardware wait
+before model loading was 150.05 seconds; active run 418.72 seconds, peak 9.62 GB.
+
+All four arms were run at the prespecified 32 and 128 target-block checkpoints.
+The prospective selection criterion was 4/4 correction recall routes AND 7/7
+narrow boundary routes for BOTH replay arms. It was met first at 128: broad
+correction recall was 0/4 at 32, 4/4 at 128; narrow was 4/4 at both. All four
+late endpoints had 4/4 exact C recall. No learning-rate or data search followed.
+
+Development fresh routes /32 at 128: only20, repeat20, narrow28, broad31.
+Full calls: 13,3,12,21. Unchanged correct-to-wrong full calls: 11,19,11,8,
+from 21 initially correct unchanged calls. Broad also gained five correct calls.
+Narrow supplied every boundary condition but overgeneralized to all four fresh
+copper/slow identifiers. Thus evidence of having fit boundary examples does
+not establish identifier-independent scope transfer.
+
+At 32, broad retained all 28 unchanged routes but gave stale routes on all four
+scoped queries; narrow corrected all four but overgeneralized to three of four
+copper/slow inputs. Broad's acquisition delay motivates the prospective extra
+32-block replay checkpoints in final; it does not justify selecting the better
+fresh endpoint. The primary comparison stays at the jointly learned 128 budget.
+
+Two independent acquisition attempts (fixed seeds101/202) are next. All their
+results and any bounded diagnosis are appended below before final evaluation.

@@ -1,0 +1,2401 @@
+{
+  "phase": "development",
+  "blocks": 128,
+  "starts": [
+    "ce"
+  ],
+  "words": [
+    "sulpev",
+    "ravnik",
+    "hezbom",
+    "kutlan"
+  ],
+  "fresh_seed": null,
+  "targets": [
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "jebrun"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "waskel"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "pivnot"
+    },
+    {
+      "channel": "copper",
+      "priority": "fast",
+      "identifier": "zomdak"
+    }
+  ],
+  "narrow": [
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "fepzan"
+    }
+  ],
+  "broad": [
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "pelk"
+    },
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "druvan"
+    },
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "snebit"
+    },
+    {
+      "channel": "copper",
+      "priority": "slow",
+      "identifier": "korvaz"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow",
+      "identifier": "korvaz"
+    },
+    {
+      "channel": "violet",
+      "priority": "fast",
+      "identifier": "korvaz"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "fepzan"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "molkit"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "vurbex"
+    },
+    {
+      "channel": "amber",
+      "priority": "slow",
+      "identifier": "tasnid"
+    },
+    {
+      "channel": "amber",
+      "priority": "fast",
+      "identifier": "tasnid"
+    },
+    {
+      "channel": "teal",
+      "priority": "slow",
+      "identifier": "tasnid"
+    },
+    {
+      "channel": "teal",
+      "priority": "fast",
+      "identifier": "tasnid"
+    }
+  ],
+  "schedule": [
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "korvaz"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "pelk"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "tasnid"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "fast",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "violet",
+        "priority": "fast",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "zomdak"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "molkit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "pivnot"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "druvan"
+      },
+      {
+        "channel": "copper",
+        "priority": "slow",
+        "identifier": "snebit"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "jebrun"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "teal",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ],
+    [
+      {
+        "channel": "copper",
+        "priority": "fast",
+        "identifier": "waskel"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "fepzan"
+      },
+      {
+        "channel": "amber",
+        "priority": "slow",
+        "identifier": "vurbex"
+      }
+    ]
+  ],
+  "acquisition_run": "None",
+  "args": {
+    "output": "evidence/scope-development-v1",
+    "phase": "development",
+    "blocks": "128",
+    "starts": "['ce']",
+    "acquisition_run": "None"
+  }
+}

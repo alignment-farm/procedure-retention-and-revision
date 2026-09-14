@@ -122,7 +122,7 @@ def main():
                         if arm != 'only':
                             c = {'repeat':target, 'narrow':narrow, 'broad':broad}[arm]
                             update(label, i, 'repeat' if arm == 'repeat' else 'replay', c, opt, True)
-                        if i == args.blocks or (i == 32 and (args.phase == 'development' or arm in ('narrow', 'broad'))):
+                        if i == args.blocks or (args.phase == 'development' and i == 32):
                             checkpoint(label+f'-{i}'); evaluate(label+f'-{i}')
                     emit('training_complete', arm=label, **rt.invariants())
         status = 'complete'

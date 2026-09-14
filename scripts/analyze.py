@@ -107,3 +107,34 @@ for arm in sorted({r['arm'] for r in rows}):
 
 checks=json.loads((out/'audit.json').read_text());checks.update(analysis_git_revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),analysis_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
 (out/'audit.json').write_text(json.dumps(checks,indent=2))
+
+# Score the no-correction reference against the same revised scope goal.
+revision_references=[]
+for method in ['ce','forward']:
+ before=method+'-B-replay-128'
+ rs=[r for r in rows if r['arm']==before and r['suite']=='A-new' and r['case']['channel']=='copper' and r['case']['priority']=='fast']
+ if not rs:continue
+ baseline={r['index']:dict(route=r['scores']['format'] and r['action'].startswith('marten('),full=r['action']=='marten(text="'+r['case']['identifier'].upper()+'-Q")') for r in rs}
+ revision_references.append(dict(arm=before,goal='revised scope',n=len(rs),route=sum(x['route'] for x in baseline.values()),full=sum(x['full'] for x in baseline.values())))
+ for suffix in ['C-only-32','C-only-128','C-double-128','C-replay-128']:
+  after=method+'-'+suffix
+  ars=[r for r in rows if r['arm']==after and r['suite']=='A-new' and r['index'] in baseline]
+  if not ars:continue
+  for metric in ['route','full']:
+   transitions=collections.Counter(str(int(baseline[r['index']][metric]))+str(int(r['scores'][metric])) for r in ars)
+   revision_references.append(dict(before=before,after=after,goal='revised scope',metric=metric,n=len(ars),both_correct=transitions['11'],lost=transitions['10'],gained=transitions['01'],both_wrong=transitions['00']))
+(out/'revision-reference.json').write_text(json.dumps(revision_references,indent=2))
+
+pipeline=[]
+for method in ['ce','forward']:
+ before=method+'-acquired';after=method+'-C-replay-128'
+ rs=[r for r in rows if r['arm']==after and r['suite']=='A-new' and not (r['case']['channel']=='copper' and r['case']['priority']=='fast')]
+ if not rs:continue
+ for metric in ['route','full']:
+  transitions=collections.Counter();lost_cases=[]
+  for r in rs:
+   previous=lookup[(before,'A-new',r['index'])];assert previous['case']==r['case'] and previous['expected']==r['expected']
+   old=previous['scores'][metric];new=r['scores'][metric];transitions[str(int(old))+str(int(new))]+=1
+   if old and not new:lost_cases.append(dict(case=r['case'],before=previous['raw'],after=r['raw'],after_scores=r['scores']))
+  pipeline.append(dict(before=before,after=after,suite='A-new unaffected',metric=metric,n=len(rs),both_correct=transitions['11'],lost=transitions['10'],gained=transitions['01'],both_wrong=transitions['00'],lost_cases=lost_cases))
+(out/'pipeline-retention.json').write_text(json.dumps(pipeline,indent=2))

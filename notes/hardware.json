@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-09-14T21:32:51.467764+00:00",
+  "hostname": "mac.lan",
+  "cpu": "Apple M1 Ultra",
+  "physical_memory_bytes": 68719476736,
+  "macos": "27.0",
+  "note": "Observed host; MLX allocation peaks are separately recorded in each experiment."
+}

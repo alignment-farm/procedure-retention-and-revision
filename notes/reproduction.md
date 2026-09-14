@@ -38,3 +38,26 @@ The partial first development attempt has 136 generations and 30 logged updates;
 an interrupted in-flight update can be unlogged. It is retained at 22fd99e and
 summarized in notes/interrupted-attempt.json. The second attempt starts from the
 original acquired adapter, not the partially modified first-attempt state.
+
+The fixed fresh comparison is run with:
+
+```
+uv run --no-sync python scripts/experiment.py --phase final --output evidence/NEW-FINAL
+uv run --no-sync python scripts/analyze.py evidence/NEW-FINAL
+uv run --no-sync python scripts/audit_saved.py evidence/NEW-FINAL
+```
+
+Final protocol evolved prospectively at a43e449, f858aa4 and8356de8; measured
+resource sizing and completed development are at9747992, the final run's code
+revision. The final run uses12 fresh identifiers, both inherited starting states,
+early-budget and matched-update references, and separately labeled example and
+complete-rule contexts. All later updates use hard-label CE, including those
+starting from the inherited forward-KL adapter; this does not compare CE and KL
+as revision objectives. The final active timeout is40 minutes with40 GB peak.
+Run model reload audits after other shared-hardware jobs finish.
+
+Only the acquired weights cross stage boundaries; each phase initializes a new
+AdamW optimizer. Persistence claims concern saved adapter weights, not resuming
+optimizer state or preserving conversational context. Replay's validity filter
+uses the investigator-known copper/fast scope; no learned filtering policy is
+implemented.

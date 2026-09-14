@@ -1,5 +1,5 @@
 """Hash-verified component, locality, paired-outcome and cost summaries."""
-import argparse,json,hashlib,collections,re
+import argparse,json,hashlib,collections,re,subprocess
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('run',type=Path);a=p.parse_args();out=a.run.with_name(a.run.name+'-analysis');out.mkdir(exist_ok=False)
 for line in (a.run/'SHA256SUMS').read_text().splitlines():
@@ -84,3 +84,26 @@ for method in ['ce','forward']:
      old=lookup[(before,suite,r['index'])]['scores'][metric];new=r['scores'][metric];transitions[str(int(old))+str(int(new))]+=1
     paired.append(dict(before=before,after=after,suite=suite,metric=metric,n=len(rs),both_correct=transitions['11'],lost=transitions['10'],gained=transitions['01'],both_wrong=transitions['00']))
 (out/'paired.json').write_text(json.dumps(paired,indent=2))
+
+starts=[e for e in events if e['kind']=='training_start']
+for method in ['ce','forward']:
+ for stage in ['B','C']:
+  subset=[e for e in starts if e['arm'].startswith(method+'-'+stage+'-')]
+  if subset:
+   assert len({e['initial_hash'] for e in subset})==1,(method,stage,'unequal starting weights')
+   assert all(e['order']==subset[0]['order'] for e in subset),(method,stage,'unequal target order')
+assert all(e['base_unchanged'] and e['reset_max_logit_delta']==0 for e in events if e['kind']=='training_complete')
+checks=json.loads((out/'audit.json').read_text());checks.update(equal_stage_starts=True,equal_target_orders=True,frozen_base_and_reset=True)
+(out/'audit.json').write_text(json.dumps(checks,indent=2))
+
+# Descriptive format/length accounting; does not replace any primary metric.
+strata=[]
+for arm in sorted({r['arm'] for r in rows}):
+ for suite in ['A-new','B-new']:
+  for length in sorted({len(r['case']['identifier']) for r in rows if r['suite']==suite}):
+   rs=[r for r in rows if r['arm']==arm and r['suite']==suite and len(r['case']['identifier'])==length]
+   strata.append(dict(arm=arm,suite=suite,length=length,n=len(rs),at_limit=sum(r['at_limit'] for r in rs),**{k:sum(r['scores'][k] for r in rs) for k in ['format','route','identifier','suffix','full']}))
+(out/'length-and-format.json').write_text(json.dumps(strata,indent=2))
+
+checks=json.loads((out/'audit.json').read_text());checks.update(analysis_git_revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),analysis_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+(out/'audit.json').write_text(json.dumps(checks,indent=2))

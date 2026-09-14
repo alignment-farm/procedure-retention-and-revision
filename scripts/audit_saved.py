@@ -1,5 +1,5 @@
 """Separate-process persistence and token audit; replays are excluded from scores."""
-import argparse,json,hashlib,sys,time,importlib.util
+import argparse,json,hashlib,sys,time,importlib.util,subprocess
 from pathlib import Path
 import mlx.core as mx
 from runtime import Runtime,sha
@@ -9,7 +9,9 @@ for line in (a.run/'SHA256SUMS').read_text().splitlines():
 rows=[json.loads(x) for x in (a.run/'responses.jsonl').read_text().splitlines()]
 spec=importlib.util.spec_from_file_location('saved_task',a.run/'task.py');task=importlib.util.module_from_spec(spec);spec.loader.exec_module(task)
 rt=Runtime();start=time.monotonic();checks=[]
+max_target_tokens=0
 for r in rows:
+ target_tokens=len(rt.target(r['prefix'],r['expected']));max_target_tokens=max(max_target_tokens,target_tokens);assert target_tokens<=48
  kwargs={'clean':r['clean_evidence']} if 'clean_evidence' in r else {}
  if 'rules' in r:kwargs['rules']=r['rules']
  assert rt.encode(task.prompt(r['case'],r['evidence'],r['revised'],**kwargs))==r['prefix']
@@ -26,5 +28,5 @@ prior=json.loads(Path('sources/checkpoints/recall.json').read_text());inherited=
 for r in rows:
  if r['arm'].endswith('-acquired') and r['suite']=='A-recall':
   method=r['arm'].split('-')[0];old=next(x for x in prior if x['arm']==method+'-0.0005' and x['case']==r['case']);assert old['ids']==r['ids'];inherited.append(dict(arm=r['arm'],index=r['index'],exact=True))
-result=dict(token_records=len(rows),reload_checks=checks,inherited_acquisition_replays=inherited,seconds=time.monotonic()-start)
+result=dict(audit_git_revision=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),audit_script_sha256=sha(__file__),token_records=len(rows),max_canonical_answer_tokens=max_target_tokens,generation_limit=48,reload_checks=checks,inherited_acquisition_replays=inherited,seconds=time.monotonic()-start)
 (out/'audit.json').write_text(json.dumps(result,indent=2));print(dict(token_records=len(rows),reload_checks=len(checks),inherited_replays=len(inherited)))

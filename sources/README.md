@@ -34,3 +34,8 @@ releases used in the versioned papers. In particular, the inspected LOKI path
 also caches edited-request keys; its memory-free motivation concerns avoiding
 an external past-knowledge corpus/feature preprocessing, not zero stored state.
 This study makes no reproduced author-method performance claim.
+
+Both final starting states receive identical subsequent hard-label CE objectives;
+forward-KL names the acquisition provenance only. The experiment does not compare
+loss orientation as an editing algorithm. The complete-rule references use
+additional oracle relation information and are never labeled example-equivalent.

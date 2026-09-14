@@ -41,3 +41,10 @@ Fresh random identifiers can test new-input behavior under a fixed recipe but
 cannot turn deterministic repeated training into an independent acquisition
 replication. Counts apply to the tested workload; do not interpret crossed
 conditions from one identifier as independent trials or make universal claims.
+
+The investigator supplies the true correction scope to replay selection: the
+program excludes exactly copper/fast A records. This is an oracle-assisted
+validity mask, not a learned discovery of which history is obsolete. The cleaned
+explicit-example reference receives the same filtering. The mask and extra
+boundary examples are part of those treatments' information access; their
+construction cost and correctness must not be attributed to the adapter.

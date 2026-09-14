@@ -1,0 +1,504 @@
+{
+  "token_records": 816,
+  "reload_checks": [
+    {
+      "arm": "ce-B-only-128",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        47,
+        2749,
+        42,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-only-128",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        47,
+        2749,
+        42,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-only-128",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-only-32",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-only-32",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-only-32",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-replay-128",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-replay-128",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-replay-128",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-replay-32",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-replay-32",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-B-replay-32",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-only-128",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        1893,
+        2749,
+        42,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-only-128",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        1893,
+        2749,
+        42,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-only-128",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-only-32",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        1893,
+        2749,
+        42,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-only-32",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        1893,
+        2749,
+        42,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-only-32",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-replay-128",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-replay-128",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        1740,
+        92963,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-replay-128",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        1094,
+        1740,
+        53,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-replay-32",
+      "suite": "A-recall",
+      "index": 0,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-replay-32",
+      "suite": "A-recall",
+      "index": 1,
+      "ids": [
+        39323,
+        3748,
+        7235,
+        428,
+        1740,
+        92963,
+        28242,
+        899,
+        151645
+      ],
+      "exact": true
+    },
+    {
+      "arm": "ce-C-replay-32",
+      "suite": "B-new",
+      "index": 0,
+      "ids": [
+        76,
+        23118,
+        7235,
+        428,
+        50,
+        7717,
+        1740,
+        53,
+        899,
+        151645
+      ],
+      "exact": true
+    }
+  ],
+  "inherited_acquisition_replays": [
+    {
+      "arm": "ce-acquired",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 2,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 3,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 4,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 5,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 6,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 7,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 8,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 9,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 10,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 11,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 12,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 13,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 14,
+      "exact": true
+    },
+    {
+      "arm": "ce-acquired",
+      "index": 15,
+      "exact": true
+    }
+  ],
+  "seconds": 7.484813667000708
+}

@@ -10,6 +10,10 @@ def main():
  events=[json.loads(l) for l in (a.run/'events.jsonl').read_text().splitlines()]
  rows=[json.loads(l) for l in (a.run/'responses.jsonl').read_text().splitlines()]
  design=json.loads((a.run/'design.json').read_text())
+ assert events[-1]['kind']=='finish' and events[-1]['status']=='complete'
+ assert design['phase'] in ('development','final'), 'Deployment ledger requires a complete acquisition/revision run'
+ for line in (a.run/'SHA256SUMS').read_text().splitlines():
+  h,n=line.split('  ',1);assert hashlib.sha256((a.run/n).read_bytes()).hexdigest()==h
  def training(us):return dict(updates=len(us),input_tokens=sum(u['input_tokens'] for u in us),loss_tokens=sum(u['loss_tokens'] for u in us),seconds=sum(u['seconds'] for u in us),sources=dict(Counter(u['source'] for u in us)))
  def inference(rs):return dict(calls=len(rs),complete=sum(r['scores']['complete'] for r in rs),prompt_tokens=sum(r['prompt_tokens'] for r in rs),completion_tokens=sum(r['completion_tokens'] for r in rs),seconds=sum(r['seconds'] for r in rs))
  trajectories=[]
@@ -26,9 +30,11 @@ def main():
     record=dict(case=e['case'],target=t.oracle(e['case'],e['version']))
     archive[json.dumps(record,sort_keys=True)]=record
    data=json.dumps(list(archive.values()),indent=2)+'\n';archive_name=name+'-'+arm+'-training-archive.json';(a.output/archive_name).write_text(data)
+   maintenance=[e for e in events if e['kind']=='maintenance' and e['state'].startswith(name+'-'+arm+'-v')]
+   relabeled={(e['version'],json.dumps(e['case'],sort_keys=True)) for e in update if e['source']=='history' and t.oracle(e['case'],e['version']-1)!=t.oracle(e['case'],0)}
    trajectories.append(dict(seed=seed,arm=arm,acquisition=training(acq),acquisition_validation=inference(validation),revision_training=training(update),recurring_use=inference(calls),
       current_adapter_bytes=cps[-1]['bytes'],training_archive_records=len(archive),training_archive_bytes=len(data.encode()),training_archive_file=archive_name,
-      history_records_scanned=128,obsolete_records_excluded=16,prior_revision_records_relabelled=8,
+      history_records_scanned=sum(e['scanned'] for e in maintenance),obsolete_records_excluded=sum(e['excluded'] for e in maintenance),prior_revision_records_relabelled=len(relabeled),
       correction_label_updates=sum(u['source']=='correction' for u in update),boundary_updates=sum(u['source']=='boundary' for u in update),rehearsal_updates=sum(u['source']=='history' for u in update)))
  model_path=Path('models/qwen3-4b-instruct')
  result=dict(git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),trajectories=trajectories,

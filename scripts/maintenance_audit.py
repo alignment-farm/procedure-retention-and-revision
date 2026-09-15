@@ -14,7 +14,7 @@ def main():
  p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
  a.output.mkdir(parents=True,exist_ok=False)
  start=time.monotonic();wait=0.
- for n in ['maintenance_audit.py','maintenance_task.py','runtime.py']:(a.output/n).write_bytes(Path('scripts',n).read_bytes())
+ for n in ['maintenance_audit.py','maintenance_task.py','runtime.py','task.py']:(a.output/n).write_bytes(Path('scripts',n).read_bytes())
  (a.output/'revision.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
  def guard():
   nonlocal wait
@@ -39,6 +39,18 @@ def main():
  for u in updates:
   prefix=rt.encode(t.prompt(u['case']));y=rt.target(prefix,t.oracle(u['case'],u['version']))
   assert u['input_tokens']==len(prefix)+len(y)-1 and u['loss_tokens']==len(y)
+ calibration=[];calibration_probes=[]
+ if (a.run/'routing-calibration.json').exists():
+  from task import prompt as routing_prompt, score as routing_score
+  reference=json.loads((a.run/'routing-calibration.json').read_text());calibration=reference['responses']
+  path=Path(reference['path']);assert sha(path)==reference['sha256'];rt.restore(list(mx.load(str(path)).items()))
+  for r in calibration:
+   assert rt.encode(routing_prompt(r['case']))==r['prefix']
+   assert rt.tokenizer.decode(r['ids'][:-1] if r['ended'] else r['ids'])==r['raw']
+   assert routing_score(r['raw'],r['case'])==r['scores']
+  for r in calibration[:3]:
+   guard();actual=rt.generate(r['prefix']);assert actual['ids']==r['ids']
+   calibration_probes.append(dict(case=r['case'],ids=actual['ids'],exact_match=True))
  probes=[]
  for e in events:
   if e['kind']!='checkpoint':continue
@@ -53,7 +65,7 @@ def main():
   for r in selected:
    guard();result=rt.generate(r['prefix'],limit=40);assert result['ids']==r['ids'],e['state']
    probes.append(dict(state=e['state'],case=r['case'],ids=result['ids'],exact_match=True))
- result=dict(rows_verified=len(rows),updates_verified=len(updates),probes=probes,seconds=time.monotonic()-start,wait_seconds=wait)
+ result=dict(rows_verified=len(rows),updates_verified=len(updates),probes=probes,calibration_rows_verified=len(calibration),calibration_probes=calibration_probes,seconds=time.monotonic()-start,wait_seconds=wait)
  (a.output/'audit.json').write_text(json.dumps(result,indent=2)+'\n')
  (a.output/'SHA256SUMS').write_text(''.join(f'{sha(f)}  {f.name}\n' for f in sorted(a.output.iterdir()) if f.is_file() and f.name!='SHA256SUMS'))
  print(json.dumps({k:v for k,v in result.items() if k!='probes'}));print('probes',len(probes))

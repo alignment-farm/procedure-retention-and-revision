@@ -106,3 +106,9 @@ experimental model runs used2,822.31 active seconds plus1,201.05 waiting seconds
 completed audit time87.50 s is separate. The interrupted auditor's partial timer
 is not added to active totals. All experimental and audit model jobs owned by
 this study have ended. No further shared-hardware run is queued.
+
+State/support phase, 15 September 2026: preparing seed401 2x2 crossing, 768
+updates and 1,152 generations, approximately ten active minutes. No competing
+Python model script visible at preparation. Existing passive yielding guard and
+40 GB ceiling retained. New acquisitions follow only after diagnostic analysis;
+no sibling files or processes modified. Expected allocation remains under 12 GB.

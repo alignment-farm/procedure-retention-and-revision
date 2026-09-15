@@ -1,0 +1,24 @@
+{
+  "analysis_git": "1c13da8343927271a6fd7a3af5b289e2497bb5f2",
+  "script_sha256": "c7ba8035145315bfa24fc45610dbc6fd015444a0a83a82335ff4c62fd9afb9f1",
+  "run_git": "692f5928e5eb5e816351abdfd29c7b7fff5e4f4b",
+  "response_records": 3892,
+  "updates": 5120,
+  "checkpoints": 28,
+  "manifest_verified": true,
+  "score_and_schedule_verified": true,
+  "completion": {
+    "kind": "complete",
+    "elapsed": 2401.419350125001,
+    "status": "complete",
+    "seconds": 2401.419346750001,
+    "resource_wait_seconds": 0.0,
+    "peak_mlx_bytes": 9615195164
+  },
+  "generation_cost": {
+    "prompt_tokens": 277340,
+    "completion_tokens": 41979,
+    "seconds": 1264.6806092820334
+  },
+  "acquisition_criteria": []
+}

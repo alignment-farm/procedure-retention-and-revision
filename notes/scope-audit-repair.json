@@ -1,0 +1,6 @@
+{
+  "kind": "CPU-only instrument-audit implementation repair",
+  "failed_attempt": "AutoTokenizer.apply_chat_template returned BatchEncoding by default, which was compared directly with the recorded token-ID list and failed the first prefix assertion.",
+  "diagnosis": "The returned input_ids matched the recorded prefix; MLX's tokenizer wrapper requests the list form. The CPU checker now explicitly uses return_dict=false.",
+  "effect": "No model run, training recipe, scoring rule or experimental evidence changed. No new generations were made. The failed checker wrote no audit result."
+}

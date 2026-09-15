@@ -1,0 +1,224 @@
+{
+  "git_revision": "1c13da8343927271a6fd7a3af5b289e2497bb5f2",
+  "runs": {
+    "scope-development-v1": {
+      "execution_revision": "77d48b9f14f833399b241bcc75120095bd1edcc4",
+      "manifest_sha256": "f7b0c8cf87bd114e7c1c349ea01236ffcb16b642fe1ab28cef528e4383dbbb75",
+      "updates": 896,
+      "generations": 612,
+      "checkpoint_files": 9,
+      "checkpoint_bytes": 23624037,
+      "elapsed_seconds": 568.7707420000006,
+      "wait_seconds": 150.04989979300808,
+      "active_seconds": 418.72084220699253,
+      "peak_mlx_bytes": 9615195164,
+      "training_seconds": 166.29927221599428,
+      "training_input_tokens": 71314,
+      "answer_tokens": 9084,
+      "generation_seconds": 190.37841407003725,
+      "prompt_tokens": 43182,
+      "completion_tokens": 6123,
+      "at_limit": 0,
+      "by_source": {
+        "repeat": {
+          "updates": 128,
+          "seconds": 23.663230413993006,
+          "input_tokens": 10208,
+          "loss_tokens": 1312
+        },
+        "replay": {
+          "updates": 256,
+          "seconds": 47.69693424495199,
+          "input_tokens": 20274,
+          "loss_tokens": 2524
+        },
+        "target": {
+          "updates": 512,
+          "seconds": 94.93910755704928,
+          "input_tokens": 40832,
+          "loss_tokens": 5248
+        }
+      }
+    },
+    "scope-acquisition-v1": {
+      "execution_revision": "8cd0f7c1cc1c4e7d431a1a6eb16bbd0b9973f380",
+      "manifest_sha256": "59ea96ef80dc68ad509cd0a05458c4e29899f37835d96478e481ebec7106ed59",
+      "updates": 320,
+      "generations": 144,
+      "checkpoint_files": 4,
+      "checkpoint_bytes": 10499572,
+      "elapsed_seconds": 139.4574097500008,
+      "wait_seconds": 0.0,
+      "active_seconds": 139.4574097500008,
+      "peak_mlx_bytes": 9612213276,
+      "training_seconds": 59.151173583992204,
+      "training_input_tokens": 25248,
+      "answer_tokens": 3072,
+      "generation_seconds": 44.182829160959955,
+      "prompt_tokens": 10136,
+      "completion_tokens": 1396,
+      "at_limit": 0,
+      "by_source": {
+        "acquisition": {
+          "updates": 256,
+          "seconds": 47.31706474799648,
+          "input_tokens": 20160,
+          "loss_tokens": 2432
+        },
+        "later": {
+          "updates": 64,
+          "seconds": 11.834108835995721,
+          "input_tokens": 5088,
+          "loss_tokens": 640
+        }
+      }
+    },
+    "scope-boundary-diagnosis-v1": {
+      "execution_revision": "65fd4eca6c2e7bfd7109868feb85b9bc76ec1822",
+      "manifest_sha256": "a2a72346725e0a10eef3c00001dbe2f5b0a34c38d0aa28879da214fb0bc179b9",
+      "updates": 768,
+      "generations": 375,
+      "checkpoint_files": 5,
+      "checkpoint_bytes": 13124465,
+      "elapsed_seconds": 1394.2340691670033,
+      "wait_seconds": 1095.6599021629881,
+      "active_seconds": 298.5741670040152,
+      "peak_mlx_bytes": 9615064092,
+      "training_seconds": 139.4522357440328,
+      "training_input_tokens": 61150,
+      "answer_tokens": 7486,
+      "generation_seconds": 115.38422844904198,
+      "prompt_tokens": 26485,
+      "completion_tokens": 3682,
+      "at_limit": 0,
+      "by_source": {
+        "boundary": {
+          "updates": 256,
+          "seconds": 46.46283037799003,
+          "input_tokens": 20406,
+          "loss_tokens": 2412
+        },
+        "boundary-repeat": {
+          "updates": 128,
+          "seconds": 23.315943417030212,
+          "input_tokens": 10203,
+          "loss_tokens": 1206
+        },
+        "history": {
+          "updates": 128,
+          "seconds": 23.099480327982747,
+          "input_tokens": 10125,
+          "loss_tokens": 1244
+        },
+        "target": {
+          "updates": 256,
+          "seconds": 46.573981621029816,
+          "input_tokens": 20416,
+          "loss_tokens": 2624
+        }
+      }
+    },
+    "scope-acquisition-repair-v1": {
+      "execution_revision": "dd5ca0a2421b37d9313f6e923e39520301943ab5",
+      "manifest_sha256": "1ca831459511805672f91dfba5f0a78e7c904ddf38597c18684aaf2bde8a46a4",
+      "updates": 256,
+      "generations": 108,
+      "checkpoint_files": 3,
+      "checkpoint_bytes": 7874679,
+      "elapsed_seconds": 106.07992887499859,
+      "wait_seconds": 0.0,
+      "active_seconds": 106.07992887499859,
+      "peak_mlx_bytes": 9612131356,
+      "training_seconds": 47.054495770993526,
+      "training_input_tokens": 20256,
+      "answer_tokens": 2496,
+      "generation_seconds": 33.37317424399225,
+      "prompt_tokens": 7602,
+      "completion_tokens": 1057,
+      "at_limit": 0,
+      "by_source": {
+        "later": {
+          "updates": 128,
+          "seconds": 23.53614176298288,
+          "input_tokens": 10176,
+          "loss_tokens": 1280
+        },
+        "old-replay": {
+          "updates": 128,
+          "seconds": 23.518354008010647,
+          "input_tokens": 10080,
+          "loss_tokens": 1216
+        }
+      }
+    },
+    "scope-final-v1": {
+      "execution_revision": "692f5928e5eb5e816351abdfd29c7b7fff5e4f4b",
+      "manifest_sha256": "9d66c643d9c2226bc8228adfcb4a524a114a6447167e0c6971f3c2f43d2bca08",
+      "updates": 5120,
+      "generations": 3892,
+      "checkpoint_files": 28,
+      "checkpoint_bytes": 73497004,
+      "elapsed_seconds": 2401.419346750001,
+      "wait_seconds": 0.0,
+      "active_seconds": 2401.419346750001,
+      "peak_mlx_bytes": 9615195164,
+      "training_seconds": 923.5859897428272,
+      "training_input_tokens": 407928,
+      "answer_tokens": 50936,
+      "generation_seconds": 1264.6806092820334,
+      "prompt_tokens": 277340,
+      "completion_tokens": 41979,
+      "at_limit": 62,
+      "by_source": {
+        "boundary": {
+          "updates": 1024,
+          "seconds": 184.69255612293637,
+          "input_tokens": 81624,
+          "loss_tokens": 9648
+        },
+        "boundary-repeat": {
+          "updates": 512,
+          "seconds": 91.66362371402647,
+          "input_tokens": 40812,
+          "loss_tokens": 4824
+        },
+        "history": {
+          "updates": 512,
+          "seconds": 93.0840919169932,
+          "input_tokens": 40500,
+          "loss_tokens": 4976
+        },
+        "repeat": {
+          "updates": 1024,
+          "seconds": 184.03118619694578,
+          "input_tokens": 81664,
+          "loss_tokens": 10496
+        },
+        "target": {
+          "updates": 2048,
+          "seconds": 370.1145317919254,
+          "input_tokens": 163328,
+          "loss_tokens": 20992
+        }
+      }
+    }
+  },
+  "totals": {
+    "updates": 7360,
+    "generations": 5131,
+    "checkpoint_files": 49,
+    "checkpoint_bytes": 128619757,
+    "elapsed_seconds": 4609.961496542004,
+    "wait_seconds": 1245.7098019559962,
+    "active_seconds": 3364.251694586008,
+    "training_seconds": 1335.54316705784,
+    "training_input_tokens": 585896,
+    "answer_tokens": 73074,
+    "generation_seconds": 1647.9992552060648,
+    "prompt_tokens": 364745,
+    "completion_tokens": 54237,
+    "at_limit": 62,
+    "unique_checkpoint_hashes": 39
+  },
+  "note": "Experimental runs only; reload-audit generations are separate. Duplicated carried states are counted as files, not independent acquisitions. The failed B32 and every early correction endpoint remain included. Inherited acquisition/B preparation costs belong to the accepted source ledger. No energy, investigator-time, or repayment estimate."
+}

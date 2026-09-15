@@ -1,0 +1,938 @@
+{
+  "ce-only-128": {
+    "n": 84,
+    "route": {
+      "before": 78,
+      "after": 48,
+      "lost": 30,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 48,
+      "lost": 30,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 43,
+      "after": 26,
+      "lost": 24,
+      "gained": 7
+    },
+    "suffix": {
+      "before": 83,
+      "after": 65,
+      "lost": 19,
+      "gained": 1
+    },
+    "full": {
+      "before": 37,
+      "after": 10,
+      "lost": 29,
+      "gained": 2
+    }
+  },
+  "ce-triple-128": {
+    "n": 84,
+    "route": {
+      "before": 78,
+      "after": 48,
+      "lost": 30,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 47,
+      "lost": 31,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 83,
+      "lost": 1,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 43,
+      "after": 24,
+      "lost": 31,
+      "gained": 12
+    },
+    "suffix": {
+      "before": 83,
+      "after": 39,
+      "lost": 45,
+      "gained": 1
+    },
+    "full": {
+      "before": 37,
+      "after": 8,
+      "lost": 33,
+      "gained": 4
+    }
+  },
+  "ce-boundary-repeat-32": {
+    "n": 84,
+    "route": {
+      "before": 78,
+      "after": 72,
+      "lost": 12,
+      "gained": 6
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 72,
+      "lost": 12,
+      "gained": 6
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 43,
+      "after": 31,
+      "lost": 22,
+      "gained": 10
+    },
+    "suffix": {
+      "before": 83,
+      "after": 70,
+      "lost": 13,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 27,
+      "lost": 19,
+      "gained": 9
+    }
+  },
+  "ce-boundary-repeat-128": {
+    "n": 84,
+    "route": {
+      "before": 78,
+      "after": 77,
+      "lost": 7,
+      "gained": 6
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 77,
+      "lost": 7,
+      "gained": 6
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 43,
+      "after": 24,
+      "lost": 24,
+      "gained": 5
+    },
+    "suffix": {
+      "before": 83,
+      "after": 70,
+      "lost": 13,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 23,
+      "lost": 19,
+      "gained": 5
+    }
+  },
+  "ce-boundary-history-32": {
+    "n": 84,
+    "route": {
+      "before": 78,
+      "after": 82,
+      "lost": 2,
+      "gained": 6
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 82,
+      "lost": 2,
+      "gained": 6
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 43,
+      "after": 46,
+      "lost": 10,
+      "gained": 13
+    },
+    "suffix": {
+      "before": 83,
+      "after": 76,
+      "lost": 7,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 43,
+      "lost": 8,
+      "gained": 14
+    }
+  },
+  "ce-boundary-history-128": {
+    "n": 84,
+    "route": {
+      "before": 78,
+      "after": 83,
+      "lost": 0,
+      "gained": 5
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 83,
+      "lost": 0,
+      "gained": 5
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 43,
+      "after": 43,
+      "lost": 15,
+      "gained": 15
+    },
+    "suffix": {
+      "before": 83,
+      "after": 79,
+      "lost": 4,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 42,
+      "lost": 15,
+      "gained": 20
+    }
+  },
+  "forward-only-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 46,
+      "lost": 38,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 80,
+      "lost": 4,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 41,
+      "after": 18,
+      "lost": 27,
+      "gained": 4
+    },
+    "suffix": {
+      "before": 83,
+      "after": 52,
+      "lost": 31,
+      "gained": 0
+    },
+    "full": {
+      "before": 41,
+      "after": 5,
+      "lost": 36,
+      "gained": 0
+    }
+  },
+  "forward-triple-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 41,
+      "after": 20,
+      "lost": 28,
+      "gained": 7
+    },
+    "suffix": {
+      "before": 83,
+      "after": 74,
+      "lost": 9,
+      "gained": 0
+    },
+    "full": {
+      "before": 41,
+      "after": 10,
+      "lost": 34,
+      "gained": 3
+    }
+  },
+  "forward-boundary-repeat-32": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 41,
+      "lost": 43,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 41,
+      "lost": 43,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 82,
+      "lost": 2,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 41,
+      "after": 2,
+      "lost": 41,
+      "gained": 2
+    },
+    "suffix": {
+      "before": 83,
+      "after": 64,
+      "lost": 19,
+      "gained": 0
+    },
+    "full": {
+      "before": 41,
+      "after": 1,
+      "lost": 41,
+      "gained": 1
+    }
+  },
+  "forward-boundary-repeat-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 41,
+      "after": 14,
+      "lost": 33,
+      "gained": 6
+    },
+    "suffix": {
+      "before": 83,
+      "after": 79,
+      "lost": 4,
+      "gained": 0
+    },
+    "full": {
+      "before": 41,
+      "after": 14,
+      "lost": 33,
+      "gained": 6
+    }
+  },
+  "forward-boundary-history-32": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 58,
+      "lost": 26,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 58,
+      "lost": 26,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 41,
+      "after": 22,
+      "lost": 30,
+      "gained": 11
+    },
+    "suffix": {
+      "before": 83,
+      "after": 37,
+      "lost": 46,
+      "gained": 0
+    },
+    "full": {
+      "before": 41,
+      "after": 19,
+      "lost": 32,
+      "gained": 10
+    }
+  },
+  "forward-boundary-history-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 82,
+      "lost": 2,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 79,
+      "lost": 5,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 81,
+      "lost": 3,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 41,
+      "after": 50,
+      "lost": 6,
+      "gained": 15
+    },
+    "suffix": {
+      "before": 83,
+      "after": 77,
+      "lost": 7,
+      "gained": 1
+    },
+    "full": {
+      "before": 41,
+      "after": 49,
+      "lost": 7,
+      "gained": 15
+    }
+  },
+  "seed101-only-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 42,
+      "lost": 36,
+      "gained": 0
+    },
+    "format": {
+      "before": 78,
+      "after": 70,
+      "lost": 12,
+      "gained": 4
+    },
+    "identifier": {
+      "before": 27,
+      "after": 22,
+      "lost": 21,
+      "gained": 16
+    },
+    "suffix": {
+      "before": 43,
+      "after": 47,
+      "lost": 25,
+      "gained": 29
+    },
+    "full": {
+      "before": 13,
+      "after": 8,
+      "lost": 13,
+      "gained": 8
+    }
+  },
+  "seed101-triple-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 44,
+      "lost": 34,
+      "gained": 0
+    },
+    "format": {
+      "before": 78,
+      "after": 80,
+      "lost": 4,
+      "gained": 6
+    },
+    "identifier": {
+      "before": 27,
+      "after": 4,
+      "lost": 27,
+      "gained": 4
+    },
+    "suffix": {
+      "before": 43,
+      "after": 39,
+      "lost": 30,
+      "gained": 26
+    },
+    "full": {
+      "before": 13,
+      "after": 1,
+      "lost": 13,
+      "gained": 1
+    }
+  },
+  "seed101-boundary-repeat-32": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 39,
+      "lost": 45,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 39,
+      "lost": 45,
+      "gained": 6
+    },
+    "format": {
+      "before": 78,
+      "after": 84,
+      "lost": 0,
+      "gained": 6
+    },
+    "identifier": {
+      "before": 27,
+      "after": 30,
+      "lost": 16,
+      "gained": 19
+    },
+    "suffix": {
+      "before": 43,
+      "after": 83,
+      "lost": 0,
+      "gained": 40
+    },
+    "full": {
+      "before": 13,
+      "after": 14,
+      "lost": 11,
+      "gained": 12
+    }
+  },
+  "seed101-boundary-repeat-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 84,
+      "lost": 0,
+      "gained": 6
+    },
+    "format": {
+      "before": 78,
+      "after": 84,
+      "lost": 0,
+      "gained": 6
+    },
+    "identifier": {
+      "before": 27,
+      "after": 31,
+      "lost": 15,
+      "gained": 19
+    },
+    "suffix": {
+      "before": 43,
+      "after": 77,
+      "lost": 0,
+      "gained": 34
+    },
+    "full": {
+      "before": 13,
+      "after": 31,
+      "lost": 8,
+      "gained": 26
+    }
+  },
+  "seed101-boundary-history-32": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 73,
+      "lost": 11,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 73,
+      "lost": 5,
+      "gained": 0
+    },
+    "format": {
+      "before": 78,
+      "after": 84,
+      "lost": 0,
+      "gained": 6
+    },
+    "identifier": {
+      "before": 27,
+      "after": 65,
+      "lost": 6,
+      "gained": 44
+    },
+    "suffix": {
+      "before": 43,
+      "after": 84,
+      "lost": 0,
+      "gained": 41
+    },
+    "full": {
+      "before": 13,
+      "after": 58,
+      "lost": 6,
+      "gained": 51
+    }
+  },
+  "seed101-boundary-history-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 78,
+      "after": 84,
+      "lost": 0,
+      "gained": 6
+    },
+    "format": {
+      "before": 78,
+      "after": 84,
+      "lost": 0,
+      "gained": 6
+    },
+    "identifier": {
+      "before": 27,
+      "after": 65,
+      "lost": 6,
+      "gained": 44
+    },
+    "suffix": {
+      "before": 43,
+      "after": 84,
+      "lost": 0,
+      "gained": 41
+    },
+    "full": {
+      "before": 13,
+      "after": 65,
+      "lost": 5,
+      "gained": 57
+    }
+  },
+  "seed202-only-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 37,
+      "after": 15,
+      "lost": 26,
+      "gained": 4
+    },
+    "suffix": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 4,
+      "lost": 35,
+      "gained": 2
+    }
+  },
+  "seed202-triple-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 48,
+      "lost": 36,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 47,
+      "lost": 37,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 81,
+      "lost": 3,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 37,
+      "after": 1,
+      "lost": 36,
+      "gained": 0
+    },
+    "suffix": {
+      "before": 84,
+      "after": 73,
+      "lost": 11,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 1,
+      "lost": 36,
+      "gained": 0
+    }
+  },
+  "seed202-boundary-repeat-32": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 78,
+      "lost": 6,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 78,
+      "lost": 6,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 37,
+      "after": 25,
+      "lost": 14,
+      "gained": 2
+    },
+    "suffix": {
+      "before": 84,
+      "after": 75,
+      "lost": 9,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 24,
+      "lost": 15,
+      "gained": 2
+    }
+  },
+  "seed202-boundary-repeat-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 81,
+      "lost": 3,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 81,
+      "lost": 3,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 37,
+      "after": 27,
+      "lost": 16,
+      "gained": 6
+    },
+    "suffix": {
+      "before": 84,
+      "after": 83,
+      "lost": 1,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 26,
+      "lost": 17,
+      "gained": 6
+    }
+  },
+  "seed202-boundary-history-32": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 60,
+      "lost": 24,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 60,
+      "lost": 24,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 37,
+      "after": 7,
+      "lost": 32,
+      "gained": 2
+    },
+    "suffix": {
+      "before": 84,
+      "after": 77,
+      "lost": 7,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 3,
+      "lost": 34,
+      "gained": 0
+    }
+  },
+  "seed202-boundary-history-128": {
+    "n": 84,
+    "route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "format": {
+      "before": 84,
+      "after": 84,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 37,
+      "after": 21,
+      "lost": 24,
+      "gained": 8
+    },
+    "suffix": {
+      "before": 84,
+      "after": 83,
+      "lost": 1,
+      "gained": 0
+    },
+    "full": {
+      "before": 37,
+      "after": 21,
+      "lost": 24,
+      "gained": 8
+    }
+  }
+}

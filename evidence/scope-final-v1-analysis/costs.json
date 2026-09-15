@@ -1,0 +1,286 @@
+{
+  "ce-only": {
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.49399674997403
+    }
+  },
+  "ce-triple": {
+    "repeat": {
+      "updates": 256,
+      "unique_cases": 4,
+      "input_tokens": 20416,
+      "loss_tokens": 2624,
+      "seconds": 46.0678033039876
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.05647237598896
+    }
+  },
+  "ce-boundary-repeat": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 22.957585335978365
+    },
+    "boundary-repeat": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 22.93097558899899
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.002544542981923
+    }
+  },
+  "ce-boundary-history": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.177402623994567
+    },
+    "history": {
+      "updates": 128,
+      "unique_cases": 28,
+      "input_tokens": 10125,
+      "loss_tokens": 1244,
+      "seconds": 23.21390171100211
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.19846366499769
+    }
+  },
+  "forward-only": {
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.518356920998485
+    }
+  },
+  "forward-triple": {
+    "repeat": {
+      "updates": 256,
+      "unique_cases": 4,
+      "input_tokens": 20416,
+      "loss_tokens": 2624,
+      "seconds": 45.71327509399998
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 22.88410924501295
+    }
+  },
+  "forward-boundary-repeat": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.38847108501068
+    },
+    "boundary-repeat": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.391356167994672
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.440056916020694
+    }
+  },
+  "forward-boundary-history": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.011501119977765
+    },
+    "history": {
+      "updates": 128,
+      "unique_cases": 28,
+      "input_tokens": 10125,
+      "loss_tokens": 1244,
+      "seconds": 23.055445248985052
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.07783787301014
+    }
+  },
+  "seed101-only": {
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 22.60385925097944
+    }
+  },
+  "seed101-triple": {
+    "repeat": {
+      "updates": 256,
+      "unique_cases": 4,
+      "input_tokens": 20416,
+      "loss_tokens": 2624,
+      "seconds": 46.13930242098286
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.056027163987892
+    }
+  },
+  "seed101-boundary-repeat": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 22.610925163982756
+    },
+    "boundary-repeat": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 22.615707087010378
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 22.641160960010893
+    }
+  },
+  "seed101-boundary-history": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.767793540013372
+    },
+    "history": {
+      "updates": 128,
+      "unique_cases": 28,
+      "input_tokens": 10125,
+      "loss_tokens": 1244,
+      "seconds": 23.798740002006525
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.78735362300722
+    }
+  },
+  "seed202-only": {
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.460059793993423
+    }
+  },
+  "seed202-triple": {
+    "repeat": {
+      "updates": 256,
+      "unique_cases": 4,
+      "input_tokens": 20416,
+      "loss_tokens": 2624,
+      "seconds": 46.11080537797534
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.095933287007938
+    }
+  },
+  "seed202-boundary-repeat": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 22.700845582981856
+    },
+    "boundary-repeat": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 22.72558487002243
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 22.739514167980815
+    }
+  },
+  "seed202-boundary-history": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.078031670997007
+    },
+    "history": {
+      "updates": 128,
+      "unique_cases": 28,
+      "input_tokens": 10125,
+      "loss_tokens": 1244,
+      "seconds": 23.016004954999516
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.058785255972907
+    }
+  }
+}

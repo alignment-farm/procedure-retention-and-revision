@@ -1,0 +1,318 @@
+{
+  "git_revision": "1c13da8343927271a6fd7a3af5b289e2497bb5f2",
+  "script_sha256": "5e14fca4d3752f1fb1ceb9a7c97a6cc9ab8f74fed07b08b5e4aa5494579d5190",
+  "token_records": 375,
+  "training_token_records": 768,
+  "max_answer_tokens": 11,
+  "source_checks": [
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 2,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 3,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 4,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 5,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 6,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 7,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 8,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 9,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 10,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 11,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 12,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 13,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 14,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "A-recall",
+      "index": 15,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 2,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 3,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 4,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 5,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 6,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 7,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 8,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 9,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 10,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 11,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 12,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 13,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 14,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "B-recall",
+      "index": 15,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "C-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "C-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "C-recall",
+      "index": 2,
+      "exact": true
+    },
+    {
+      "arm": "ce-before",
+      "suite": "C-recall",
+      "index": 3,
+      "exact": true
+    }
+  ],
+  "reload_checks": [
+    {
+      "checkpoint": "ce-before.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-before.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-before.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-history-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-history-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-history-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-history-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-history-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-history-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-repeat-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-repeat-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-repeat-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-repeat-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-repeat-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "ce-boundary-repeat-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    }
+  ],
+  "seconds": 4.819534834001388
+}

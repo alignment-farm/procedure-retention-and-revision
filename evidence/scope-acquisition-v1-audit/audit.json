@@ -1,0 +1,83 @@
+{
+  "git_revision": "1c13da8343927271a6fd7a3af5b289e2497bb5f2",
+  "script_sha256": "5e14fca4d3752f1fb1ceb9a7c97a6cc9ab8f74fed07b08b5e4aa5494579d5190",
+  "token_records": 144,
+  "training_token_records": 320,
+  "max_answer_tokens": 11,
+  "source_checks": [],
+  "reload_checks": [
+    {
+      "checkpoint": "seed101-A-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed101-A-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed101-A-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed101-B-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed101-B-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed101-B-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed202-A-128.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed202-A-128.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed202-A-128.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed202-B-32.safetensors",
+      "suite": "A-recall",
+      "index": 0,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed202-B-32.safetensors",
+      "suite": "A-recall",
+      "index": 1,
+      "exact": true
+    },
+    {
+      "checkpoint": "seed202-B-32.safetensors",
+      "suite": "B-recall",
+      "index": 0,
+      "exact": true
+    }
+  ],
+  "seconds": 3.796166167001502
+}

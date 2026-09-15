@@ -62,8 +62,12 @@ messaging channel is exposed; use the existing observational yielding protocol.
 
 Maintenance development completed: 1,148.25 s wall time, including 60.02 s shared
 resource wait; peak MLX allocation 9,614,539,804 bytes. Routing calibration was
-16/16 full calls. The diagnostic queued after completion and yielded before load
-to experience-selection PID5235, whose resource note advertises a bounded
+16/16 full calls. The diagnostic queued after completion. Its initial process check was empty;
+PID5235 began during model initialization. At 13.96 seconds the diagnostic
+paused before its first generation, with model weights resident. This corrects
+the initial progress-update assumption that it had yielded before loading.
+Initialization briefly overlapped experience-selection PID5235; neither
+diagnostic training nor generation had started. The sibling note advertises a bounded
 1,152-update development job after our PID4678 exited. No sibling files changed.
 Planned negative-boundary diagnostic: 384 updates and 480 generations, expected
 about four active minutes. This one additional diagnostic is justified by scoped

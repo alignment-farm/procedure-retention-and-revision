@@ -1,0 +1,16 @@
+{
+  "eligible_any": [
+    {
+      "certified": 1
+    },
+    {
+      "channel": "copper",
+      "priority": "fast"
+    },
+    {
+      "channel": "violet",
+      "priority": "slow"
+    }
+  ],
+  "units_per_order": 1
+}

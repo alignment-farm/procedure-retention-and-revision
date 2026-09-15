@@ -1,0 +1,98 @@
+[
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "familiar-first-two",
+    "n": 4,
+    "directly_relabelled_n": 0,
+    "directly_relabelled_complete": 0,
+    "complete": 4,
+    "stale": 0,
+    "downstream_n": 2,
+    "downstream_complete": 2
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "familiar-withheld",
+    "n": 4,
+    "directly_relabelled_n": 0,
+    "directly_relabelled_complete": 0,
+    "complete": 4,
+    "stale": 0,
+    "downstream_n": 2,
+    "downstream_complete": 2
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "correction-new",
+    "n": 8,
+    "directly_relabelled_n": 8,
+    "directly_relabelled_complete": 8,
+    "complete": 8,
+    "stale": 0,
+    "downstream_n": 4,
+    "downstream_complete": 4
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 4,
+    "directly_relabelled_n": 0,
+    "directly_relabelled_complete": 0,
+    "complete": 4,
+    "stale": 0,
+    "downstream_n": 2,
+    "downstream_complete": 2
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "familiar-first-two",
+    "n": 4,
+    "directly_relabelled_n": 4,
+    "directly_relabelled_complete": 4,
+    "complete": 4,
+    "stale": 0,
+    "downstream_n": 2,
+    "downstream_complete": 2
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "familiar-withheld",
+    "n": 4,
+    "directly_relabelled_n": 0,
+    "directly_relabelled_complete": 0,
+    "complete": 4,
+    "stale": 0,
+    "downstream_n": 2,
+    "downstream_complete": 2
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "correction-new",
+    "n": 8,
+    "directly_relabelled_n": 4,
+    "directly_relabelled_complete": 4,
+    "complete": 8,
+    "stale": 0,
+    "downstream_n": 4,
+    "downstream_complete": 4
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 4,
+    "directly_relabelled_n": 0,
+    "directly_relabelled_complete": 0,
+    "complete": 4,
+    "stale": 0,
+    "downstream_n": 2,
+    "downstream_complete": 2
+  }
+]

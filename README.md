@@ -1,12 +1,18 @@
 # Procedure retention and revision
 
-**Status: Both comparisons accepted; [phase on maintaining complete procedures](MAINTENANCE.md) commissioned.**
+**Status: Both earlier comparisons accepted; complete-procedure development finished and fresh comparison queued.**
+
+The third phase now has a [fixed fresh protocol](protocol/maintenance-final-v1.md)
+and [recorded development decision](notes/maintenance-development-decision.md).
+All original and repaired development endpoints are preserved. Fresh model
+execution yields to active shared-hardware jobs; final findings will be published
+separately.
 
 The current [third-phase brief](MAINTENANCE.md) asks whether supported correction
 can revise familiar and unfamiliar applications while preserving complete
 unaffected behavior through repeated use. It extends beyond routing calibration
 and measures useful performance and maintenance costs against explicit memory.
-The investigator can proceed independently; preparing the brief did not start runs.
+The investigator proceeds independently; the brief did not itself launch runs.
 
 ## Accepted scope evidence and rehearsal follow-up
 

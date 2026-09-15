@@ -1,0 +1,104 @@
+{
+  "training": [
+    {
+      "state": "seed311-novel-v1",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.72600370801956,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed311-bridged-v1",
+      "updates": 192,
+      "input_tokens": 17150,
+      "loss_tokens": 1536,
+      "seconds": 35.77443691802,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    }
+  ],
+  "inference": [
+    {
+      "state": "seed311-no-update",
+      "version": 0,
+      "repeat": 0,
+      "n": 160,
+      "complete": 160,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.52472120700986
+    },
+    {
+      "state": "seed311-novel-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 160,
+      "complete": 160,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.4270177800081
+    },
+    {
+      "state": "seed311-bridged-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 160,
+      "complete": 160,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.4409854240148
+    }
+  ],
+  "finish": {
+    "kind": "finish",
+    "elapsed": 674.8945380000023,
+    "status": "complete",
+    "wall_seconds": 674.8945358340006,
+    "wait_seconds": 440.4037579970027,
+    "peak_mlx_bytes": 9614851100
+  },
+  "maintenance": [
+    {
+      "kind": "maintenance",
+      "elapsed": 501.5058635000005,
+      "state": "seed311-novel-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator"
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 583.5405069590015,
+      "state": "seed311-bridged-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator"
+    }
+  ],
+  "checkpoints": [
+    {
+      "kind": "checkpoint",
+      "elapsed": 538.5303934590011,
+      "state": "seed311-novel-v1",
+      "sha256": "16fc771948e65df9045baebcbe7c45560f3b8eeff5bec67a67203b2d929720b7",
+      "state_hash": "acad0b1d7ad5235b7ab53bb26c5b33581b344f79e2c8da02716227017d84ea50",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 620.6279626670021,
+      "state": "seed311-bridged-v1",
+      "sha256": "a51b17c1fe22535308eae89441f2df3d0575e7896374417a1a7a5af05f5355ab",
+      "state_hash": "2a0c3971a31b4ad0c3bfeace2e1f5e045ce8907cd0aa151641b7940dc8f37874",
+      "bytes": 2624893
+    }
+  ]
+}

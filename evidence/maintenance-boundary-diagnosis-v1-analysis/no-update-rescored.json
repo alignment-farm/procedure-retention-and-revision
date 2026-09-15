@@ -1,0 +1,20 @@
+[
+  {
+    "state": "seed311-no-update",
+    "version": 1,
+    "repeat": 0,
+    "n": 160,
+    "complete": 140,
+    "stale": 20,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed311-no-update",
+    "version": 2,
+    "repeat": 0,
+    "n": 160,
+    "complete": 120,
+    "stale": 20,
+    "reuses_generation": true
+  }
+]

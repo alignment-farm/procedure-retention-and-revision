@@ -75,3 +75,12 @@ corrections transferring while inducing off-scope eligibility and shipment error
 it changes boundary-example allocation at fixed update count, not model size.
 The eventual two-seed fresh comparison is sized at roughly 30 active minutes,
 with the same model/allocation limits and no concurrent local model job.
+
+The boundary diagnostic completed at 674.89 s wall / 440.40 s waiting, peak
+9,614,851,100 MLX bytes; both corrected endpoints are160/160 complete. The fresh
+comparison at0c4c819 queued behind experience-selection PID5491, which had already
+started its three-site development-v3 sequence. Its initial check found that job,
+so final model loading has not started during this wait. Fresh runtime budget is
+now about22 active minutes after retaining full primary evaluations but reducing
+redundant repeated queries. This is the study's last planned experimental model
+run, followed by saved-state/token audits; no correction search uses fresh results.

@@ -75,3 +75,22 @@ Second-revision historical rehearsal includes eight investigator-relabeled recor
 from revision 1, as well as dropping the eight newly obsolete revision-2 records.
 No human-effort, electricity or assistant-orchestration dollar estimate is made.
 Zero paid experimental model calls does not mean zero total research cost.
+
+## Frozen fresh execution
+
+Execution revision **0c4c819**. The negative-boundary recipe was selected using
+only the fixed development diagnostic. Seeds401/402 and fresh entity names are
+prospective, and readiness checks use the original development material.
+
+```sh
+uv run --no-sync python scripts/maintenance_experiment.py --phase final --seeds 401 402 --boundary-mode negative --output evidence/NEW-MAINTENANCE-FINAL
+uv run --no-sync python scripts/maintenance_analyze.py evidence/NEW-MAINTENANCE-FINAL --output evidence/NEW-MAINTENANCE-FINAL-ANALYSIS
+uv run --no-sync python scripts/maintenance_explicit.py evidence/NEW-MAINTENANCE-FINAL --output evidence/NEW-MAINTENANCE-FINAL-EXPLICIT
+uv run --no-sync python scripts/maintenance_costs.py evidence/NEW-MAINTENANCE-FINAL --output evidence/NEW-MAINTENANCE-FINAL-COSTS
+uv run --no-sync python scripts/maintenance_audit.py evidence/NEW-MAINTENANCE-FINAL --output evidence/NEW-MAINTENANCE-FINAL-AUDIT
+```
+
+The formal-policy reference has already completed 672/672 fresh use events;
+its source, versioned policies, traces and native-unit costs are preserved in
+maintenance-final-explicit-v1. Final neural execution is queued/running. All
+final source and protocol snapshots are written before model loading.

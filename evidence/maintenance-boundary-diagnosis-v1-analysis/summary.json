@@ -1,0 +1,47 @@
+[
+  {
+    "state": "seed311-no-update",
+    "version": 0,
+    "repeat": 0,
+    "n": 160,
+    "eligibility": 160,
+    "reservation": 160,
+    "shipment": 160,
+    "stock": 160,
+    "status": 160,
+    "format": 160,
+    "exact": 160,
+    "complete": 160,
+    "stale": 0
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "repeat": 0,
+    "n": 160,
+    "eligibility": 160,
+    "reservation": 160,
+    "shipment": 160,
+    "stock": 160,
+    "status": 160,
+    "format": 160,
+    "exact": 160,
+    "complete": 160,
+    "stale": 0
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "repeat": 0,
+    "n": 160,
+    "eligibility": 160,
+    "reservation": 160,
+    "shipment": 160,
+    "stock": 160,
+    "status": 160,
+    "format": 160,
+    "exact": 160,
+    "complete": 160,
+    "stale": 0
+  }
+]

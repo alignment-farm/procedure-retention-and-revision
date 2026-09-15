@@ -59,3 +59,15 @@ Maintenance phase, 15 September 2026: preparing work-order development, one
 per revision. Native host verified mac.lan; no competing Python script visible
 at preparation. Expected <12 GB, hard 40 GB, one active hour per run. No external
 messaging channel is exposed; use the existing observational yielding protocol.
+
+Maintenance development completed: 1,148.25 s wall time, including 60.02 s shared
+resource wait; peak MLX allocation 9,614,539,804 bytes. Routing calibration was
+16/16 full calls. The diagnostic queued after completion and yielded before load
+to experience-selection PID5235, whose resource note advertises a bounded
+1,152-update development job after our PID4678 exited. No sibling files changed.
+Planned negative-boundary diagnostic: 384 updates and 480 generations, expected
+about four active minutes. This one additional diagnostic is justified by scoped
+corrections transferring while inducing off-scope eligibility and shipment errors;
+it changes boundary-example allocation at fixed update count, not model size.
+The eventual two-seed fresh comparison is sized at roughly 30 active minutes,
+with the same model/allocation limits and no concurrent local model job.

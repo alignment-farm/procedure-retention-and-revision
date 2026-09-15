@@ -1,0 +1,44 @@
+[
+  {
+    "state": "seed311-no-update",
+    "version": 0,
+    "n": 160,
+    "identical": 160
+  },
+  {
+    "state": "seed311-no-update",
+    "version": 1,
+    "n": 160,
+    "identical": 160
+  },
+  {
+    "state": "seed311-no-update",
+    "version": 2,
+    "n": 160,
+    "identical": 160
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "n": 160,
+    "identical": 160
+  },
+  {
+    "state": "seed311-novel-v2",
+    "version": 2,
+    "n": 160,
+    "identical": 160
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "n": 160,
+    "identical": 160
+  },
+  {
+    "state": "seed311-bridged-v2",
+    "version": 2,
+    "n": 160,
+    "identical": 160
+  }
+]

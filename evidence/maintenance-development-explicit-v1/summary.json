@@ -1,0 +1,38 @@
+{
+  "git": "b9b4f4eaf23a977b81b9cdc8912c28043b99b8f7",
+  "python": "3.14.7",
+  "n": 960,
+  "complete": 960,
+  "inference_seconds": 0.0033497069798613666,
+  "maintenance": [
+    {
+      "version": 0,
+      "seconds": 0.0003072910003538709,
+      "bytes": 85,
+      "clauses_added": 0,
+      "records_scanned": 0,
+      "authority": "investigator-supplied formal rule"
+    },
+    {
+      "version": 1,
+      "seconds": 0.00020745899928442668,
+      "bytes": 150,
+      "clauses_added": 1,
+      "records_scanned": 0,
+      "authority": "investigator-supplied formal rule"
+    },
+    {
+      "version": 2,
+      "seconds": 0.00021820899928570725,
+      "bytes": 215,
+      "clauses_added": 1,
+      "records_scanned": 0,
+      "authority": "investigator-supplied formal rule"
+    }
+  ],
+  "wall_seconds": 0.02729529200041725,
+  "model_tokens": 0,
+  "updates": 0,
+  "paid_cost": 0,
+  "information": "privileged executable rules; manual construction and authority"
+}

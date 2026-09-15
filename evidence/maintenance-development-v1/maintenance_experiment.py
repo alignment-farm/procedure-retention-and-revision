@@ -17,10 +17,9 @@ def main():
     p.add_argument('--phase',choices=['development','final'],default='development')
     p.add_argument('--seeds',nargs='+',type=int,default=[311])
     p.add_argument('--blocks',type=int,default=64)
-    p.add_argument('--boundary-mode',choices=['all','negative'],default='all')
     args=p.parse_args();out=args.output;out.mkdir(parents=True,exist_ok=False)
     start=time.monotonic();wait=0.;last=0.;status='failed'
-    for n in ['maintenance_task.py','maintenance_experiment.py','runtime.py','task.py']:
+    for n in ['maintenance_task.py','maintenance_experiment.py','runtime.py']:
         (out/n).write_bytes(Path('scripts',n).read_bytes())
     (out/'protocol.md').write_bytes(Path(f'protocol/maintenance-{args.phase}-v1.md').read_bytes())
     def save(n,d): (out/n).write_text(json.dumps(d,indent=2)+'\n')
@@ -41,10 +40,8 @@ def main():
         assert time.monotonic()-start-wait<3600,'active hour ceiling'
         assert mx.get_peak_memory()<40e9,'MLX allocation ceiling'
     fresh=task.DEV if args.phase=='development' else ['wexlun','pazdor','jivrek','qomset']
-    assert not set(fresh)&set(task.ACQUIRED+task.TARGETS)
-    if args.phase=='final': assert not set(fresh)&set(task.DEV)
     save('design.json',dict(phase=args.phase,seeds=args.seeds,blocks=args.blocks,fresh=fresh,
-                           acquired=task.ACQUIRED,targets=task.TARGETS,boundary_mode=args.boundary_mode))
+                           acquired=task.ACQUIRED,targets=task.TARGETS))
     try:
         emit('revision',git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
              dirty=subprocess.check_output(['git','status','--short'],text=True))
@@ -84,7 +81,7 @@ def main():
         # A zero-adapter reference, with explicit maintained rules and no learning.
         for v in range(3):
             text=task.rules(v);save(f'rules-v{v}.json',dict(text=text,bytes=len(text.encode()),tokens=len(rt.tokenizer.encode(text))))
-            evaluate('explicit-rules',v,all_entities,rule=True,passes=1)
+            evaluate('explicit-rules',v,all_entities,rule=True,passes=2 if args.phase=='final' else 1)
         for seed in args.seeds:
             rt.reinitialize(seed);seedname=f'seed{seed}'
             evaluate(seedname+'-base',0,task.ACQUIRED+fresh)
@@ -103,19 +100,17 @@ def main():
             if acquired is None:
                 emit('acquisition_failed',seed=seed);continue
             # Shared old-state reference evaluated once for every recurring query.
-            for v in ((0,) if args.phase=='final' else (0,1,2)): evaluate(seedname+'-no-update',v,all_entities,passes=2)
+            for v in (0,1,2): evaluate(seedname+'-no-update',v,all_entities,passes=2)
             for arm in ('novel','bridged'):
                 rt.restore(acquired)
                 emit('paired_start',state=seedname+'-'+arm,state_hash=digest(rt.snapshot()))
                 for version in (1,2):
                     name=seedname+'-'+arm+f'-v{version}';opt=rt.optimizer()
-                    maintenance_tick=time.monotonic();old=task.cases(task.ACQUIRED)
+                    old=task.cases(task.ACQUIRED)
                     obsolete=[c for c in old if task.oracle(c,version)!=task.oracle(c,version-1)]
                     emit('maintenance',state=name,scanned=len(old),excluded=len(obsolete),
-                         authority='investigator',obsolete=obsolete,
-                         prior_revision_relabels=sum(task.oracle(c,version-1)!=task.oracle(c,0) for c in old),
-                         history_maintenance_seconds=time.monotonic()-maintenance_tick)
-                    for i,(source,c) in enumerate(task.schedule(arm,version,args.blocks,args.boundary_mode),1):
+                         authority='investigator',obsolete=obsolete)
+                    for i,(source,c) in enumerate(task.schedule(arm,version,args.blocks),1):
                         update(name,i,source,c,version,opt)
                     checkpoint(name);evaluate(name,version,all_entities,passes=2)
             emit('invariants',seed=seed,**rt.invariants())

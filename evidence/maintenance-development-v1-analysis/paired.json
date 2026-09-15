@@ -1,0 +1,122 @@
+[
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "all",
+    "n": 140,
+    "before": 140,
+    "after": 112,
+    "lost": 28,
+    "gained": 0
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 49,
+    "lost": 7,
+    "gained": 0
+  },
+  {
+    "state": "seed311-novel-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 28,
+    "before": 28,
+    "after": 21,
+    "lost": 7,
+    "gained": 0
+  },
+  {
+    "state": "seed311-novel-v2",
+    "version": 2,
+    "group": "all",
+    "n": 140,
+    "before": 112,
+    "after": 100,
+    "lost": 12,
+    "gained": 0
+  },
+  {
+    "state": "seed311-novel-v2",
+    "version": 2,
+    "group": "acquired",
+    "n": 56,
+    "before": 49,
+    "after": 40,
+    "lost": 9,
+    "gained": 0
+  },
+  {
+    "state": "seed311-novel-v2",
+    "version": 2,
+    "group": "fresh",
+    "n": 28,
+    "before": 21,
+    "after": 20,
+    "lost": 1,
+    "gained": 0
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "all",
+    "n": 140,
+    "before": 140,
+    "after": 120,
+    "lost": 20,
+    "gained": 0
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 48,
+    "lost": 8,
+    "gained": 0
+  },
+  {
+    "state": "seed311-bridged-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 28,
+    "before": 28,
+    "after": 24,
+    "lost": 4,
+    "gained": 0
+  },
+  {
+    "state": "seed311-bridged-v2",
+    "version": 2,
+    "group": "all",
+    "n": 140,
+    "before": 120,
+    "after": 100,
+    "lost": 20,
+    "gained": 0
+  },
+  {
+    "state": "seed311-bridged-v2",
+    "version": 2,
+    "group": "acquired",
+    "n": 56,
+    "before": 48,
+    "after": 40,
+    "lost": 8,
+    "gained": 0
+  },
+  {
+    "state": "seed311-bridged-v2",
+    "version": 2,
+    "group": "fresh",
+    "n": 28,
+    "before": 24,
+    "after": 20,
+    "lost": 4,
+    "gained": 0
+  }
+]

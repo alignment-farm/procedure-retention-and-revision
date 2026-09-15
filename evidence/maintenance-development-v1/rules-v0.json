@@ -1,0 +1,5 @@
+{
+  "text": "Authoritative policy, applying to EVERY entity: Certification is required for eligibility. If ineligible: FAIL, SKIP reservation, SKIP shipment, leave stock unchanged, HELD. If eligible with stock 0: PASS, SKIP reservation, SKIP shipment, stock 0, WAIT. If eligible with stock 1: PASS, RESERVE one unit (stock becomes 0), SHIP that unit, SENT.\n",
+  "bytes": 344,
+  "tokens": 80
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "development",
+  "seeds": [
+    311
+  ],
+  "blocks": 64,
+  "fresh": [
+    "lusbek",
+    "navrit"
+  ],
+  "acquired": [
+    "daxen",
+    "miptor",
+    "velsun",
+    "robnak"
+  ],
+  "targets": [
+    "fenzal",
+    "kudrem",
+    "sovpik",
+    "tarnex"
+  ]
+}

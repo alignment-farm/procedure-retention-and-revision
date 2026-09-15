@@ -1,0 +1,580 @@
+{
+  "training": [
+    {
+      "state": "seed311-acquisition",
+      "updates": 256,
+      "input_tokens": 22912,
+      "loss_tokens": 2048,
+      "seconds": 45.68799886999477,
+      "sources": {
+        "acquisition": 256
+      }
+    },
+    {
+      "state": "seed311-novel-v1",
+      "updates": 192,
+      "input_tokens": 17146,
+      "loss_tokens": 1536,
+      "seconds": 35.800204117995236,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed311-novel-v2",
+      "updates": 192,
+      "input_tokens": 17146,
+      "loss_tokens": 1536,
+      "seconds": 35.63136582899642,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed311-bridged-v1",
+      "updates": 192,
+      "input_tokens": 17146,
+      "loss_tokens": 1536,
+      "seconds": 35.77855225199164,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed311-bridged-v2",
+      "updates": 192,
+      "input_tokens": 17146,
+      "loss_tokens": 1536,
+      "seconds": 35.62958708601036,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    }
+  ],
+  "inference": [
+    {
+      "state": "explicit-rules",
+      "version": 0,
+      "repeat": 0,
+      "n": 160,
+      "complete": 85,
+      "prompt_tokens": 25968,
+      "completion_tokens": 1315,
+      "seconds": 54.83559892599624
+    },
+    {
+      "state": "explicit-rules",
+      "version": 1,
+      "repeat": 0,
+      "n": 160,
+      "complete": 80,
+      "prompt_tokens": 27408,
+      "completion_tokens": 1370,
+      "seconds": 58.10468525400938
+    },
+    {
+      "state": "explicit-rules",
+      "version": 2,
+      "repeat": 0,
+      "n": 160,
+      "complete": 70,
+      "prompt_tokens": 28048,
+      "completion_tokens": 1357,
+      "seconds": 55.40139300099327
+    },
+    {
+      "state": "seed311-base",
+      "version": 0,
+      "repeat": 0,
+      "n": 96,
+      "complete": 0,
+      "prompt_tokens": 7904,
+      "completion_tokens": 1389,
+      "seconds": 37.63070578501174
+    },
+    {
+      "state": "seed311-A256",
+      "version": 0,
+      "repeat": 0,
+      "n": 64,
+      "complete": 64,
+      "prompt_tokens": 5280,
+      "completion_tokens": 512,
+      "seconds": 17.757423174003634
+    },
+    {
+      "state": "seed311-A256-new",
+      "version": 0,
+      "repeat": 0,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2624,
+      "completion_tokens": 256,
+      "seconds": 8.853712583997549
+    },
+    {
+      "state": "seed311-no-update",
+      "version": 0,
+      "repeat": 0,
+      "n": 160,
+      "complete": 160,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.273481883994464
+    },
+    {
+      "state": "seed311-no-update",
+      "version": 0,
+      "repeat": 1,
+      "n": 160,
+      "complete": 160,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.27811341398228
+    },
+    {
+      "state": "seed311-no-update",
+      "version": 1,
+      "repeat": 0,
+      "n": 160,
+      "complete": 140,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.42070132999652
+    },
+    {
+      "state": "seed311-no-update",
+      "version": 1,
+      "repeat": 1,
+      "n": 160,
+      "complete": 140,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.61942175098193
+    },
+    {
+      "state": "seed311-no-update",
+      "version": 2,
+      "repeat": 0,
+      "n": 160,
+      "complete": 120,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.67012687999522
+    },
+    {
+      "state": "seed311-no-update",
+      "version": 2,
+      "repeat": 1,
+      "n": 160,
+      "complete": 120,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.66642179701557
+    },
+    {
+      "state": "seed311-novel-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 160,
+      "complete": 132,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1276,
+      "seconds": 44.663326334002704
+    },
+    {
+      "state": "seed311-novel-v1",
+      "version": 1,
+      "repeat": 1,
+      "n": 160,
+      "complete": 132,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1276,
+      "seconds": 44.572510916985266
+    },
+    {
+      "state": "seed311-novel-v2",
+      "version": 2,
+      "repeat": 0,
+      "n": 160,
+      "complete": 120,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.40629321298911
+    },
+    {
+      "state": "seed311-novel-v2",
+      "version": 2,
+      "repeat": 1,
+      "n": 160,
+      "complete": 120,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.348609546012085
+    },
+    {
+      "state": "seed311-bridged-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 160,
+      "complete": 140,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.4332298040008
+    },
+    {
+      "state": "seed311-bridged-v1",
+      "version": 1,
+      "repeat": 1,
+      "n": 160,
+      "complete": 140,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.38230450100855
+    },
+    {
+      "state": "seed311-bridged-v2",
+      "version": 2,
+      "repeat": 0,
+      "n": 160,
+      "complete": 120,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.4488794519948
+    },
+    {
+      "state": "seed311-bridged-v2",
+      "version": 2,
+      "repeat": 1,
+      "n": 160,
+      "complete": 120,
+      "prompt_tokens": 13168,
+      "completion_tokens": 1280,
+      "seconds": 44.366863259994716
+    }
+  ],
+  "finish": {
+    "kind": "finish",
+    "elapsed": 1148.2476283340002,
+    "status": "complete",
+    "wall_seconds": 1148.2476263340013,
+    "wait_seconds": 60.02407924999898,
+    "peak_mlx_bytes": 9614539804
+  },
+  "maintenance": [
+    {
+      "kind": "maintenance",
+      "elapsed": 630.9339570000011,
+      "state": "seed311-novel-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        }
+      ]
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 758.411013334,
+      "state": "seed311-novel-v2",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        }
+      ]
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 885.1864478340012,
+      "state": "seed311-bridged-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        }
+      ]
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1012.2097007089997,
+      "state": "seed311-bridged-v2",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "kind": "checkpoint",
+      "elapsed": 333.79886675000125,
+      "state": "seed311-A256",
+      "sha256": "97dfb01479512ad16d2e7840e024566e4b6b26a73c3b3c2db6a923c239e8233b",
+      "state_hash": "7bc9aa6ea2cccb1d34dfbdef7324c1e17c0ed67a8ac93b4efe4a1e1f288b142b",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 668.0668393340002,
+      "state": "seed311-novel-v1",
+      "sha256": "c8a829856aba162d6bb98ccec8486b65cdb4bfdba42e6dff20a07460ce4ea5ed",
+      "state_hash": "48a33fdd82b2a76975c5a32d90b8479661b9ececadf419217f3e4fb3edd035de",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 795.300005209001,
+      "state": "seed311-novel-v2",
+      "sha256": "435edcffad3efa2c3aa7168967678bf7ffbb9bd9184d8d1827f6f4f9e0374b6d",
+      "state_hash": "e5cf1b8e784a853c22b7e027c537942ba0371ad2d9c0f03cf34da12e33c407f8",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 922.297039250001,
+      "state": "seed311-bridged-v1",
+      "sha256": "52f9ec44ad892c24bd41c23877d8836106412a883d7f67c2e9b2d46708864f34",
+      "state_hash": "2a7a98e847e2c40ecae0b7cad2cd9795821572bc7727facd34ac600cf668e4fd",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1049.1147520840004,
+      "state": "seed311-bridged-v2",
+      "sha256": "98605ffef54125117b54f980f551ba7e0bd9f545b01d078debc4a282d25c1aba",
+      "state_hash": "a3b3265aeebac59959492551b7847da7a60191206d567c61bc7a1de203b74243",
+      "bytes": 2624893
+    }
+  ]
+}

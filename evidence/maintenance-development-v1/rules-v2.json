@@ -1,0 +1,5 @@
+{
+  "text": "Authoritative policy, applying to EVERY entity: Certification is required for eligibility. Waive certification exactly for copper/fast and violet/slow orders. If ineligible: FAIL, SKIP reservation, SKIP shipment, leave stock unchanged, HELD. If eligible with stock 0: PASS, SKIP reservation, SKIP shipment, stock 0, WAIT. If eligible with stock 1: PASS, RESERVE one unit (stock becomes 0), SHIP that unit, SENT.\n",
+  "bytes": 412,
+  "tokens": 93
+}

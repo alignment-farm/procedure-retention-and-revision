@@ -1,0 +1,553 @@
+{
+  "git_revision": "1c461a744e95bb0f0fbcca9285c4ba03323f10bd",
+  "script_sha256": "20d6d67cc1c7732a5df3ecfea57b0eddf11a6054f92a1d76f10e3bd128f71141",
+  "development_response_prefix_checks": 612,
+  "development_training_token_checks": 896,
+  "final_limit": 48,
+  "capped_generations": 62,
+  "capped_by_arm": {
+    "ce-triple-128": 1,
+    "forward-only-128": 2,
+    "forward-boundary-repeat-32": 3,
+    "forward-boundary-history-32": 30,
+    "forward-boundary-history-128": 3,
+    "seed101-before": 8,
+    "seed101-only-128": 9,
+    "seed101-triple-128": 3,
+    "seed202-triple-128": 3
+  },
+  "capped_full_correct": 0,
+  "capped_syntactically_valid": 0,
+  "capped_tool_known": 61,
+  "capped_checks": [
+    {
+      "arm": "ce-triple-128",
+      "suite": "B-new",
+      "index": 13,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PIDAELZELXELZELXELZELXELZELXELZELXELZELXELZELXELZELXELZELXELZELXELZ",
+      "expected": "marten(text=\"TILXFCAELZ-Q\")"
+    },
+    {
+      "arm": "forward-only-128",
+      "suite": "A-new",
+      "index": 45,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"ROVMAVJVAJVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACV",
+      "expected": "marten(text=\"RMVMACVJHA-Q\")"
+    },
+    {
+      "arm": "forward-only-128",
+      "suite": "B-new",
+      "index": 44,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"ROMAVACJVAJACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVACVAC",
+      "expected": "marten(text=\"RMVMACVJHA\")"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-recall",
+      "index": 13,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"SASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASK",
+      "expected": "marten(text=\"TASNID-Q\")"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "A-new",
+      "index": 29,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"MORILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILILIL",
+      "expected": "marten(text=\"MGBLCQLDCW-Q\")"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-new",
+      "index": 2,
+      "prefix_already_diverged": true,
+      "raw": "kestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkest",
+      "expected": "kestrel(text=\"PENT\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 0,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"PEVETETVETETVETETVETETVETETVETETVETETVETETVETETVETETVETETVETETVETETVETETV",
+      "expected": "kestrel(text=\"PENT\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 1,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PEVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTVETPTV",
+      "expected": "marten(text=\"PENT-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 6,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"LTWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVW",
+      "expected": "marten(text=\"ITLTMW\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 7,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"WETWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWV",
+      "expected": "marten(text=\"ITLTMW-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 13,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"FDAVURWPEVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVUR",
+      "expected": "marten(text=\"TILXFCAELZ-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 14,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"FVAELVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFV",
+      "expected": "marten(text=\"TILXFCAELZ\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 17,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"VURSPEVWPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEV",
+      "expected": "marten(text=\"LKMV-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 32,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"HJOPEWENWENWENWENWENWENWENWENWENWENWENWENDWENDWENDWENDWENDWENDWENDWENDWENDW",
+      "expected": "kestrel(text=\"HEJA\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 33,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"HJOPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEWPEW",
+      "expected": "marten(text=\"HEJA-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 40,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"CEDCFPAPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPE",
+      "expected": "kestrel(text=\"CEDFCPAP\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 41,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"CEDCFPAPEVSPVCFVPEVSPVCFVPEVSPVCFVPEVSPVCFVPEVSPVCFVPEVSPVCFVPEVSPVCF",
+      "expected": "marten(text=\"CEDFCPAP-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 42,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"CEDCFPAPEVSPVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPE",
+      "expected": "marten(text=\"CEDFCPAP\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 43,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"CEDCFPAPEVAPVCFPEVAPVCFPEVAPVCFPEVAPVCFPEVAPVCFPEVAPVCFPEVAPVCFPEVAPVCFPE",
+      "expected": "marten(text=\"CEDFCPAP-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 46,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"REVURVWVJVAVWVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVUR",
+      "expected": "marten(text=\"RMVMACVJHA\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "A-new",
+      "index": 47,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"REVURVWVJVAVWVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVURVUR",
+      "expected": "marten(text=\"RMVMACVJHA-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 1,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEV",
+      "expected": "marten(text=\"PENT-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 4,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"WLTWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWVWV",
+      "expected": "marten(text=\"ITLTMW\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 8,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"WIAUXPOVWAGVPEVWPEVWPEVWPEVWPEVWPEVWPEVWPEVWPEVWPEVWPEVWPEVW",
+      "expected": "marten(text=\"WGIAUPXO\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 9,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"WIAUXPOVWPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEV",
+      "expected": "marten(text=\"WGIAUPXO-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 12,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"FVAELZVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAF",
+      "expected": "marten(text=\"TILXFCAELZ\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 14,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"FVAELVZELVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAFVAF",
+      "expected": "kestrel(text=\"TILXFCAELZ\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 16,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"VURSPEVWPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEV",
+      "expected": "marten(text=\"LKMV\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 17,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"VURSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVKSVK",
+      "expected": "marten(text=\"LKMV-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 18,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"VLMV-QKUV-PEVW-VKUV-QVUV-QVUV-QVUV-QVUV-QVUV-QVUV-QVUV-QVUV-QVUV-QVUV-Q",
+      "expected": "kestrel(text=\"LKMV\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 19,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"VURKVURKVURKVURKVURKVURKVURKVURKVURKVURKVURKVURKVURKVURKVUR",
+      "expected": "kestrel(text=\"LKMV-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 30,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"MGBLQCQDWCLVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRSTWVQRST",
+      "expected": "kestrel(text=\"MGBLCQLDCW\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 40,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"CEDCFPAPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPE",
+      "expected": "marten(text=\"CEDFCPAP\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 41,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"CEDCFPAPEVSPVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCFVCF",
+      "expected": "marten(text=\"CEDFCPAP-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 42,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"CEDCFPAPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPEVPE",
+      "expected": "kestrel(text=\"CEDFCPAP\")"
+    },
+    {
+      "arm": "forward-boundary-history-32",
+      "suite": "B-new",
+      "index": 43,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"CEDCFPAPEVDAVPEVDAVPEVDAVPEVDAVPEVDAVPEVDAVPEVDAVPEVDAVPEVDAVPEVDAVPE",
+      "expected": "kestrel(text=\"CEDFCPAP-Q\")"
+    },
+    {
+      "arm": "forward-boundary-history-128",
+      "suite": "A-new",
+      "index": 0,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"PEVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUV",
+      "expected": "kestrel(text=\"PENT\")"
+    },
+    {
+      "arm": "forward-boundary-history-128",
+      "suite": "B-new",
+      "index": 0,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PEVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUVDRUV",
+      "expected": "marten(text=\"PENT\")"
+    },
+    {
+      "arm": "forward-boundary-history-128",
+      "suite": "B-new",
+      "index": 1,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PEVDRUVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRVDRV",
+      "expected": "marten(text=\"PENT-Q\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 4,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT",
+      "expected": "kestrel(text=\"ITLTMW\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 5,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT\")kestrel(text=\"ITKIT",
+      "expected": "marten(text=\"ITLTMW-Q\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 8,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG",
+      "expected": "kestrel(text=\"WGIAUPXO\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 9,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG\")kestrel(text=\"WGG",
+      "expected": "marten(text=\"WGIAUPXO-Q\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 12,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"TILKIT\")kestrel(text=\"TILKIT\")kestrel(text=\"TILKIT\")kestrel(text=\"TILKIT\")kestrel(text=\"TILKIT\")kestrel(text=\"TILKIT\")",
+      "expected": "kestrel(text=\"TILXFCAELZ\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 28,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"MGG\")kestrel(text=\"MGG\")kestrel(text=\"MGG\")kestrel(text=\"MGG\")kestrel(text=\"MGG\")kestrel(text=\"MGG\")kestrel(text=\"MGG",
+      "expected": "kestrel(text=\"MGBLCQLDCW\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 32,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"H\")kestrel(text=\"\")kestrel(text=\"\")kestrel(text=\"\")kestrel(text=\"\")kestrel(text=\"\")kestrel(text=\"\")kestrel(text=\"\")kestrel(text=\"\")kestrel",
+      "expected": "kestrel(text=\"HEJA\")"
+    },
+    {
+      "arm": "seed101-before",
+      "suite": "A-new",
+      "index": 36,
+      "prefix_already_diverged": true,
+      "raw": "kestrel(text=\"ELSkest\")kestrel(text=\"ELEkest\")kestrel(text=\"ELEkest\")kestrel(text=\"ELEkest\")kestrel(text=\"ELEkest\")kestrel(text=\"ELEkest\")",
+      "expected": "kestrel(text=\"ELESQK\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "A-new",
+      "index": 2,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PETENT...PELTEN...PELTEN...PELTEN...PELTEN...PELTEN...PELTEN...PELTEL...PELTEN...PELTEN...PELTEN...PE",
+      "expected": "marten(text=\"PENT\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "A-new",
+      "index": 7,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"TWIMWIT\")\ntext=\"TWIMWIT\" is a valid text value for the marten(text=\"TWIMWIT\"\") function, and the text value is correctly associated with the text value of the",
+      "expected": "marten(text=\"ITLTMW-Q\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "A-new",
+      "index": 28,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"MELWELBOLDAWELBOLDGELWELBOLDGELWELBOLDGELWELBOLDGELWELBOLDGELWELBOLDGELW",
+      "expected": "kestrel(text=\"MGBLCQLDCW\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "A-new",
+      "index": 33,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"HEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEM",
+      "expected": "marten(text=\"HEJA-Q\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "A-new",
+      "index": 44,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"MATTENEL VELMUC VELMUC VELMUC VELMAC VELMUC VELMUC VELMUC VELMUC VELMAC VELMUC",
+      "expected": "kestrel(text=\"RMVMACVJHA\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "B-new",
+      "index": 0,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PETENT...PENT...PENT...PENT...PENT...PENT...PENT...PENT...PENT...PENT...PENT...PETENT...PENT...PENT...PE",
+      "expected": "marten(text=\"PENT\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "B-new",
+      "index": 14,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"TILXFCAELZ-T-ELAFCAELZ-T-ELAFCAELZ-ELAFCAELZ-ELAFCAELZ-ELAFCAELZ-ELAFCAELZ",
+      "expected": "kestrel(text=\"TILXFCAELZ\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "B-new",
+      "index": 33,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"HEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEM",
+      "expected": "marten(text=\"HEJA-Q\")"
+    },
+    {
+      "arm": "seed101-only-128",
+      "suite": "B-new",
+      "index": 35,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"HEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEMHEM",
+      "expected": "kestrel(text=\"HEJA-Q\")"
+    },
+    {
+      "arm": "seed101-triple-128",
+      "suite": "A-new",
+      "index": 5,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"ILTWMLWTEVWTEVWTEVWTEVWTEVWTEVWTEVWTEVWTEVWTEVWTEVWTEVWTEVW",
+      "expected": "marten(text=\"ITLTMW-Q\")"
+    },
+    {
+      "arm": "seed101-triple-128",
+      "suite": "A-new",
+      "index": 34,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"HVEJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVA",
+      "expected": "marten(text=\"HEJA\")"
+    },
+    {
+      "arm": "seed101-triple-128",
+      "suite": "B-new",
+      "index": 32,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"HVEJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVAJVA",
+      "expected": "marten(text=\"HEJA\")"
+    },
+    {
+      "arm": "seed202-triple-128",
+      "suite": "A-new",
+      "index": 2,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PIVELASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASK",
+      "expected": "marten(text=\"PENT\")"
+    },
+    {
+      "arm": "seed202-triple-128",
+      "suite": "B-new",
+      "index": 3,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"PIVASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASKASK",
+      "expected": "kestrel(text=\"PENT-Q\")"
+    },
+    {
+      "arm": "seed202-triple-128",
+      "suite": "B-new",
+      "index": 23,
+      "prefix_already_diverged": true,
+      "raw": "marten(text=\"UURCBMRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUNRUN",
+      "expected": "kestrel(text=\"URCBMG-Q\")"
+    }
+  ],
+  "unknown_tool_records": [
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-recall",
+      "index": 2,
+      "raw": "kestkestrel(text=\"kest\")"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-recall",
+      "index": 10,
+      "raw": "kestkestrel(text=\"kest\")"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-recall",
+      "index": 14,
+      "raw": "kestkestrel(text=\"kestASK\")"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-new",
+      "index": 2,
+      "raw": "kestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkestkest"
+    },
+    {
+      "arm": "forward-boundary-repeat-32",
+      "suite": "B-new",
+      "index": 3,
+      "raw": "kestkestrel(text=\"kestest\")"
+    }
+  ],
+  "interpretation": "Every capped prefix already differs from the canonical answer; appending tokens cannot repair its exact-call score. This does not claim the decoder would never stop or recover in a different interaction. No longer-budget generations were selected or added."
+}

@@ -41,3 +41,15 @@ using Python every five seconds. No cross-session messaging facility is exposed.
 Coordination remains passive and timers are not isolated performance benchmarks.
 Final scope will be fixed from development and sized below one active hour.
 Wait ceiling is two hours (development protocol's active limit is unchanged).
+
+Follow-up completion: scope-final-v1 (692f592) ran2,401.42 seconds with no observed
+competing Python jobs or waits, peak9,615,195,164 MLX bytes. Across the five new
+experimental runs, active time is3,364.25 seconds plus1,245.71 seconds explicitly
+waiting for shared hardware. Independent acquisition and its repair had no waits.
+The first development reload auditor yielded after a sibling run began; its
+unseparated wait remains in that audit's own timer and is not included in the
+experimental active-time total. All other final audit jobs ran sequentially.
+These are observational measurements, not an exclusive reservation or isolated
+performance benchmark. No model download, paid experimental call, or supporting
+service installation was needed. Current hardware was rechecked in
+scope-hardware.json. All work and records remain in this study.

@@ -108,3 +108,40 @@ folder is overwritten. The final has3,892 generations and5,120 updates across
 controls;128 remains the primary endpoint for every start, without fresh-based
 selection. The current scorer separately identifies the four familiar original
 A scope cases so their stale responses are not hidden by new-string transfer.
+
+## Completed audits and cost ledger
+
+Fresh execution completed all28 states,3,892 generations and5,120 updates.
+Its analyzer checks every score, denominator, scheduled example, checkpoint hash,
+common start and frozen-base/reset invariant. Across all five follow-up runs,
+separate-process audits decode5,131 token records and reproduce147 checkpoint
+probes exactly. They also match216 existing recall records at reused starts.
+The CPU instrument audit verifies the first development run's896 training-token
+counts, completing verification of all7,360 follow-up updates' token counts.
+
+Regenerate the aggregate ledger and completion-limit analysis with new outputs:
+
+```sh
+uv run --no-sync python scripts/scope_costs.py --output evidence/NEW-SCOPE-COSTS.json
+uv run --no-sync python scripts/scope_instrument_audit.py --output evidence/NEW-SCOPE-INSTRUMENT-AUDIT.json
+```
+
+These two commands aggregate the committed run names, including every failed
+learning endpoint. They do not launch a model or alter experimental evidence.
+The instrument audit uses the tokenizer only. Its first implementation compared
+a Transformers BatchEncoding object to a token list; the explicit return_dict=false
+repair matches MLX's wrapper and all612 recorded development prefixes. The
+failed checker and repair are documented in scope-audit-repair.json. No training,
+scoring rule, generation budget or empirical result changed.
+
+The longest canonical answer needs13 tokens. There were62 final generations at
+the48-token limit; every one was already a divergent, incorrect call prefix.
+More appended tokens could not make that recorded prefix an exact answer.
+Five outputs have no recognizable initial tool, all at the early failed FK
+boundary-repeat checkpoint; they remain unknown errors, not assigned an invented
+route. Perfect tool selection can coexist with malformed or repeating arguments.
+
+The first development audit's timer includes a resource wait that it did not
+separate. Audit times are not added to the aggregate experimental active-time
+claim; verification counts are reported separately. Later audit source files
+and execution revisions are captured at launch in their audit directories.

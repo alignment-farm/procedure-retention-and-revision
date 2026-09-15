@@ -56,3 +56,34 @@ then reports per-seed interactions and native-unit investigation costs.
 The initial diagnostic analysis is retained. `state-support-development-v1-analysis-v2`
 adds actual directly trained cases and waiver-by-identity breakdowns without changing
 any endpoint, denominator or selection; exact analysis source is snapshotted.
+
+## Completed evidence
+
+Diagnostic source `a31fde0`; acquisition/fresh protocol `795b649`; first fresh
+crossing and final analysis behavior captured at `0115c04` and subsequent unchanged
+model-run source snapshots. Fresh evidence was committed at `92521f4` (acquisition),
+`6a2ca27` (501), and `66c35a2` (502). Audit sources include the strengthened target
+and negative-boundary probe selector at `d1c4e62`. Exact run revisions remain in
+events.jsonl, rather than being inferred from when an artifact was committed.
+
+The completed `evidence/state-support-phase-audit/report.json` verifies4,736
+response records,4,096 update-token records and221 reload probes across four
+separate-process audits. Sixteen CPU instrument/schedule/probe tests pass.
+There were no interrupted attempts or diagonal discrepancies in this phase.
+The only failed readiness checkpoints were501/502 at256 updates; all remained
+in the model audit. Every final checkpoint, including failed procedures, was
+reloaded. Repeated revision-1 responses matched their first-pass responses.
+
+Regenerate the complete phase ledger after the commands above, substituting your
+new directories consistently:
+
+```sh
+uv run --no-sync python scripts/state_support_report.py --runs evidence/state-support-development-v1 evidence/state-support-fresh-acquisition-v1 evidence/state-support-final-seed501-v1 evidence/state-support-final-seed502-v1 --analyses evidence/state-support-development-v1-analysis-v2 evidence/state-support-final-seed501-v1-analysis evidence/state-support-final-seed502-v1-analysis --audits evidence/state-support-development-v1-audit evidence/state-support-fresh-acquisition-v1-audit evidence/state-support-final-seed501-v1-audit evidence/state-support-final-seed502-v1-audit --output evidence/NEW-STATE-SUPPORT-PHASE-AUDIT
+```
+
+Experimental totals:4,096 updates;366,020 input and32,768 loss tokens;4,736
+generations with389,728 prompt and37,823 completion tokens;2,212.07 active seconds;
+52,497,860 bytes of newly saved adapters. Audit127.07 seconds and221 generations
+are separate. Prior artifact reuse and original acquisition are disclosed in the
+findings. No candidate would deploy all twelve experimental revision-2 cells;
+these totals are investigation costs, not a cost per maintained work order.

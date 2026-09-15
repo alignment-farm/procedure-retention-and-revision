@@ -1,0 +1,285 @@
+{
+  "runs": {
+    "evidence/state-support-development-v1": {
+      "updates": 768,
+      "training_input_tokens": 68592,
+      "training_loss_tokens": 6144,
+      "update_seconds": 140.5647597530333,
+      "generations": 1152,
+      "prompt_tokens": 94944,
+      "completion_tokens": 9214,
+      "generation_seconds": 318.96417189290514,
+      "wall_seconds": 490.9009712909974,
+      "wait_seconds": 0.0,
+      "peak_mlx_bytes": 9614687260,
+      "checkpoint_bytes": 10499572,
+      "active_seconds": 490.9009712909974
+    },
+    "evidence/state-support-fresh-acquisition-v1": {
+      "updates": 1792,
+      "training_input_tokens": 160244,
+      "training_loss_tokens": 14336,
+      "update_seconds": 330.478934155748,
+      "generations": 1280,
+      "prompt_tokens": 105280,
+      "completion_tokens": 10171,
+      "generation_seconds": 354.44584692396165,
+      "wall_seconds": 732.5647189579977,
+      "wait_seconds": 0.0,
+      "peak_mlx_bytes": 9614900252,
+      "checkpoint_bytes": 20999144,
+      "active_seconds": 732.5647189579977
+    },
+    "evidence/state-support-final-seed501-v1": {
+      "updates": 768,
+      "training_input_tokens": 68592,
+      "training_loss_tokens": 6144,
+      "update_seconds": 143.07538699315046,
+      "generations": 1152,
+      "prompt_tokens": 94752,
+      "completion_tokens": 9227,
+      "generation_seconds": 319.7939201699046,
+      "wall_seconds": 495.41218316699815,
+      "wait_seconds": 0.0,
+      "peak_mlx_bytes": 9614687260,
+      "checkpoint_bytes": 10499572,
+      "active_seconds": 495.41218316699815
+    },
+    "evidence/state-support-final-seed502-v1": {
+      "updates": 768,
+      "training_input_tokens": 68592,
+      "training_loss_tokens": 6144,
+      "update_seconds": 142.0178876709033,
+      "generations": 1152,
+      "prompt_tokens": 94752,
+      "completion_tokens": 9211,
+      "generation_seconds": 319.35296787201514,
+      "wall_seconds": 493.1946353750027,
+      "wait_seconds": 0.0,
+      "peak_mlx_bytes": 9614703644,
+      "checkpoint_bytes": 10499572,
+      "active_seconds": 493.1946353750027
+    }
+  },
+  "acquisition_attempts": [
+    {
+      "run": "evidence/state-support-fresh-acquisition-v1",
+      "kind": "acquisition_criterion",
+      "elapsed": 89.02720962499734,
+      "state": "seed501-A256",
+      "passed": false,
+      "recall": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 48,
+        "shipment": 48,
+        "stock": 48,
+        "status": 64,
+        "format": 64,
+        "exact": 48,
+        "complete": 48,
+        "stale": 0
+      },
+      "transfer": {
+        "n": 32,
+        "eligibility": 32,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 32,
+        "format": 32,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      }
+    },
+    {
+      "run": "evidence/state-support-fresh-acquisition-v1",
+      "kind": "acquisition_criterion",
+      "elapsed": 165.38981349999813,
+      "state": "seed501-A512",
+      "passed": true,
+      "recall": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "transfer": {
+        "n": 32,
+        "eligibility": 32,
+        "reservation": 32,
+        "shipment": 32,
+        "stock": 32,
+        "status": 32,
+        "format": 32,
+        "exact": 32,
+        "complete": 32,
+        "stale": 0
+      }
+    },
+    {
+      "run": "evidence/state-support-fresh-acquisition-v1",
+      "kind": "acquisition_criterion",
+      "elapsed": 448.4115876249998,
+      "state": "seed502-A256",
+      "passed": false,
+      "recall": {
+        "n": 64,
+        "eligibility": 56,
+        "reservation": 48,
+        "shipment": 48,
+        "stock": 48,
+        "status": 44,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "transfer": {
+        "n": 32,
+        "eligibility": 28,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 20,
+        "format": 32,
+        "exact": 20,
+        "complete": 20,
+        "stale": 0
+      }
+    },
+    {
+      "run": "evidence/state-support-fresh-acquisition-v1",
+      "kind": "acquisition_criterion",
+      "elapsed": 523.928938416997,
+      "state": "seed502-A512",
+      "passed": true,
+      "recall": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "transfer": {
+        "n": 32,
+        "eligibility": 32,
+        "reservation": 32,
+        "shipment": 32,
+        "stock": 32,
+        "status": 32,
+        "format": 32,
+        "exact": 32,
+        "complete": 32,
+        "stale": 0
+      }
+    }
+  ],
+  "interactions": {
+    "evidence/state-support-development-v1-analysis-v2": {
+      "nn": 192,
+      "nb": 122,
+      "bn": 120,
+      "bb": 120,
+      "novel_history_support_effect": 70,
+      "bridged_history_support_effect": 0,
+      "novel_support_history_effect": 72,
+      "bridged_support_history_effect": 2,
+      "interaction": 70,
+      "starts": {
+        "novel": 192,
+        "bridged": 192
+      }
+    },
+    "evidence/state-support-final-seed501-v1-analysis": {
+      "nn": 192,
+      "nb": 185,
+      "bn": 120,
+      "bb": 120,
+      "novel_history_support_effect": 7,
+      "bridged_history_support_effect": 0,
+      "novel_support_history_effect": 72,
+      "bridged_support_history_effect": 65,
+      "interaction": 7,
+      "starts": {
+        "novel": 182,
+        "bridged": 192
+      }
+    },
+    "evidence/state-support-final-seed502-v1-analysis": {
+      "nn": 143,
+      "nb": 133,
+      "bn": 121,
+      "bb": 145,
+      "novel_history_support_effect": 10,
+      "bridged_history_support_effect": -24,
+      "novel_support_history_effect": 22,
+      "bridged_support_history_effect": -12,
+      "interaction": 34,
+      "starts": {
+        "novel": 183,
+        "bridged": 192
+      }
+    }
+  },
+  "audits": {
+    "evidence/state-support-development-v1-audit": {
+      "rows_verified": 1152,
+      "updates_verified": 768,
+      "calibration_rows_verified": 0,
+      "seconds": 29.338997625003685,
+      "wait_seconds": 0.0,
+      "probes": 48
+    },
+    "evidence/state-support-fresh-acquisition-v1-audit": {
+      "rows_verified": 1280,
+      "updates_verified": 1792,
+      "calibration_rows_verified": 0,
+      "seconds": 38.71818024999811,
+      "wait_seconds": 0.0,
+      "probes": 77
+    },
+    "evidence/state-support-final-seed501-v1-audit": {
+      "rows_verified": 1152,
+      "updates_verified": 768,
+      "calibration_rows_verified": 0,
+      "seconds": 29.508116958000755,
+      "wait_seconds": 0.0,
+      "probes": 48
+    },
+    "evidence/state-support-final-seed502-v1-audit": {
+      "rows_verified": 1152,
+      "updates_verified": 768,
+      "calibration_rows_verified": 0,
+      "seconds": 29.505598374998954,
+      "wait_seconds": 0.0,
+      "probes": 48
+    }
+  },
+  "totals": {
+    "updates": 4096,
+    "training_input_tokens": 366020,
+    "training_loss_tokens": 32768,
+    "update_seconds": 756.136968572835,
+    "generations": 4736,
+    "prompt_tokens": 389728,
+    "completion_tokens": 37823,
+    "generation_seconds": 1312.5569068587865,
+    "wall_seconds": 2212.072508790996,
+    "wait_seconds": 0.0,
+    "checkpoint_bytes": 52497860,
+    "active_seconds": 2212.072508790996
+  }
+}

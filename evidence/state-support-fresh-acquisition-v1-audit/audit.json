@@ -1,0 +1,1870 @@
+{
+  "rows_verified": 1280,
+  "updates_verified": 1792,
+  "probes": [
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        16,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS SKIP SKIP 1 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A256",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-A512",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "velsun",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "velsun",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed501-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        16,
+        54390,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS SKIP SKIP 1 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A256",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-A512",
+      "version": 0,
+      "case": {
+        "entity": "lusbek",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "velsun",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-novel-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "velsun",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "seed502-bridged-v1",
+      "version": 1,
+      "case": {
+        "entity": "zelvon",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    }
+  ],
+  "calibration_rows_verified": 0,
+  "calibration_probes": [],
+  "seconds": 38.71818024999811,
+  "wait_seconds": 0.0
+}

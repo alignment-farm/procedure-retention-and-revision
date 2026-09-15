@@ -1,0 +1,1179 @@
+{
+  "rows_verified": 1152,
+  "updates_verified": 768,
+  "probes": [
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "velsun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        15,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 0 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "velsun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "novel--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "velsun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--novel",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "velsun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 0 HELD",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "daxen",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 1,
+        "stock": 0
+      },
+      "ids": [
+        49792,
+        81404,
+        81404,
+        220,
+        15,
+        54390,
+        151645
+      ],
+      "expected": "PASS SKIP SKIP 0 WAIT",
+      "recorded_raw": "PASS SKIP SKIP 0 WAIT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "copper",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        36973,
+        81404,
+        81404,
+        220,
+        16,
+        37657,
+        35,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "FAIL SKIP SKIP 1 HELD",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "fenzal",
+        "channel": "violet",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "PASS RESERVE SHIP 0 SENT",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "copper",
+        "priority": "slow",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    },
+    {
+      "state": "bridged--bridged",
+      "version": 2,
+      "case": {
+        "entity": "wexlun",
+        "channel": "violet",
+        "priority": "fast",
+        "certified": 0,
+        "stock": 1
+      },
+      "ids": [
+        49792,
+        13170,
+        76079,
+        6434,
+        3298,
+        220,
+        15,
+        95751,
+        151645
+      ],
+      "expected": "FAIL SKIP SKIP 1 HELD",
+      "recorded_raw": "PASS RESERVE SHIP 0 SENT",
+      "exact_match": true
+    }
+  ],
+  "calibration_rows_verified": 0,
+  "calibration_probes": [],
+  "seconds": 29.338997625003685,
+  "wait_seconds": 0.0
+}

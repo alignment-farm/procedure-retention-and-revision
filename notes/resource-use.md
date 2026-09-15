@@ -118,3 +118,17 @@ Novel/Bridged122/192 and Bridged/Novel120/192. After the second diagonal reprodu
 queue two fresh acquisitions501/502 and their full crossings sequentially under
 protocol/state-support-final-v1.md. Approximate20 active minutes; same <12 GB
 expected allocation,40 GB ceiling, passive yielding. No expanded model/search.
+
+State/support phase complete: four experimental model runs used2,212.07 active
+seconds (36.87 minutes), zero recorded waits,4,096 updates and4,736 generations.
+The fresh portion took28.69 active minutes, above the rough20-minute estimate
+but within the fixed run counts and one-hour per-run ceilings; no budget or
+method expansion occurred. Maximum MLX allocation9,614,900,252 bytes. All observed
+resource checks were empty; this is passive observation, not an isolated timing
+claim or exclusive reservation. Four separate-process audits took127.07 seconds,
+with zero waits, verifying all responses/updates and221 regenerated probes.
+Failed readiness checkpoints are included. All study model jobs have ended;
+no further model run is queued. Host and memory reverified in
+state-support-hardware.json. No model download, supporting installation, paid
+experimental model call, sibling file change or other investigator process
+modification was needed.

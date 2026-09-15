@@ -1,13 +1,16 @@
 # Procedure retention and revision
 
-**Status: All three publications accepted; fourth phase commissioned, 15 September 2026.**
+**Status: Three publications accepted; fourth-phase state/support investigation in progress, 15 September 2026.**
 
 Start with [STATE_SUPPORT.md](STATE_SUPPORT.md). The next investigation separates
 learning history from current support by crossing saved revision-1 states with
 revision-2 evidence. It asks why equally successful states differ in maintenance,
 with a bounded diagnostic comparison and fresh assessment of the developed claim.
 The ancillary investigator owns methods, resources and routine execution.
-Preparing the handoff has not launched experiments.
+The diagnostic crossing is complete; fresh acquisitions and assessment are in progress.
+See [development evidence](evidence/state-support-development-v1-analysis/tables.md),
+[decision](notes/state-support-development-decision.md), and
+[frozen fresh protocol](protocol/state-support-final-v1.md).
 
 ## Complete-procedure maintenance
 

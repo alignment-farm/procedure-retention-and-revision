@@ -1,0 +1,21 @@
+{
+  "seed": 401,
+  "entities": [
+    "daxen",
+    "miptor",
+    "velsun",
+    "robnak",
+    "fenzal",
+    "kudrem",
+    "sovpik",
+    "tarnex",
+    "wexlun",
+    "pazdor",
+    "jivrek",
+    "qomset"
+  ],
+  "start_run": "evidence/maintenance-final-v1",
+  "blocks": 64,
+  "boundary_mode": "negative",
+  "phase": "diagnostic"
+}

@@ -1,6 +1,14 @@
 # Procedure retention and revision
 
-**Status: [Scope evidence and rehearsal follow-up completed locally](FINDINGS-SCOPE.md); first comparison accepted.**
+**Status: Both comparisons accepted; [phase on maintaining complete procedures](MAINTENANCE.md) commissioned.**
+
+The current [third-phase brief](MAINTENANCE.md) asks whether supported correction
+can revise familiar and unfamiliar applications while preserving complete
+unaffected behavior through repeated use. It extends beyond routing calibration
+and measures useful performance and maintenance costs against explicit memory.
+The investigator can proceed independently; preparing the brief did not start runs.
+
+## Accepted scope evidence and rehearsal follow-up
 
 Seven crossed boundary examples recover all 96 fresh routes in two of four
 starting states. With the same boundary-case access and update count, adding

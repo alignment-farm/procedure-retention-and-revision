@@ -1,6 +1,12 @@
 # Scope evidence and rehearsal during procedural correction
 
-**Status: Commissioned follow-up, 14 September 2026.** Develop and run a bounded
+**Status: Local follow-up completed, 14 September 2026.**
+[Findings](FINDINGS-SCOPE.md), [evidence](evidence/scope-final-v1-analysis/compact-tables.md)
+and [reproduction](notes/scope-reproduction.md) are published separately from the
+accepted first comparison. Completion does not retire the broader question or
+assert acceptance of this new publication. The original commission follows.
+
+Develop and run a bounded
 comparison addressing the question below. Preparing this handoff did not launch
 experiments. The investigator owns the workload, methods, resource sizing and
 routine execution, and can proceed independently of the other ancillary studies.

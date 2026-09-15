@@ -1,6 +1,18 @@
 # Procedure retention and revision
 
-**Status: First bounded comparison accepted; [follow-up on scope evidence and rehearsal](FOLLOWUP.md) commissioned.**
+**Status: [Scope evidence and rehearsal follow-up completed locally](FINDINGS-SCOPE.md); first comparison accepted.**
+
+Seven crossed boundary examples recover all 96 fresh routes in two of four
+starting states. With the same boundary-case access and update count, adding
+history reduces losses of previously correct calls in three starts and increases
+them in one. None of the 16 primary endpoints preserves every previously correct
+unchanged call; one history treatment also leaves familiar corrected-scope
+answers stale.
+The broader research question remains open.
+
+[Follow-up findings](FINDINGS-SCOPE.md) · [Fixed methods](protocol/scope-anchored-final-v1.md) · [Evidence](evidence/scope-final-v1-analysis/compact-tables.md) · [Reproduction](notes/scope-reproduction.md)
+
+## Accepted first comparison
 
 One replay regime finishes later learning and a scoped correction with 96/96
 fresh routing decisions correct, but only 19/96 complete calls. The same recipe
@@ -10,12 +22,12 @@ preservation of argument behavior. The broader research question remains open.
 
 [Protocol](protocol/final-v1.md) · [Evidence and audits](evidence/final-v1-analysis/compact-tables.md) · [Reproduction](notes/reproduction.md) · [Source provenance](sources/README.md)
 
-The current [follow-up brief](FOLLOWUP.md) asks whether selective correction needs
-information identifying its scope, broader rehearsal, or both. The investigator
-can proceed with bounded empirical work independently; preparation of the brief
-did not start experiments. The accepted [findings](FINDINGS.md) and frozen protocol
-remain the record of the first comparison. The original study brief follows for
-context; FOLLOWUP.md supplies the current assignment.
+The [follow-up brief](FOLLOWUP.md) commissioned the now-completed comparison of
+scope evidence and rehearsal. The accepted [findings](FINDINGS.md), frozen
+protocol and evidence remain the record of the first comparison. The original
+study brief follows for context.
+
+## Original study brief
 
 **Can an acquired procedural relation survive later learning and accept a scoped
 revision that transfers to unfamiliar inputs, while preserving unaffected

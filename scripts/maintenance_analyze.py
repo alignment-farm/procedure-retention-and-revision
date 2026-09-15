@@ -75,7 +75,7 @@ def main():
   prior=(seed+'-no-update',0,0) if v==1 else (seed+'-'+arm+f'-v{v-1}',v-1,0)
   before={key(r):r for r in grouped[prior]}
   unchanged=[r for r in rs if t.oracle(r['case'],v)==t.oracle(r['case'],v-1)]
-  for subgroup,subset in [('all',unchanged),('acquired',[r for r in unchanged if r['case']['entity'] in t.ACQUIRED]),('fresh',[r for r in unchanged if r['case']['entity'] in design['fresh']])]:
+  for subgroup,subset in [('all',unchanged),('acquired',[r for r in unchanged if r['case']['entity'] in t.ACQUIRED]),('fresh',[r for r in unchanged if r['case']['entity'] in design['fresh']]),('earlier-revision',[r for r in unchanged if v>1 and t.oracle(r['case'],v-1)!=t.oracle(r['case'],0)])]:
    paired.append(dict(state=state,version=v,group=subgroup,n=len(subset),
      before=sum(before[key(r)]['scores']['complete'] for r in subset),after=sum(r['scores']['complete'] for r in subset),
      lost=sum(before[key(r)]['scores']['complete'] and not r['scores']['complete'] for r in subset),

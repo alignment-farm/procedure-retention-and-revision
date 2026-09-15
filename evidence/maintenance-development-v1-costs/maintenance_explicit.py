@@ -36,7 +36,7 @@ def main():
   policy=json.loads((a.output/f'policy-v{v}.json').read_text())
   maintenance.append(dict(version=v,seconds=time.perf_counter()-tick,bytes=len(data.encode()),clauses_added=1 if v else 0,records_scanned=0,authority='investigator-supplied formal rule'))
   for repeat in range(2):
-   for c in t.cases(entities if repeat==0 else design.get('repeat_entities',entities)):
+   for c in t.cases(entities):
     tick=time.perf_counter();raw,trace=execute(c,policy);elapsed=time.perf_counter()-tick
     scores=t.check(raw,c,v);assert scores['complete']
     for state in trace:assert state['stock']>=0 and state['reserved']>=0 and state['stock']+state['reserved']+state['shipped']==c['stock']

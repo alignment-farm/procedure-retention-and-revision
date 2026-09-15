@@ -1,0 +1,3 @@
+seed311-no-update {'n': 160, 'eligibility': 160, 'reservation': 160, 'shipment': 160, 'stock': 160, 'status': 160, 'format': 160, 'exact': 160, 'complete': 160, 'stale': 0}
+seed311-novel-v1 {'n': 160, 'eligibility': 160, 'reservation': 160, 'shipment': 160, 'stock': 160, 'status': 160, 'format': 160, 'exact': 160, 'complete': 160, 'stale': 0}
+seed311-bridged-v1 {'n': 160, 'eligibility': 160, 'reservation': 160, 'shipment': 160, 'stock': 160, 'status': 160, 'format': 160, 'exact': 160, 'complete': 160, 'stale': 0}

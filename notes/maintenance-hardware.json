@@ -1,0 +1,9 @@
+{
+  "host": "mac.lan",
+  "machine": "arm64",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "memory_bytes": 68719476736,
+  "cpu": "Apple M1 Ultra",
+  "route": "native MLX; gradients and saved mutable adapters verified in development",
+  "dedicated_service_not_used": true
+}

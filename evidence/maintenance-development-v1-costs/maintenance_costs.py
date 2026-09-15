@@ -36,7 +36,7 @@ def main():
    finish=events[-1],base_weight_bytes=sum(p.stat().st_size for p in model_path.glob('*.safetensors')),
    interpreter_function_bytes=len(inspect.getsource(execute).encode()),paid_experimental_model_calls=0,
    accounting_notes=['A deployed candidate is one seed/arm trajectory; shared acquisitions are attributed to each candidate but counted once in experiment totals.',
-    'Recurring use includes a full pass and a repeated batch at each of versions 0, 1 and 2; duplicate deterministic calls are use events, not independent statistical samples.',
+    'Recurring use includes two passes at each of versions 0, 1 and 2; duplicate deterministic calls are use events, not independent statistical samples.',
     'Initial acquisition validation is charged separately; base diagnostics and other references are experimental-only.',
     'Archive is an explicit serialization of all unique case/target pairs actually trained on, including obsolete labels. It is a disclosed sufficient representation, not a minimal storage lower bound.',
     '128 scans and 16 exclusions are investigator-known validity operations across two revisions; eight earlier acquired labels are supplied in revised form at the second revision.',

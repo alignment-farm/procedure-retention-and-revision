@@ -1,0 +1,24 @@
+{
+  "phase": "boundary-diagnosis",
+  "seeds": [
+    311
+  ],
+  "blocks": 64,
+  "boundary_mode": "negative",
+  "fresh": [
+    "lusbek",
+    "navrit"
+  ],
+  "acquired": [
+    "daxen",
+    "miptor",
+    "velsun",
+    "robnak"
+  ],
+  "targets": [
+    "fenzal",
+    "kudrem",
+    "sovpik",
+    "tarnex"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "git": "99329ac769671b1a769af1f4be1f3ebdb8853689",
+  "trajectories": [
+    {
+      "seed": 311,
+      "arm": "novel",
+      "acquisition": {
+        "updates": 256,
+        "input_tokens": 22912,
+        "loss_tokens": 2048,
+        "seconds": 45.68799886999477,
+        "sources": {
+          "acquisition": 256
+        }
+      },
+      "acquisition_validation": {
+        "calls": 96,
+        "complete": 96,
+        "prompt_tokens": 7904,
+        "completion_tokens": 768,
+        "seconds": 26.611135758001183
+      },
+      "revision_training": {
+        "updates": 384,
+        "input_tokens": 34292,
+        "loss_tokens": 3072,
+        "seconds": 71.43156994699166,
+        "sources": {
+          "correction": 128,
+          "boundary": 128,
+          "history": 128
+        }
+      },
+      "recurring_use": {
+        "calls": 960,
+        "complete": 824,
+        "prompt_tokens": 79008,
+        "completion_tokens": 7672,
+        "seconds": 266.5423353079659
+      },
+      "current_adapter_bytes": 2624893,
+      "training_archive_records": 144,
+      "training_archive_bytes": 26901,
+      "training_archive_file": "seed311-novel-training-archive.json",
+      "history_records_scanned": 128,
+      "obsolete_records_excluded": 16,
+      "prior_revision_records_relabelled": 8,
+      "correction_label_updates": 128,
+      "boundary_updates": 128,
+      "rehearsal_updates": 128
+    },
+    {
+      "seed": 311,
+      "arm": "bridged",
+      "acquisition": {
+        "updates": 256,
+        "input_tokens": 22912,
+        "loss_tokens": 2048,
+        "seconds": 45.68799886999477,
+        "sources": {
+          "acquisition": 256
+        }
+      },
+      "acquisition_validation": {
+        "calls": 96,
+        "complete": 96,
+        "prompt_tokens": 7904,
+        "completion_tokens": 768,
+        "seconds": 26.611135758001183
+      },
+      "revision_training": {
+        "updates": 384,
+        "input_tokens": 34292,
+        "loss_tokens": 3072,
+        "seconds": 71.408139338002,
+        "sources": {
+          "correction": 128,
+          "boundary": 128,
+          "history": 128
+        }
+      },
+      "recurring_use": {
+        "calls": 960,
+        "complete": 840,
+        "prompt_tokens": 79008,
+        "completion_tokens": 7680,
+        "seconds": 266.1828723149756
+      },
+      "current_adapter_bytes": 2624893,
+      "training_archive_records": 112,
+      "training_archive_bytes": 20917,
+      "training_archive_file": "seed311-bridged-training-archive.json",
+      "history_records_scanned": 128,
+      "obsolete_records_excluded": 16,
+      "prior_revision_records_relabelled": 8,
+      "correction_label_updates": 128,
+      "boundary_updates": 128,
+      "rehearsal_updates": 128
+    }
+  ],
+  "experimental_training": {
+    "updates": 1024,
+    "input_tokens": 91496,
+    "loss_tokens": 8192,
+    "seconds": 188.52770815498843,
+    "sources": {
+      "acquisition": 256,
+      "correction": 256,
+      "boundary": 256,
+      "history": 256
+    }
+  },
+  "experimental_inference": {
+    "calls": 2912,
+    "complete": 2195,
+    "prompt_tokens": 281584,
+    "completion_tokens": 24111,
+    "seconds": 855.1338028069658
+  },
+  "finish": {
+    "kind": "finish",
+    "elapsed": 1148.2476283340002,
+    "status": "complete",
+    "wall_seconds": 1148.2476263340013,
+    "wait_seconds": 60.02407924999898,
+    "peak_mlx_bytes": 9614539804
+  },
+  "base_weight_bytes": 8044982000,
+  "interpreter_function_bytes": 815,
+  "paid_experimental_model_calls": 0,
+  "accounting_notes": [
+    "A deployed candidate is one seed/arm trajectory; shared acquisitions are attributed to each candidate but counted once in experiment totals.",
+    "Recurring use includes two passes at each of versions 0, 1 and 2; duplicate deterministic calls are use events, not independent statistical samples.",
+    "Initial acquisition validation is charged separately; base diagnostics and other references are experimental-only.",
+    "Archive is an explicit serialization of all unique case/target pairs actually trained on, including obsolete labels. It is a disclosed sufficient representation, not a minimal storage lower bound.",
+    "128 scans and 16 exclusions are investigator-known validity operations across two revisions; eight earlier acquired labels are supplied in revised form at the second revision.",
+    "Formal-policy construction, correction authority, assistant orchestration and electricity are unpriced; zero paid experimental calls is not zero research cost.",
+    "Wall times are observational on shared hardware. Training/inference times exclude recorded resource waits; they do not include every setup/verification overhead."
+  ]
+}

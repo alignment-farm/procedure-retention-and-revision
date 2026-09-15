@@ -44,7 +44,8 @@ def main():
     assert not set(fresh)&set(task.ACQUIRED+task.TARGETS)
     if args.phase=='final': assert not set(fresh)&set(task.DEV)
     save('design.json',dict(phase=args.phase,seeds=args.seeds,blocks=args.blocks,fresh=fresh,
-                           acquired=task.ACQUIRED,targets=task.TARGETS,boundary_mode=args.boundary_mode))
+                           acquired=task.ACQUIRED,targets=task.TARGETS,boundary_mode=args.boundary_mode,
+                           repeat_entities=[task.ACQUIRED[0],fresh[0]] if args.phase=='final' else task.ACQUIRED+task.TARGETS+fresh))
     try:
         emit('revision',git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
              dirty=subprocess.check_output(['git','status','--short'],text=True))
@@ -53,7 +54,8 @@ def main():
             summaries=[]
             for repeat in range(passes):
                 counts={};n=0
-                for c in task.cases(entities):
+                repeat_entities=entities if repeat==0 or args.phase!='final' else [task.ACQUIRED[0],fresh[0]]
+                for c in task.cases(repeat_entities):
                     guard();prefix=rt.encode(task.prompt(c,version if rule else None));r=rt.generate(prefix,limit=40)
                     scores=task.check(r['raw'],c,version)
                     for k,v in scores.items(): counts[k]=counts.get(k,0)+int(v)

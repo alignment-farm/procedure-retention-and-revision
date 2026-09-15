@@ -41,7 +41,11 @@ Final runner removes redundant unchanged-model queries: its no-update output is
 collected twice under version 0 and rescored under versions 1 and 2, since the
 version is absent from that prompt. Rescoring is not additional inference or a
 new sample. The weak prompted-rule reference uses one pass per version; the
-competent executable-policy reference uses both recurring passes. The original
+competent executable-policy reference uses the same full pass and repeat batch
+as each learned trajectory. Final repeats all conditions on one familiar and
+one fresh entity (32 orders), after each full 192-order pass. Development used
+two full passes; every paired repeat was identical. This resource-saving change
+was fixed before any fresh evaluation; all 192 primary test cases remain. The original
 development's extra no-update generations remain in its experimental ledger.
 
 ## What is checked and what costs mean
@@ -61,7 +65,7 @@ from accuracy denominators. Checkpoint-only persistence does not establish
 resistance to learning; the revision sequence provides that separate measurement.
 
 Each candidate deployed trajectory has one initial acquisition, two corrections,
-and two fixed query passes at each of three policy versions. Experimental totals
+and a full query pass plus a fixed repeat batch at each of three policy versions. Experimental totals
 also include the other treatment, development, no-update references, weak
 prompted-rule references, calibration and audits. Do not sum shared acquisitions
 as if both were needed to deploy one trajectory. Cost files retain tokens, updates,

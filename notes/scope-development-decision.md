@@ -64,3 +64,20 @@ target order first, so32 and128 have identical prefixes. All completed and
 queued diagnostic schedules use128 and are unchanged. A contract test checks
 this prefix identity; this is an implementation repair before final, not a
 response to fresh outcomes.
+
+## Crossed-boundary diagnostic result
+
+Execution65fd4ec completed375 generations/768 updates in298.57 active seconds,
+plus1,095.66 seconds yielding before model load. Primary128 is fixed: at32,
+boundary-repeat C recall is3/4 and boundary-history0/4; at128 both C and boundary
+recall are perfect (4/4,7/7). At128 repeat/history fresh routes are29/32 vs32/32;
+full calls21 vs24. Of21 initially correct unchanged calls, repeat loses3 and
+history loses0; neither gains an unchanged call. Both give3/4 exact scoped calls.
+
+History's otherwise successful fresh routing leaves all four original A scoped
+training routes stale (A current-rule recall12/16). These remain in every
+standard evaluation; final adds an explicit familiar-scope subgroup to prevent
+hiding this limit behind fresh transfer. No fresh outcomes informed this addition.
+The repair/final protocol preserves the earlier endpoint failures and notes
+that stronger crossed evidence, repeated rehearsal and archive diversity remain
+different interventions. No further correction-recipe search will follow.

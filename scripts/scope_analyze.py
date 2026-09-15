@@ -55,6 +55,8 @@ def analyze(run, output):
             assert event['summary'] == by_suite
         fresh = [r for r in rs if r['suite'].endswith('-new')]
         groups = dict(scope=[r for r in fresh if task.scope(r['case'])],
+                      old_scope_recall=[r for r in rs if r['suite']=='A-recall' and task.scope(r['case'])],
+                      old_unchanged_recall=[r for r in rs if r['suite']=='A-recall' and not task.scope(r['case'])],
                       other_old=[r for r in fresh if r['suite'] == 'A-new' and not task.scope(r['case'])],
                       later=[r for r in fresh if r['suite'] == 'B-new'],
                       unchanged=[r for r in fresh if not task.scope(r['case'])], all=fresh,

@@ -1,0 +1,158 @@
+{
+  "ce-boundary-repeat-32": {
+    "n": 28,
+    "route": {
+      "before": 28,
+      "after": 24,
+      "lost": 4,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 28,
+      "after": 24,
+      "lost": 4,
+      "gained": 0
+    },
+    "format": {
+      "before": 28,
+      "after": 28,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 21,
+      "after": 21,
+      "lost": 0,
+      "gained": 0
+    },
+    "suffix": {
+      "before": 25,
+      "after": 25,
+      "lost": 0,
+      "gained": 0
+    },
+    "full": {
+      "before": 21,
+      "after": 18,
+      "lost": 3,
+      "gained": 0
+    }
+  },
+  "ce-boundary-repeat-128": {
+    "n": 28,
+    "route": {
+      "before": 28,
+      "after": 25,
+      "lost": 3,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 28,
+      "after": 25,
+      "lost": 3,
+      "gained": 0
+    },
+    "format": {
+      "before": 28,
+      "after": 28,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 21,
+      "after": 21,
+      "lost": 0,
+      "gained": 0
+    },
+    "suffix": {
+      "before": 25,
+      "after": 26,
+      "lost": 0,
+      "gained": 1
+    },
+    "full": {
+      "before": 21,
+      "after": 18,
+      "lost": 3,
+      "gained": 0
+    }
+  },
+  "ce-boundary-history-32": {
+    "n": 28,
+    "route": {
+      "before": 28,
+      "after": 26,
+      "lost": 2,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 28,
+      "after": 26,
+      "lost": 2,
+      "gained": 0
+    },
+    "format": {
+      "before": 28,
+      "after": 28,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 21,
+      "after": 13,
+      "lost": 8,
+      "gained": 0
+    },
+    "suffix": {
+      "before": 25,
+      "after": 25,
+      "lost": 3,
+      "gained": 3
+    },
+    "full": {
+      "before": 21,
+      "after": 13,
+      "lost": 8,
+      "gained": 0
+    }
+  },
+  "ce-boundary-history-128": {
+    "n": 28,
+    "route": {
+      "before": 28,
+      "after": 28,
+      "lost": 0,
+      "gained": 0
+    },
+    "strict_route": {
+      "before": 28,
+      "after": 28,
+      "lost": 0,
+      "gained": 0
+    },
+    "format": {
+      "before": 28,
+      "after": 28,
+      "lost": 0,
+      "gained": 0
+    },
+    "identifier": {
+      "before": 21,
+      "after": 21,
+      "lost": 0,
+      "gained": 0
+    },
+    "suffix": {
+      "before": 25,
+      "after": 28,
+      "lost": 0,
+      "gained": 3
+    },
+    "full": {
+      "before": 21,
+      "after": 21,
+      "lost": 0,
+      "gained": 0
+    }
+  }
+}

@@ -9,13 +9,13 @@ paired=json.loads((analysis/'paired.json').read_text())
 costs=json.loads((analysis/'costs.json').read_text())
 primary=design['blocks']
 lines=['# Fresh scope and rehearsal comparison','',f'Primary endpoint: {primary} target blocks. Counts are conditional on this workload.', '',
-'| Start | Treatment | Scope route /12 | Unchanged route /84 | Stale /12 | Overbroad /12 | Full /96 |',
-'|---|---|---:|---:|---:|---:|---:|']
+'| Start | Treatment | Fresh scope route /12 | Old scope route /4 | Unchanged route /84 | Stale /12 | Overbroad /12 | Full /96 |',
+'|---|---|---:|---:|---:|---:|---:|---:|']
 for start in design['starts']:
  for treatment in ['before',*design['arms']]:
   name=start+'-'+treatment+('' if treatment=='before' else '-'+str(primary))
   g=summary[name]['groups']
-  lines.append(f"| {start} | {treatment} | {g['scope']['route']} | {g['unchanged']['route']} | {g['scope']['stale']} | {g['other_old']['overgeneralized']} | {g['all']['full']} |")
+  lines.append(f"| {start} | {treatment} | {g['scope']['route']} | {g['old_scope_recall']['route']} | {g['unchanged']['route']} | {g['scope']['stale']} | {g['other_old']['overgeneralized']} | {g['all']['full']} |")
 lines += ['','## Complete-call preservation on the same 84 unchanged inputs','',
 '| Start | Treatment | Before | After | Lost | Gained | Format /96 | Identifier /96 | Suffix /96 |',
 '|---|---|---:|---:|---:|---:|---:|---:|---:|']

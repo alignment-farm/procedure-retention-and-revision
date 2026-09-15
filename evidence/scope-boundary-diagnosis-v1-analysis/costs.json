@@ -1,0 +1,48 @@
+{
+  "ce-boundary-repeat": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.363540001984802
+    },
+    "boundary-repeat": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.315943417030212
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.456604454022454
+    }
+  },
+  "ce-boundary-history": {
+    "boundary": {
+      "updates": 128,
+      "unique_cases": 7,
+      "input_tokens": 10203,
+      "loss_tokens": 1206,
+      "seconds": 23.09929037600523
+    },
+    "history": {
+      "updates": 128,
+      "unique_cases": 28,
+      "input_tokens": 10125,
+      "loss_tokens": 1244,
+      "seconds": 23.099480327982747
+    },
+    "target": {
+      "updates": 128,
+      "unique_cases": 4,
+      "input_tokens": 10208,
+      "loss_tokens": 1312,
+      "seconds": 23.117377167007362
+    }
+  }
+}

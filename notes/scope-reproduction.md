@@ -84,3 +84,27 @@ distinguished from its loaded source. It checks612 response token records and27
 reload probes. Later audits also verify every recorded training-token count.
 A CPU-only regression of the strengthened analyzer atd85418c reproduced all
 initial development/acquisition summaries, paired counts and costs exactly.
+
+## Frozen fresh comparison
+
+Execution revision: **692f592**. The actual selection uses seed101 B32-only and
+seed202 B128-replay, after the latter failed both initial B32-only and repair
+B32-replay. All source files/checkpoints are committed. To reproduce the final
+comparison directly from these fixed carried states:
+
+```sh
+uv run --no-sync python scripts/scope_experiment.py --phase final --anchored --starts ce forward seed101 seed202 --blocks 128 --start-manifest notes/scope-starts.json --output evidence/NEW-SCOPE-FINAL
+uv run --no-sync python scripts/scope_analyze.py evidence/NEW-SCOPE-FINAL
+uv run --no-sync python scripts/scope_report.py evidence/NEW-SCOPE-FINAL
+uv run --no-sync python scripts/scope_audit.py evidence/NEW-SCOPE-FINAL
+```
+
+Check out the recorded execution revision for exact historical reproduction.
+To use newly reproduced acquisitions instead of the committed carried states,
+write a new four-entry path manifest matching scope-starts.json and pass that
+file; preserve the same prospectively selected endpoints. No original evidence
+folder is overwritten. The final has3,892 generations and5,120 updates across
+28 states. The 32-block boundary checkpoints are additional reported budget
+controls;128 remains the primary endpoint for every start, without fresh-based
+selection. The current scorer separately identifies the four familiar original
+A scope cases so their stale responses are not hidden by new-string transfer.

@@ -37,9 +37,12 @@ def components(raw, c, revised=True):
     return result
 
 def schedule(blocks):
+    assert 0 < blocks <= 128
     rng = random.Random(73)
     target_order = []
-    while len(target_order) < blocks:
+    # Keep the replay RNG position fixed: a 32-block run must reproduce the
+    # first 32 blocks calibrated inside the 128-block development trajectory.
+    while len(target_order) < 128:
         order = list(range(4)); rng.shuffle(order); target_order.extend(order)
     replay = []
     cycle = 0

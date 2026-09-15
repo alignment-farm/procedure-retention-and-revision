@@ -55,3 +55,12 @@ copper except for druvan fits all4 C and7 narrow cases, but only25/28 broad and
 6/7 crossed boundary cases. These are logical counterexamples, not inferred
 models of the network. The intended scope rule fits every set. Finite examples
 still cannot uniquely determine behavior on all unfamiliar strings.
+
+Prospective schedule check: if32 is chosen for final, its replay RNG position
+must reproduce the first32 blocks of the128-block diagnostic. The schedule
+constructor previously advanced the target RNG only for the requested duration.
+Before any32-block standalone/fresh run, it was fixed to build the128-block
+target order first, so32 and128 have identical prefixes. All completed and
+queued diagnostic schedules use128 and are unchanged. A contract test checks
+this prefix identity; this is an implementation repair before final, not a
+response to fresh outcomes.

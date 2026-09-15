@@ -17,6 +17,7 @@ class ScopeContract(unittest.TestCase):
 
     def test_matched_boundary_schedule(self):
         rows = schedule(128)
+        self.assertEqual(schedule(32),rows[:32])
         self.assertEqual(len(rows), 128)
         self.assertTrue(all(scope(t) and not scope(n) and not scope(b) for t, n, b in rows))
         self.assertTrue(all((n['channel'], n['priority']) == (b['channel'], b['priority']) for _, n, b in rows))

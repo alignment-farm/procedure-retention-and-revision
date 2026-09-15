@@ -8,14 +8,14 @@ import time
 import mlx.core as mx
 from runtime import Runtime, resource, sha
 import maintenance_task as t
-from maintenance_probe_selection import select
+from state_support_probe_selection import select
 
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
  a.output.mkdir(parents=True,exist_ok=False)
  start=time.monotonic();wait=0.
- for n in ['state_support_audit.py','maintenance_probe_selection.py','maintenance_task.py','runtime.py','task.py']:(a.output/n).write_bytes(Path('scripts',n).read_bytes())
+ for n in ['state_support_audit.py','maintenance_probe_selection.py','state_support_probe_selection.py','maintenance_task.py','runtime.py','task.py']:(a.output/n).write_bytes(Path('scripts',n).read_bytes())
  (a.output/'revision.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
  def guard():
   nonlocal wait

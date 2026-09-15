@@ -15,3 +15,13 @@ class CrossingSchedule(unittest.TestCase):
   history=[c for s,c in novel if s=='history']
   self.assertEqual(sum(t.oracle(c,1)!=t.oracle(c,0) for c in history),10)
   self.assertTrue(all(t.oracle(c,2)==t.oracle(c,1) for c in history))
+
+class ReloadCoverage(unittest.TestCase):
+ def test_direct_target_and_fresh_negative_boundaries(self):
+  from state_support_probe_selection import select
+  rows=[dict(case=c,version=2,expected=t.oracle(c,2),scores=t.check(t.oracle(c,2),c,2)) for c in t.cases(t.ACQUIRED+t.TARGETS+['fresh'])]
+  selected=select(rows)
+  for v in [1,2]:
+   self.assertTrue(any(r['case']['entity'] in t.TARGETS and r['case']['stock']==1 and t.oracle(r['case'],v)!=t.oracle(r['case'],v-1) for r in selected))
+  for channel,priority in [('copper','slow'),('violet','fast')]:
+   self.assertTrue(any(r['case']==dict(entity='fresh',channel=channel,priority=priority,certified=0,stock=1) for r in selected))

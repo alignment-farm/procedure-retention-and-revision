@@ -1,0 +1,16 @@
+seed501-A256 0 0 {'n': 64, 'eligibility': 64, 'reservation': 48, 'shipment': 48, 'stock': 48, 'status': 64, 'format': 64, 'exact': 48, 'complete': 48, 'stale': 0}
+seed501-A256-new 0 0 {'n': 32, 'eligibility': 32, 'reservation': 24, 'shipment': 24, 'stock': 24, 'status': 32, 'format': 32, 'exact': 24, 'complete': 24, 'stale': 0}
+seed501-A512 0 0 {'n': 64, 'eligibility': 64, 'reservation': 64, 'shipment': 64, 'stock': 64, 'status': 64, 'format': 64, 'exact': 64, 'complete': 64, 'stale': 0}
+seed501-A512-new 0 0 {'n': 32, 'eligibility': 32, 'reservation': 32, 'shipment': 32, 'stock': 32, 'status': 32, 'format': 32, 'exact': 32, 'complete': 32, 'stale': 0}
+seed501-novel-v1 1 0 {'n': 192, 'eligibility': 182, 'reservation': 189, 'shipment': 189, 'stock': 189, 'status': 182, 'format': 192, 'exact': 182, 'complete': 182, 'stale': 0}
+seed501-novel-v1 1 1 {'n': 32, 'eligibility': 31, 'reservation': 32, 'shipment': 32, 'stock': 32, 'status': 31, 'format': 32, 'exact': 31, 'complete': 31, 'stale': 0}
+seed501-bridged-v1 1 0 {'n': 192, 'eligibility': 192, 'reservation': 192, 'shipment': 192, 'stock': 192, 'status': 192, 'format': 192, 'exact': 192, 'complete': 192, 'stale': 0}
+seed501-bridged-v1 1 1 {'n': 32, 'eligibility': 32, 'reservation': 32, 'shipment': 32, 'stock': 32, 'status': 32, 'format': 32, 'exact': 32, 'complete': 32, 'stale': 0}
+seed502-A256 0 0 {'n': 64, 'eligibility': 56, 'reservation': 48, 'shipment': 48, 'stock': 48, 'status': 44, 'format': 64, 'exact': 40, 'complete': 40, 'stale': 0}
+seed502-A256-new 0 0 {'n': 32, 'eligibility': 28, 'reservation': 24, 'shipment': 24, 'stock': 24, 'status': 20, 'format': 32, 'exact': 20, 'complete': 20, 'stale': 0}
+seed502-A512 0 0 {'n': 64, 'eligibility': 64, 'reservation': 64, 'shipment': 64, 'stock': 64, 'status': 64, 'format': 64, 'exact': 64, 'complete': 64, 'stale': 0}
+seed502-A512-new 0 0 {'n': 32, 'eligibility': 32, 'reservation': 32, 'shipment': 32, 'stock': 32, 'status': 32, 'format': 32, 'exact': 32, 'complete': 32, 'stale': 0}
+seed502-novel-v1 1 0 {'n': 192, 'eligibility': 183, 'reservation': 192, 'shipment': 192, 'stock': 192, 'status': 183, 'format': 192, 'exact': 183, 'complete': 183, 'stale': 0}
+seed502-novel-v1 1 1 {'n': 32, 'eligibility': 31, 'reservation': 32, 'shipment': 32, 'stock': 32, 'status': 31, 'format': 32, 'exact': 31, 'complete': 31, 'stale': 0}
+seed502-bridged-v1 1 0 {'n': 192, 'eligibility': 192, 'reservation': 192, 'shipment': 192, 'stock': 192, 'status': 192, 'format': 192, 'exact': 192, 'complete': 192, 'stale': 0}
+seed502-bridged-v1 1 1 {'n': 32, 'eligibility': 32, 'reservation': 32, 'shipment': 32, 'stock': 32, 'status': 32, 'format': 32, 'exact': 32, 'complete': 32, 'stale': 0}

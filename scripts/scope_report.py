@@ -23,6 +23,22 @@ for start in design['starts']:
  for mode in ['boundary-repeat','boundary-history']:
   name=f'{start}-{mode}-{primary}'; pair=paired[name]['full'];g=summary[name]['groups']['all']
   lines.append(f"| {start} | {mode} | {pair['before']} | {pair['after']} | {pair['lost']} | {pair['gained']} | {g['format']} | {g['identifier']} | {g['suffix']} |")
+lines += ['','## Paired component losses / previously correct unchanged cases','',
+'| Start | Treatment | Route | Identifier | Suffix | Full call |',
+'|---|---|---:|---:|---:|---:|']
+for start in design['starts']:
+ for mode in ['boundary-repeat','boundary-history']:
+  row=paired[f'{start}-{mode}-{primary}']
+  values=[f"{row[key]['lost']}/{row[key]['before']}" for key in ['route','identifier','suffix','full']]
+  lines.append('| '+start+' | '+mode+' | '+' | '.join(values)+' |')
+if primary>32:
+ lines += ['','## Prespecified short-budget checkpoints (32 target blocks)','',
+ '| Start | Treatment | C recall /4 | Boundary /7 | Fresh scope /12 | Old scope /4 | Unchanged routes /84 | Full /96 |',
+ '|---|---|---:|---:|---:|---:|---:|---:|']
+ for start in design['starts']:
+  for mode in ['boundary-repeat','boundary-history']:
+   row=summary[f'{start}-{mode}-32'];g=row['groups']
+   lines.append(f"| {start} | {mode} | {row['suites']['C-recall']['route']} | {g['boundary']['route']} | {g['scope']['route']} | {g['old_scope_recall']['route']} | {g['unchanged']['route']} | {g['all']['full']} |")
 lines += ['','## Update costs by source','',
 '| Start/treatment | Source | Updates | Unique cases | Input tokens | Answer tokens | Seconds |',
 '|---|---|---:|---:|---:|---:|---:|']

@@ -1,0 +1,23 @@
+{
+  "kind": "logical counterexample, not an inferred network mechanism",
+  "motivation": "familiar-scope failure observed in pre-final crossed-boundary development",
+  "rule": "use the old route for original A identifiers; use the revised route otherwise",
+  "groups": {
+    "corrections": {
+      "current_route_matches": 4,
+      "n": 4
+    },
+    "crossed_boundary": {
+      "current_route_matches": 7,
+      "n": 7
+    },
+    "valid_history": {
+      "current_route_matches": 28,
+      "n": 28
+    },
+    "omitted_old_scope": {
+      "current_route_matches": 0,
+      "n": 4
+    }
+  }
+}

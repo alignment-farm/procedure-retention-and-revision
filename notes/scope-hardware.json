@@ -1,0 +1,9 @@
+{
+  "observed_utc": "2026-09-15T00:40:10.585810+00:00",
+  "hostname": "mac.lan",
+  "cpu": "Apple M1 Ultra",
+  "physical_memory_bytes": 68719476736,
+  "macos": "27.0",
+  "model_path_read_only_reuse": "/Users/macos-user/Developer/Projects/alignment-farm/ancillary-studies/procedure-transfer/models/qwen3-4b-instruct",
+  "note": "Native MLX gradients; model file hashes verified in every run. No serving endpoint is treated as a gradient API."
+}

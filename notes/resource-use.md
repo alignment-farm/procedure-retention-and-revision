@@ -53,3 +53,9 @@ These are observational measurements, not an exclusive reservation or isolated
 performance benchmark. No model download, paid experimental call, or supporting
 service installation was needed. Current hardware was rechecked in
 scope-hardware.json. All work and records remain in this study.
+
+Maintenance phase, 15 September 2026: preparing work-order development, one
+256/512/1024-update bounded acquisition ladder and paired 192-update corrections
+per revision. Native host verified mac.lan; no competing Python script visible
+at preparation. Expected <12 GB, hard 40 GB, one active hour per run. No external
+messaging channel is exposed; use the existing observational yielding protocol.

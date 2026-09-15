@@ -36,6 +36,8 @@ def main():
     report['direct_'+source]=dict(n=len(ss),complete=sum(r['scores']['complete'] for r in ss))
   if inherited:
    before={key(r['case']):r for r in groups[inherited+'-start']}
+   changed=[r for r in rr if t.oracle(r['case'],1)!=t.oracle(r['case'],2)]
+   report['newest_before_update']=dict(n=len(changed),complete=sum(t.check(before[key(r['case'])]['raw'],r['case'],2)['complete'] for r in changed))
    unchanged=[r for r in rr if t.oracle(r['case'],1)==t.oracle(r['case'],2)]
    report['unchanged']=dict(n=len(unchanged),lost=sum(before[key(r['case'])]['scores']['complete'] and not r['scores']['complete'] for r in unchanged),gained=sum(not before[key(r['case'])]['scores']['complete'] and r['scores']['complete'] for r in unchanged))
    for label in ['acquired','target','fresh','current_support_identities','additional_familiar']:

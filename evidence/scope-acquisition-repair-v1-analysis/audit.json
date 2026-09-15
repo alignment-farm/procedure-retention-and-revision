@@ -1,0 +1,56 @@
+{
+  "analysis_git": "b0a68792082e7d6e3c34a174371058c90c325ddc",
+  "script_sha256": "c7ba8035145315bfa24fc45610dbc6fd015444a0a83a82335ff4c62fd9afb9f1",
+  "run_git": "dd5ca0a2421b37d9313f6e923e39520301943ab5",
+  "response_records": 108,
+  "updates": 256,
+  "checkpoints": 3,
+  "manifest_verified": true,
+  "score_and_schedule_verified": true,
+  "completion": {
+    "kind": "complete",
+    "elapsed": 106.07993291599996,
+    "status": "complete",
+    "seconds": 106.07992887499859,
+    "resource_wait_seconds": 0.0,
+    "peak_mlx_bytes": 9612131356
+  },
+  "generation_cost": {
+    "prompt_tokens": 7602,
+    "completion_tokens": 1057,
+    "seconds": 33.37317424399225
+  },
+  "acquisition_criteria": [
+    {
+      "kind": "acquisition_criterion",
+      "elapsed": 24.99312558299789,
+      "arm": "seed202-A",
+      "passed": true,
+      "route": 16,
+      "full": 16,
+      "n": 16
+    },
+    {
+      "kind": "start_criterion",
+      "elapsed": 48.95628908299841,
+      "arm": "seed202-B",
+      "step": 32,
+      "passed": false,
+      "A_route": 10,
+      "B_route": 8,
+      "A_full": 10,
+      "B_full": 8
+    },
+    {
+      "kind": "start_criterion",
+      "elapsed": 96.94098562499858,
+      "arm": "seed202-B",
+      "step": 128,
+      "passed": true,
+      "A_route": 16,
+      "B_route": 16,
+      "A_full": 16,
+      "B_full": 16
+    }
+  ]
+}

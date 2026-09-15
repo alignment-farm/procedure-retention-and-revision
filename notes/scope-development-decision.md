@@ -81,3 +81,24 @@ hiding this limit behind fresh transfer. No fresh outcomes informed this additio
 The repair/final protocol preserves the earlier endpoint failures and notes
 that stronger crossed evidence, repeated rehearsal and archive diversity remain
 different interventions. No further correction-recipe search will follow.
+
+## Independent acquisitions and final start selection
+
+Both A128 attempts (seeds101/202) achieved16/16 exact original recall. Initial
+B32: seed101 old/new routes16/16 each, full4/16 and11/16; seed202 routes8/16 each,
+full6/16 and8/16. One repair restored seed202 A128 and interleaved original A
+replay. At32 it still failed (old routes10/16,new8/16); at128 it reached16/16
+routes AND exact calls on both sets. The earliest functioning repair endpoint
+is therefore128. No replacement seed, omitted failure or further search.
+
+Final start paths are frozen in scope-starts.json. The inherited pair shares
+seed41; independent seed101 uses B32-only, seed202 B128-replay after repair.
+Thus the final comparison covers independent acquisitions and varied later
+learning histories, not four identical full-pipeline seed replications. The
+repair's repeated A recall is verification, not a third acquisition. Its256
+updates/108 generations took106.08 active seconds and9.61 GB peak with no wait.
+
+Final execution uses all four starts, both boundary-arm32 checkpoints and every
+128-block endpoint:3,892 generations,5,120 updates. The correction recipe,
+selection rule, fresh seed and familiar-scope reporting were fixed before this
+execution. The seven contract tests pass before launch.

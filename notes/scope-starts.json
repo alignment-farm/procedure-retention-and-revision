@@ -1,0 +1,6 @@
+{
+  "ce": "evidence/final-v1/ce-B-replay-128.safetensors",
+  "forward": "evidence/final-v1/forward-B-replay-128.safetensors",
+  "seed101": "evidence/scope-acquisition-v1/seed101-B-32.safetensors",
+  "seed202": "evidence/scope-acquisition-repair-v1/seed202-B-128.safetensors"
+}

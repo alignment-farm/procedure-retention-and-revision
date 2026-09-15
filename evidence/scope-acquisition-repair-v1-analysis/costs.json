@@ -1,0 +1,18 @@
+{
+  "seed202-B": {
+    "later": {
+      "updates": 128,
+      "unique_cases": 16,
+      "input_tokens": 10176,
+      "loss_tokens": 1280,
+      "seconds": 23.53614176298288
+    },
+    "old-replay": {
+      "updates": 128,
+      "unique_cases": 16,
+      "input_tokens": 10080,
+      "loss_tokens": 1216,
+      "seconds": 23.518354008010647
+    }
+  }
+}

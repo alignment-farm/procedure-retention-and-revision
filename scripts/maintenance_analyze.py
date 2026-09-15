@@ -85,7 +85,7 @@ def main():
    sub=[r for r in changed if r['case']['entity'] in entities]
    direct_entities=t.TARGETS if arm=='novel' else t.ACQUIRED[:2]+t.TARGETS[:2]
    direct=[r for r in sub if r['case']['entity'] in direct_entities]
-   obligations.append(dict(state=state,version=v,group=label,n=len(sub),directly_relabelled_n=len(direct),directly_relabelled_complete=sum(r['scores']['complete'] for r in direct),complete=sum(r['scores']['complete'] for r in sub),stale=sum(r['scores']['stale'] for r in sub),
+   obligations.append(dict(state=state,version=v,group=label,n=len(sub),before_complete_under_new_policy=sum(t.check(before[key(r)]['raw'],r['case'],v)['complete'] for r in sub),directly_relabelled_n=len(direct),directly_relabelled_complete=sum(r['scores']['complete'] for r in direct),complete=sum(r['scores']['complete'] for r in sub),stale=sum(r['scores']['stale'] for r in sub),
                            downstream_n=sum(r['case']['stock']==1 for r in sub),downstream_complete=sum(r['case']['stock']==1 and r['scores']['complete'] for r in sub)))
  costs=[]
  for state,us in updates.items():

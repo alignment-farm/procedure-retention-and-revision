@@ -34,3 +34,20 @@ class Maintenance(unittest.TestCase):
    for c in changed:
     self.assertTrue(t.check(t.oracle(c,v-1),c,v)['stale'])
     self.assertFalse(t.check(t.oracle(c,v-1),c,v)['complete'])
+
+class ExplicitPolicy(unittest.TestCase):
+ def test_state_conservation_and_revision(self):
+  from maintenance_explicit import execute, INITIAL, ADDITIONS
+  import copy
+  policy=copy.deepcopy(INITIAL)
+  for v in range(3):
+   if v:policy['eligible_any'].append(ADDITIONS[v-1])
+   for c in t.cases(['unseen']):
+    raw,trace=execute(c,policy)
+    self.assertTrue(t.check(raw,c,v)['complete'])
+    for state in trace:
+     self.assertEqual(state['stock']+state['reserved']+state['shipped'],c['stock'])
+  c=dict(entity='unseen',channel='copper',priority='slow',certified=0,stock=1)
+  wrong=copy.deepcopy(policy);wrong['eligible_any'].append({'channel':'copper'})
+  raw,_=execute(c,wrong)
+  self.assertFalse(t.check(raw,c,2)['complete'])

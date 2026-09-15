@@ -1,0 +1,21 @@
+{
+  "seed": 501,
+  "entities": [
+    "daxen",
+    "miptor",
+    "velsun",
+    "robnak",
+    "fenzal",
+    "kudrem",
+    "sovpik",
+    "tarnex",
+    "zelvon",
+    "barmek",
+    "nustal",
+    "pelrik"
+  ],
+  "start_run": "evidence/state-support-fresh-acquisition-v1",
+  "blocks": 64,
+  "boundary_mode": "negative",
+  "phase": "final"
+}

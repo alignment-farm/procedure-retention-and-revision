@@ -1,0 +1,928 @@
+{
+  "summaries": {
+    "novel-start": {
+      "all": {
+        "n": 192,
+        "eligibility": 182,
+        "reservation": 189,
+        "shipment": 189,
+        "stock": 189,
+        "status": 182,
+        "format": 192,
+        "exact": 182,
+        "complete": 182,
+        "stale": 0
+      },
+      "earlier_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "newest_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "acquired": {
+        "n": 64,
+        "eligibility": 62,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 62,
+        "format": 64,
+        "exact": 62,
+        "complete": 62,
+        "stale": 0
+      },
+      "target": {
+        "n": 64,
+        "eligibility": 59,
+        "reservation": 62,
+        "shipment": 62,
+        "stock": 62,
+        "status": 59,
+        "format": 64,
+        "exact": 59,
+        "complete": 59,
+        "stale": 0
+      },
+      "fresh": {
+        "n": 64,
+        "eligibility": 61,
+        "reservation": 63,
+        "shipment": 63,
+        "stock": 63,
+        "status": 61,
+        "format": 64,
+        "exact": 61,
+        "complete": 61,
+        "stale": 0
+      }
+    },
+    "novel--novel": {
+      "all": {
+        "n": 192,
+        "eligibility": 192,
+        "reservation": 192,
+        "shipment": 192,
+        "stock": 192,
+        "status": 192,
+        "format": 192,
+        "exact": 192,
+        "complete": 192,
+        "stale": 0
+      },
+      "earlier_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "newest_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "acquired": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "target": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "fresh": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "current_support_identities": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "additional_familiar": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "current_support_identities_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "current_support_identities_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "additional_familiar_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "additional_familiar_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "fresh_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "fresh_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "acquired_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "acquired_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "target_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "target_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_correction": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_boundary": {
+        "n": 16,
+        "complete": 16
+      },
+      "direct_history": {
+        "n": 56,
+        "complete": 56
+      },
+      "newest_before_update": {
+        "n": 24,
+        "complete": 0
+      },
+      "unchanged": {
+        "n": 168,
+        "lost": 0,
+        "gained": 10
+      },
+      "unchanged_acquired": {
+        "n": 56,
+        "lost": 0,
+        "gained": 2
+      },
+      "unchanged_target": {
+        "n": 56,
+        "lost": 0,
+        "gained": 5
+      },
+      "unchanged_fresh": {
+        "n": 56,
+        "lost": 0,
+        "gained": 3
+      },
+      "unchanged_current_support_identities": {
+        "n": 56,
+        "lost": 0,
+        "gained": 5
+      },
+      "unchanged_additional_familiar": {
+        "n": 56,
+        "lost": 0,
+        "gained": 2
+      },
+      "costs": {
+        "updates": 192,
+        "input_tokens": 17148,
+        "loss_tokens": 1536,
+        "update_seconds": 35.714216463013145
+      }
+    },
+    "novel--bridged": {
+      "all": {
+        "n": 192,
+        "eligibility": 185,
+        "reservation": 185,
+        "shipment": 185,
+        "stock": 185,
+        "status": 185,
+        "format": 192,
+        "exact": 185,
+        "complete": 185,
+        "stale": 0
+      },
+      "earlier_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "newest_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "acquired": {
+        "n": 64,
+        "eligibility": 62,
+        "reservation": 62,
+        "shipment": 62,
+        "stock": 62,
+        "status": 62,
+        "format": 64,
+        "exact": 62,
+        "complete": 62,
+        "stale": 0
+      },
+      "target": {
+        "n": 64,
+        "eligibility": 61,
+        "reservation": 61,
+        "shipment": 61,
+        "stock": 61,
+        "status": 61,
+        "format": 64,
+        "exact": 61,
+        "complete": 61,
+        "stale": 0
+      },
+      "fresh": {
+        "n": 64,
+        "eligibility": 62,
+        "reservation": 62,
+        "shipment": 62,
+        "stock": 62,
+        "status": 62,
+        "format": 64,
+        "exact": 62,
+        "complete": 62,
+        "stale": 0
+      },
+      "current_support_identities": {
+        "n": 64,
+        "eligibility": 63,
+        "reservation": 63,
+        "shipment": 63,
+        "stock": 63,
+        "status": 63,
+        "format": 64,
+        "exact": 63,
+        "complete": 63,
+        "stale": 0
+      },
+      "additional_familiar": {
+        "n": 32,
+        "eligibility": 30,
+        "reservation": 30,
+        "shipment": 30,
+        "stock": 30,
+        "status": 30,
+        "format": 32,
+        "exact": 30,
+        "complete": 30,
+        "stale": 0
+      },
+      "current_support_identities_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "current_support_identities_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "additional_familiar_earlier_waiver": {
+        "n": 4,
+        "complete": 4
+      },
+      "additional_familiar_newest_waiver": {
+        "n": 4,
+        "complete": 4
+      },
+      "fresh_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "fresh_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "acquired_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "acquired_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "target_earlier_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "target_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_correction": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_boundary": {
+        "n": 16,
+        "complete": 15
+      },
+      "direct_history": {
+        "n": 56,
+        "complete": 54
+      },
+      "newest_before_update": {
+        "n": 24,
+        "complete": 0
+      },
+      "unchanged": {
+        "n": 168,
+        "lost": 7,
+        "gained": 10
+      },
+      "unchanged_acquired": {
+        "n": 56,
+        "lost": 2,
+        "gained": 2
+      },
+      "unchanged_target": {
+        "n": 56,
+        "lost": 3,
+        "gained": 5
+      },
+      "unchanged_fresh": {
+        "n": 56,
+        "lost": 2,
+        "gained": 3
+      },
+      "unchanged_current_support_identities": {
+        "n": 56,
+        "lost": 1,
+        "gained": 3
+      },
+      "unchanged_additional_familiar": {
+        "n": 28,
+        "lost": 2,
+        "gained": 1
+      },
+      "costs": {
+        "updates": 192,
+        "input_tokens": 17148,
+        "loss_tokens": 1536,
+        "update_seconds": 35.718403703023796
+      }
+    },
+    "bridged-start": {
+      "all": {
+        "n": 192,
+        "eligibility": 192,
+        "reservation": 192,
+        "shipment": 192,
+        "stock": 192,
+        "status": 192,
+        "format": 192,
+        "exact": 192,
+        "complete": 192,
+        "stale": 0
+      },
+      "earlier_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "newest_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "acquired": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "target": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      },
+      "fresh": {
+        "n": 64,
+        "eligibility": 64,
+        "reservation": 64,
+        "shipment": 64,
+        "stock": 64,
+        "status": 64,
+        "format": 64,
+        "exact": 64,
+        "complete": 64,
+        "stale": 0
+      }
+    },
+    "bridged--novel": {
+      "all": {
+        "n": 192,
+        "eligibility": 120,
+        "reservation": 156,
+        "shipment": 156,
+        "stock": 156,
+        "status": 120,
+        "format": 192,
+        "exact": 120,
+        "complete": 120,
+        "stale": 0
+      },
+      "earlier_waiver": {
+        "n": 24,
+        "eligibility": 0,
+        "reservation": 12,
+        "shipment": 12,
+        "stock": 12,
+        "status": 0,
+        "format": 24,
+        "exact": 0,
+        "complete": 0,
+        "stale": 0
+      },
+      "newest_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "acquired": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "target": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "fresh": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "current_support_identities": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "additional_familiar": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "current_support_identities_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "current_support_identities_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "additional_familiar_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "additional_familiar_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "fresh_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "fresh_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "acquired_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "acquired_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "target_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "target_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_correction": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_boundary": {
+        "n": 16,
+        "complete": 0
+      },
+      "direct_history": {
+        "n": 56,
+        "complete": 32
+      },
+      "newest_before_update": {
+        "n": 24,
+        "complete": 0
+      },
+      "unchanged": {
+        "n": 168,
+        "lost": 72,
+        "gained": 0
+      },
+      "unchanged_acquired": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_target": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_fresh": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_current_support_identities": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_additional_familiar": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "costs": {
+        "updates": 192,
+        "input_tokens": 17148,
+        "loss_tokens": 1536,
+        "update_seconds": 35.80753779605584
+      }
+    },
+    "bridged--bridged": {
+      "all": {
+        "n": 192,
+        "eligibility": 120,
+        "reservation": 156,
+        "shipment": 156,
+        "stock": 156,
+        "status": 120,
+        "format": 192,
+        "exact": 120,
+        "complete": 120,
+        "stale": 0
+      },
+      "earlier_waiver": {
+        "n": 24,
+        "eligibility": 0,
+        "reservation": 12,
+        "shipment": 12,
+        "stock": 12,
+        "status": 0,
+        "format": 24,
+        "exact": 0,
+        "complete": 0,
+        "stale": 0
+      },
+      "newest_waiver": {
+        "n": 24,
+        "eligibility": 24,
+        "reservation": 24,
+        "shipment": 24,
+        "stock": 24,
+        "status": 24,
+        "format": 24,
+        "exact": 24,
+        "complete": 24,
+        "stale": 0
+      },
+      "acquired": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "target": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "fresh": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "current_support_identities": {
+        "n": 64,
+        "eligibility": 40,
+        "reservation": 52,
+        "shipment": 52,
+        "stock": 52,
+        "status": 40,
+        "format": 64,
+        "exact": 40,
+        "complete": 40,
+        "stale": 0
+      },
+      "additional_familiar": {
+        "n": 32,
+        "eligibility": 20,
+        "reservation": 26,
+        "shipment": 26,
+        "stock": 26,
+        "status": 20,
+        "format": 32,
+        "exact": 20,
+        "complete": 20,
+        "stale": 0
+      },
+      "current_support_identities_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "current_support_identities_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "additional_familiar_earlier_waiver": {
+        "n": 4,
+        "complete": 0
+      },
+      "additional_familiar_newest_waiver": {
+        "n": 4,
+        "complete": 4
+      },
+      "fresh_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "fresh_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "acquired_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "acquired_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "target_earlier_waiver": {
+        "n": 8,
+        "complete": 0
+      },
+      "target_newest_waiver": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_correction": {
+        "n": 8,
+        "complete": 8
+      },
+      "direct_boundary": {
+        "n": 16,
+        "complete": 0
+      },
+      "direct_history": {
+        "n": 56,
+        "complete": 32
+      },
+      "newest_before_update": {
+        "n": 24,
+        "complete": 0
+      },
+      "unchanged": {
+        "n": 168,
+        "lost": 72,
+        "gained": 0
+      },
+      "unchanged_acquired": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_target": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_fresh": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_current_support_identities": {
+        "n": 56,
+        "lost": 24,
+        "gained": 0
+      },
+      "unchanged_additional_familiar": {
+        "n": 28,
+        "lost": 12,
+        "gained": 0
+      },
+      "costs": {
+        "updates": 192,
+        "input_tokens": 17148,
+        "loss_tokens": 1536,
+        "update_seconds": 35.83522903105768
+      }
+    }
+  },
+  "costs": {
+    "updates": 768,
+    "generations": 1152,
+    "prompt_tokens": 94752,
+    "completion_tokens": 9227,
+    "generation_seconds": 319.7939201699046,
+    "update_seconds": 143.07538699315046,
+    "finish": {
+      "kind": "finish",
+      "elapsed": 495.4121851249947,
+      "status": "complete",
+      "wall_seconds": 495.41218316699815,
+      "wait_seconds": 0.0,
+      "peak_mlx_bytes": 9614687260
+    }
+  }
+}

@@ -1,6 +1,13 @@
 # Procedure retention and revision
 
-**Status: Two earlier comparisons accepted; third-phase findings published for root assessment.**
+**Status: All three publications accepted; fourth phase commissioned, 15 September 2026.**
+
+Start with [STATE_SUPPORT.md](STATE_SUPPORT.md). The next investigation separates
+learning history from current support by crossing saved revision-1 states with
+revision-2 evidence. It asks why equally successful states differ in maintenance,
+with a bounded diagnostic comparison and fresh assessment of the developed claim.
+The ancillary investigator owns methods, resources and routine execution.
+Preparing the handoff has not launched experiments.
 
 ## Complete-procedure maintenance
 
@@ -18,7 +25,9 @@ state and support. The broader research question remains open.
 [Reproduction](notes/maintenance-reproduction.md)
 
 The [commissioning brief](MAINTENANCE.md) and all development attempts are retained.
-Local publication and root acceptance are separate decisions.
+The third-phase publication was accepted in the root synthesis at `d2f3a08`;
+[STATE_SUPPORT.md](STATE_SUPPORT.md) supplies the new commission. Acceptance of
+the previous contribution does not close the broader research question.
 
 ## Accepted scope evidence and rehearsal follow-up
 

@@ -1,8 +1,9 @@
 # Maintaining complete procedures through use and revision
 
-**Status: Completed locally, 15 September 2026; root assessment pending.**
+**Status: Completed and accepted at the root, 15 September 2026.**
 [Findings](FINDINGS-MAINTENANCE.md) and [completed evidence audit](evidence/maintenance-phase-audit/report.json)
-record the result. The original commissioning brief follows.
+record the result. The subsequent [state/support investigation](STATE_SUPPORT.md)
+is the current commission. The original third-phase commissioning brief follows.
 
 Develop and execute a bounded empirical comparison within the study's
 [local resources](AGENTS.md).
@@ -10,7 +11,8 @@ The investigator owns the task, methods, workload and budget; routine execution
 needs no additional root approval. Preparing this brief did not launch experiments.
 The commissioning brief referenced the root's learning-maintenance note at
 `../../construct-2/notes/LEARNING_MAINTENANCE.md` for broader context. That file is
-absent from the current parent checkout; this brief is sufficient independently.
+absent from the investigator's checkout when that phase was published; this brief
+was sufficient independently.
 
 **Can a supported correction revise both familiar acquired instances and
 unfamiliar applications while preserving complete unaffected behavior through

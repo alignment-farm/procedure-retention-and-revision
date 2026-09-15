@@ -6,10 +6,10 @@ from runtime import Runtime,resource,sha,digest
 import maintenance_task as t
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--start-run',type=Path,default=Path('evidence/maintenance-final-v1'));p.add_argument('--seed',type=int,default=401);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--start-run',type=Path,default=Path('evidence/maintenance-final-v1'));p.add_argument('--seed',type=int,default=401);p.add_argument('--phase',choices=['development','final'],default='development');a=p.parse_args()
  out=a.output;out.mkdir(parents=True,exist_ok=False);start=time.monotonic();wait=0.;last=0.;status='failed'
  for n in ['state_support_experiment.py','maintenance_task.py','runtime.py']:(out/n).write_bytes(Path('scripts',n).read_bytes())
- (out/'protocol.md').write_bytes(Path('protocol/state-support-development-v1.md').read_bytes())
+ (out/'protocol.md').write_bytes(Path(f'protocol/state-support-{a.phase}-v1.md').read_bytes())
  ev=(out/'events.jsonl').open('x');rs=(out/'responses.jsonl').open('x')
  def save(n,d):(out/n).write_text(json.dumps(d,indent=2)+'\n')
  def emit(kind,**d):ev.write(json.dumps(dict(kind=kind,elapsed=time.monotonic()-start,**d))+'\n');ev.flush()
@@ -29,7 +29,7 @@ def main():
   for line in (a.start_run/'SHA256SUMS').read_text().splitlines():
    h,n=line.split('  ',1);assert sha(a.start_run/n)==h,n
   design=json.loads((a.start_run/'design.json').read_text());entities=t.ACQUIRED+t.TARGETS+design['fresh']
-  save('design.json',dict(seed=a.seed,entities=entities,start_run=str(a.start_run),blocks=64,boundary_mode='negative',phase='diagnostic'))
+  save('design.json',dict(seed=a.seed,entities=entities,start_run=str(a.start_run),blocks=64,boundary_mode='negative',phase=a.phase))
   old=[json.loads(l) for l in (a.start_run/'responses.jsonl').read_text().splitlines()]
   def published(arm,v):return {json.dumps(r['case'],sort_keys=True):r['raw'] for r in old if r['state']==f'seed{a.seed}-{arm}-v{v}' and r['repeat']==0}
   guard();save('resource.json',resource());rt=Runtime()
@@ -53,8 +53,8 @@ def main():
      guard();prefix=rt.encode(t.prompt(c));y=rt.target(prefix,t.oracle(c,2));emit('update',state=name,index=i,source=source,case=c,version=2,**rt.step(prefix,y,opt))
     path=out/(name+'.safetensors');mx.save_safetensors(str(path),dict(rt.snapshot()));h=sha(path)
     emit('checkpoint',state=name,sha256=h,state_hash=digest(rt.snapshot()),bytes=path.stat().st_size)
-    evaluate(name,2,published(inherited,2) if inherited==support else None)
-    if inherited==support:
+    evaluate(name,2,published(inherited,2) if inherited==support and a.phase=='development' else None)
+    if inherited==support and a.phase=='development':
      same=h==sha(a.start_run/f'seed{a.seed}-{inherited}-v2.safetensors');emit('diagonal_checkpoint',state=name,identical=same);assert same
   emit('invariants',**rt.invariants());status='complete'
  finally:

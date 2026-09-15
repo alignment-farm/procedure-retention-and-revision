@@ -112,3 +112,9 @@ updates and 1,152 generations, approximately ten active minutes. No competing
 Python model script visible at preparation. Existing passive yielding guard and
 40 GB ceiling retained. New acquisitions follow only after diagnostic analysis;
 no sibling files or processes modified. Expected allocation remains under 12 GB.
+
+State/support development reveals an interaction: Novel/Novel preserves192/192,
+Novel/Bridged122/192 and Bridged/Novel120/192. After the second diagonal reproduction,
+queue two fresh acquisitions501/502 and their full crossings sequentially under
+protocol/state-support-final-v1.md. Approximate20 active minutes; same <12 GB
+expected allocation,40 GB ceiling, passive yielding. No expanded model/search.

@@ -2,6 +2,7 @@
 import argparse
 import copy
 import hashlib
+import inspect
 import json
 from pathlib import Path
 import platform
@@ -41,7 +42,7 @@ def main():
     for state in trace:assert state['stock']>=0 and state['reserved']>=0 and state['stock']+state['reserved']+state['shipped']==c['stock']
     rows.append(dict(version=v,repeat=repeat,case=c,raw=raw,trace=trace,scores=scores,seconds=elapsed))
  (a.output/'responses.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in rows))
- report=dict(git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),python=platform.python_version(),n=len(rows),complete=sum(r['scores']['complete'] for r in rows),inference_seconds=sum(r['seconds'] for r in rows),maintenance=maintenance,wall_seconds=time.monotonic()-start,model_tokens=0,updates=0,paid_cost=0,information='privileged executable rules; manual construction and authority')
+ report=dict(git=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),python=platform.python_version(),n=len(rows),complete=sum(r['scores']['complete'] for r in rows),inference_seconds=sum(r['seconds'] for r in rows),maintenance=maintenance,wall_seconds=time.monotonic()-start,model_tokens=0,updates=0,paid_cost=0,interpreter_function_bytes=len(inspect.getsource(execute).encode()),information='privileged executable rules; manual construction and authority')
  (a.output/'summary.json').write_text(json.dumps(report,indent=2)+'\n')
  for name in ['maintenance_explicit.py','maintenance_task.py']:(a.output/name).write_bytes(Path('scripts',name).read_bytes())
  (a.output/'protocol.md').write_bytes(Path('protocol/maintenance-reference-diagnosis-v1.md').read_bytes())

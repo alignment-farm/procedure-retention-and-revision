@@ -36,7 +36,7 @@ def main():
   if e['kind']=='update': updates[e['state']].append(e)
  for state,us in updates.items():
   if '-v' in state:
-   arm=state.split('-')[1];v=int(state[-1]);schedule=t.schedule(arm,v,design['blocks'])
+   arm=state.split('-')[1];v=int(state[-1]);schedule=t.schedule(arm,v,design['blocks'],design.get('boundary_mode','all'))
    assert len(us)==len(schedule)
    for i,(u,(source,c)) in enumerate(zip(us,schedule),1):
     assert (u['index'],u['source'],u['case'],u['version'])==(i,source,c,v)
@@ -64,7 +64,9 @@ def main():
   changed=[r for r in rs if t.oracle(r['case'],v)!=t.oracle(r['case'],v-1)]
   for label,entities in [('familiar-first-two',t.ACQUIRED[:2]),('familiar-withheld',t.ACQUIRED[2:]),('correction-new',t.TARGETS),('fresh',design['fresh'])]:
    sub=[r for r in changed if r['case']['entity'] in entities]
-   obligations.append(dict(state=state,version=v,group=label,n=len(sub),complete=sum(r['scores']['complete'] for r in sub),stale=sum(r['scores']['stale'] for r in sub),
+   direct_entities=t.TARGETS if arm=='novel' else t.ACQUIRED[:2]+t.TARGETS[:2]
+   direct=[r for r in sub if r['case']['entity'] in direct_entities]
+   obligations.append(dict(state=state,version=v,group=label,n=len(sub),directly_relabelled_n=len(direct),directly_relabelled_complete=sum(r['scores']['complete'] for r in direct),complete=sum(r['scores']['complete'] for r in sub),stale=sum(r['scores']['stale'] for r in sub),
                            downstream_n=sum(r['case']['stock']==1 for r in sub),downstream_complete=sum(r['case']['stock']==1 and r['scores']['complete'] for r in sub)))
  costs=[]
  for state,us in updates.items():
@@ -72,6 +74,12 @@ def main():
  inference=[]
  for (state,v,repeat),rs in grouped.items():
   inference.append(dict(state=state,version=v,repeat=repeat,n=len(rs),complete=sum(r['scores']['complete'] for r in rs),prompt_tokens=sum(r['prompt_tokens'] for r in rs),completion_tokens=sum(r['completion_tokens'] for r in rs),seconds=sum(r['seconds'] for r in rs)))
+ counterfactual=[]
+ for (state,v,repeat),rs in grouped.items():
+  if state.endswith('-no-update') and v==0:
+   for version in (1,2):
+    counterfactual.append(dict(state=state,version=version,repeat=repeat,n=len(rs),complete=sum(t.check(r['raw'],r['case'],version)['complete'] for r in rs),stale=sum(t.check(r['raw'],r['case'],version)['stale'] for r in rs),reuses_generation=True))
+ write('no-update-rescored.json',counterfactual)
  write('summary.json',summary);write('paired.json',paired);write('obligations.json',obligations);write('repeatability.json',repeats)
  write('costs.json',dict(training=costs,inference=inference,finish=events[-1],maintenance=[e for e in events if e['kind']=='maintenance'],checkpoints=[e for e in events if e['kind']=='checkpoint']))
  write('audit.json',dict(responses=len(rows),updates=sum(map(len,updates.values())),hashes_verified=True,score_recomputed=True,schedules_verified=True,paired_starts_verified=True))

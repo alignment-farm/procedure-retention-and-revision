@@ -62,10 +62,12 @@ def check(raw, c, version):
     result['stale']=version>0 and oracle(c,version)!=oracle(c,version-1) and raw.strip()==oracle(c,version-1)
     return result
 
-def schedule(arm, version, blocks=64):
+def schedule(arm, version, blocks=64, boundary_mode='all'):
     entities=TARGETS if arm=='novel' else ACQUIRED[:2]+TARGETS[:2]
     changed=[c for c in cases(entities) if oracle(c,version)!=oracle(c,version-1)]
     boundary=[c for c in cases(entities) if oracle(c,version)==oracle(c,version-1)]
+    if boundary_mode=='negative': boundary=[c for c in boundary if not eligible(c,version)]
+    elif boundary_mode!='all': raise ValueError(boundary_mode)
     history=[c for c in cases(ACQUIRED) if oracle(c,version)==oracle(c,version-1)]
     return [(source,pool[i%len(pool)]) for i in range(blocks)
             for source,pool in [('correction',changed),('boundary',boundary),('history',history)]]

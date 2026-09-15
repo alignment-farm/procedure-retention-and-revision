@@ -51,3 +51,19 @@ class ExplicitPolicy(unittest.TestCase):
   wrong=copy.deepcopy(policy);wrong['eligible_any'].append({'channel':'copper'})
   raw,_=execute(c,wrong)
   self.assertFalse(t.check(raw,c,2)['complete'])
+
+class NegativeBoundary(unittest.TestCase):
+ def test_negative_support_changes_only_boundary(self):
+  for v in [1,2]:
+   for arm in ['novel','bridged']:
+    old=t.schedule(arm,v);new=t.schedule(arm,v,boundary_mode='negative')
+    for (so,co),(sn,cn) in zip(old,new):
+     self.assertEqual(so,sn)
+     if sn!='boundary':self.assertEqual(co,cn)
+     else:
+      self.assertFalse(t.eligible(cn,v))
+      self.assertEqual(t.oracle(cn,v),t.oracle(cn,v-1))
+   novel=t.schedule('novel',v,boundary_mode='negative');bridge=t.schedule('bridged',v,boundary_mode='negative')
+   for (sn,cn),(sb,cb) in zip(novel,bridge):
+    self.assertEqual(sn,sb)
+    self.assertEqual({k:x for k,x in cn.items() if k!='entity'},{k:x for k,x in cb.items() if k!='entity'})

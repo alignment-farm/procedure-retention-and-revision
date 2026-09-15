@@ -1,0 +1,962 @@
+[
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 1,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "copper",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "FAIL SKIP SKIP 0 HELD"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "violet",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "FAIL SKIP SKIP 1 HELD"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "daxen",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "miptor",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "fenzal",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "kudrem",
+      "channel": "violet",
+      "priority": "slow",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "velsun",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 0
+    },
+    "target": "PASS SKIP SKIP 0 WAIT"
+  },
+  {
+    "case": {
+      "entity": "robnak",
+      "channel": "copper",
+      "priority": "fast",
+      "certified": 0,
+      "stock": 1
+    },
+    "target": "PASS RESERVE SHIP 0 SENT"
+  }
+]

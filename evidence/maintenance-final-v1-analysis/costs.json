@@ -1,0 +1,1076 @@
+{
+  "training": [
+    {
+      "state": "seed401-acquisition",
+      "updates": 256,
+      "input_tokens": 22912,
+      "loss_tokens": 2048,
+      "seconds": 47.191038754037436,
+      "sources": {
+        "acquisition": 256
+      }
+    },
+    {
+      "state": "seed401-novel-v1",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.67015626002467,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed401-novel-v2",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.755019626030844,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed401-bridged-v1",
+      "updates": 192,
+      "input_tokens": 17150,
+      "loss_tokens": 1536,
+      "seconds": 35.11681066200981,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed401-bridged-v2",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.7487802899559,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed402-acquisition",
+      "updates": 512,
+      "input_tokens": 45824,
+      "loss_tokens": 4096,
+      "seconds": 95.35012286599886,
+      "sources": {
+        "acquisition": 512
+      }
+    },
+    {
+      "state": "seed402-novel-v1",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.78378403999159,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed402-novel-v2",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.14845637503822,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed402-bridged-v1",
+      "updates": 192,
+      "input_tokens": 17150,
+      "loss_tokens": 1536,
+      "seconds": 35.84437541001171,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    },
+    {
+      "state": "seed402-bridged-v2",
+      "updates": 192,
+      "input_tokens": 17148,
+      "loss_tokens": 1536,
+      "seconds": 35.78953233298671,
+      "sources": {
+        "correction": 64,
+        "boundary": 64,
+        "history": 64
+      }
+    }
+  ],
+  "inference": [
+    {
+      "state": "explicit-rules",
+      "version": 0,
+      "repeat": 0,
+      "n": 192,
+      "complete": 99,
+      "prompt_tokens": 31184,
+      "completion_tokens": 1581,
+      "seconds": 66.0132536710189
+    },
+    {
+      "state": "explicit-rules",
+      "version": 1,
+      "repeat": 0,
+      "n": 192,
+      "complete": 96,
+      "prompt_tokens": 32912,
+      "completion_tokens": 1645,
+      "seconds": 67.27930570801618
+    },
+    {
+      "state": "explicit-rules",
+      "version": 2,
+      "repeat": 0,
+      "n": 192,
+      "complete": 84,
+      "prompt_tokens": 33680,
+      "completion_tokens": 1630,
+      "seconds": 66.90810166400479
+    },
+    {
+      "state": "seed401-base",
+      "version": 0,
+      "repeat": 0,
+      "n": 128,
+      "complete": 0,
+      "prompt_tokens": 10560,
+      "completion_tokens": 1916,
+      "seconds": 51.51919646000897
+    },
+    {
+      "state": "seed401-A256",
+      "version": 0,
+      "repeat": 0,
+      "n": 64,
+      "complete": 64,
+      "prompt_tokens": 5280,
+      "completion_tokens": 512,
+      "seconds": 17.81145579398799
+    },
+    {
+      "state": "seed401-A256-new",
+      "version": 0,
+      "repeat": 0,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2624,
+      "completion_tokens": 256,
+      "seconds": 8.879472791999433
+    },
+    {
+      "state": "seed401-no-update",
+      "version": 0,
+      "repeat": 0,
+      "n": 192,
+      "complete": 192,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1536,
+      "seconds": 53.269459122002445
+    },
+    {
+      "state": "seed401-no-update",
+      "version": 0,
+      "repeat": 1,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2640,
+      "completion_tokens": 256,
+      "seconds": 8.883693872987351
+    },
+    {
+      "state": "seed401-novel-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 192,
+      "complete": 192,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1536,
+      "seconds": 53.3352855859921
+    },
+    {
+      "state": "seed401-novel-v1",
+      "version": 1,
+      "repeat": 1,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2640,
+      "completion_tokens": 256,
+      "seconds": 8.871509124001022
+    },
+    {
+      "state": "seed401-novel-v2",
+      "version": 2,
+      "repeat": 0,
+      "n": 192,
+      "complete": 192,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1536,
+      "seconds": 53.32135320798989
+    },
+    {
+      "state": "seed401-novel-v2",
+      "version": 2,
+      "repeat": 1,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2640,
+      "completion_tokens": 256,
+      "seconds": 8.880820498012326
+    },
+    {
+      "state": "seed401-bridged-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 192,
+      "complete": 192,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1536,
+      "seconds": 53.34717304100923
+    },
+    {
+      "state": "seed401-bridged-v1",
+      "version": 1,
+      "repeat": 1,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2640,
+      "completion_tokens": 256,
+      "seconds": 8.882839003006666
+    },
+    {
+      "state": "seed401-bridged-v2",
+      "version": 2,
+      "repeat": 0,
+      "n": 192,
+      "complete": 120,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1536,
+      "seconds": 53.33522333298242
+    },
+    {
+      "state": "seed401-bridged-v2",
+      "version": 2,
+      "repeat": 1,
+      "n": 32,
+      "complete": 20,
+      "prompt_tokens": 2640,
+      "completion_tokens": 256,
+      "seconds": 8.87272462499459
+    },
+    {
+      "state": "seed402-base",
+      "version": 0,
+      "repeat": 0,
+      "n": 128,
+      "complete": 0,
+      "prompt_tokens": 10560,
+      "completion_tokens": 1916,
+      "seconds": 51.57933667498946
+    },
+    {
+      "state": "seed402-A256",
+      "version": 0,
+      "repeat": 0,
+      "n": 64,
+      "complete": 41,
+      "prompt_tokens": 5280,
+      "completion_tokens": 473,
+      "seconds": 17.127378078999755
+    },
+    {
+      "state": "seed402-A256-new",
+      "version": 0,
+      "repeat": 0,
+      "n": 32,
+      "complete": 18,
+      "prompt_tokens": 2624,
+      "completion_tokens": 234,
+      "seconds": 8.477878120986134
+    },
+    {
+      "state": "seed402-A512",
+      "version": 0,
+      "repeat": 0,
+      "n": 64,
+      "complete": 64,
+      "prompt_tokens": 5280,
+      "completion_tokens": 512,
+      "seconds": 17.82999008200204
+    },
+    {
+      "state": "seed402-A512-new",
+      "version": 0,
+      "repeat": 0,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2624,
+      "completion_tokens": 256,
+      "seconds": 8.87996862500222
+    },
+    {
+      "state": "seed402-no-update",
+      "version": 0,
+      "repeat": 0,
+      "n": 192,
+      "complete": 192,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1536,
+      "seconds": 53.287495407006645
+    },
+    {
+      "state": "seed402-no-update",
+      "version": 0,
+      "repeat": 1,
+      "n": 32,
+      "complete": 32,
+      "prompt_tokens": 2640,
+      "completion_tokens": 256,
+      "seconds": 8.884266334986023
+    },
+    {
+      "state": "seed402-novel-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 192,
+      "complete": 179,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1547,
+      "seconds": 53.55635383601111
+    },
+    {
+      "state": "seed402-novel-v1",
+      "version": 1,
+      "repeat": 1,
+      "n": 32,
+      "complete": 30,
+      "prompt_tokens": 2640,
+      "completion_tokens": 258,
+      "seconds": 8.915799921003781
+    },
+    {
+      "state": "seed402-novel-v2",
+      "version": 2,
+      "repeat": 0,
+      "n": 192,
+      "complete": 132,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1524,
+      "seconds": 53.12462254595084
+    },
+    {
+      "state": "seed402-novel-v2",
+      "version": 2,
+      "repeat": 1,
+      "n": 32,
+      "complete": 22,
+      "prompt_tokens": 2640,
+      "completion_tokens": 254,
+      "seconds": 8.834460122994642
+    },
+    {
+      "state": "seed402-bridged-v1",
+      "version": 1,
+      "repeat": 0,
+      "n": 192,
+      "complete": 179,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1547,
+      "seconds": 53.548780632012495
+    },
+    {
+      "state": "seed402-bridged-v1",
+      "version": 1,
+      "repeat": 1,
+      "n": 32,
+      "complete": 30,
+      "prompt_tokens": 2640,
+      "completion_tokens": 258,
+      "seconds": 8.919038582989742
+    },
+    {
+      "state": "seed402-bridged-v2",
+      "version": 2,
+      "repeat": 0,
+      "n": 192,
+      "complete": 130,
+      "prompt_tokens": 15824,
+      "completion_tokens": 1526,
+      "seconds": 53.16859107501659
+    },
+    {
+      "state": "seed402-bridged-v2",
+      "version": 2,
+      "repeat": 1,
+      "n": 32,
+      "complete": 21,
+      "prompt_tokens": 2640,
+      "completion_tokens": 255,
+      "seconds": 8.864549209010875
+    }
+  ],
+  "finish": {
+    "kind": "finish",
+    "elapsed": 2200.2207197499993,
+    "status": "complete",
+    "wall_seconds": 2200.220717917,
+    "wait_seconds": 700.625022035998,
+    "peak_mlx_bytes": 9614556188
+  },
+  "maintenance": [
+    {
+      "kind": "maintenance",
+      "elapsed": 1116.0521206669982,
+      "state": "seed401-novel-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 0,
+      "history_maintenance_seconds": 6.179100091685541e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1215.9409262499976,
+      "state": "seed401-novel-v2",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 8,
+      "history_maintenance_seconds": 8.69169998622965e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1315.9981645419975,
+      "state": "seed401-bridged-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 0,
+      "history_maintenance_seconds": 6.479199873865582e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1415.1074643339998,
+      "state": "seed401-bridged-v2",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 8,
+      "history_maintenance_seconds": 7.554100011475384e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1791.3817065839976,
+      "state": "seed402-novel-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 0,
+      "history_maintenance_seconds": 8.03340008133091e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1891.7571049590006,
+      "state": "seed402-novel-v2",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 8,
+      "history_maintenance_seconds": 8.229200102505274e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 1990.6560346669976,
+      "state": "seed402-bridged-v1",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "copper",
+          "priority": "fast",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 0,
+      "history_maintenance_seconds": 8.237500151153654e-05
+    },
+    {
+      "kind": "maintenance",
+      "elapsed": 2091.0876882919983,
+      "state": "seed402-bridged-v2",
+      "scanned": 64,
+      "excluded": 8,
+      "authority": "investigator",
+      "obsolete": [
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "daxen",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "miptor",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "velsun",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 0
+        },
+        {
+          "entity": "robnak",
+          "channel": "violet",
+          "priority": "slow",
+          "certified": 0,
+          "stock": 1
+        }
+      ],
+      "prior_revision_relabels": 8,
+      "history_maintenance_seconds": 7.920899952296168e-05
+    }
+  ],
+  "checkpoints": [
+    {
+      "kind": "checkpoint",
+      "elapsed": 1026.090736541999,
+      "state": "seed401-A256",
+      "sha256": "6ad4da263eb130d959df6f13de295cc7547969e8e048f6669d563ea1777eb7bb",
+      "state_hash": "86bbf37dab3119b4b98f44f07fa854af8fd7abc6e535e69003e63f8cbff6dff6",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1152.9840423339992,
+      "state": "seed401-novel-v1",
+      "sha256": "76c3f93cd70ee9dad678a2162b847ad615078ba4064430ea4f99faee1d34e7ce",
+      "state_hash": "574fab7efd13a779cb94bf697c3a8ec6c789cdaf2e185c495278b62079c6b3d6",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1253.0250437089999,
+      "state": "seed401-novel-v2",
+      "sha256": "d732dfc4de014cf89009d81e20bbdff6ef5e7696b86fdc3c8b34724e80f988d0",
+      "state_hash": "a46057511c339d8784fa625ba2c2565d0d9117c450221f11741d8b29a217ddec",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1352.1229973339978,
+      "state": "seed401-bridged-v1",
+      "sha256": "c2bba7088c8998ff6f08e19fe372f455a6453e3f3dd4a6ac1f32e51beb9f1108",
+      "state_hash": "179ac3ae39e5284e4ca94dad1d239afcc439f3cb9e07f9ee0c33ff69f58924a4",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1452.1935641669988,
+      "state": "seed401-bridged-v2",
+      "sha256": "8d6f91a54e0f1417a5cf39dd8c3aa523652019b3d72f80816a7e557c8edc269d",
+      "state_hash": "d138ed2124d9bc07e56c92252d62186b7ae61d51bb36f41519b828f02eb9d559",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1626.1507913339992,
+      "state": "seed402-A256",
+      "sha256": "a09d2637035214de7a9835ace2534c2bec964f7c097488fa6788602e4183f9e3",
+      "state_hash": "0a02d86ca082441e6ec6af17543d91655f949519c23e32abc6fbf13e4e25ca73",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1701.3804428750009,
+      "state": "seed402-A512",
+      "sha256": "8e945b79e9986ccab48f76cfb02fe8c4d7d28abfac2f9f856b9784a305cc7095",
+      "state_hash": "35f9faaadb189047e259ca709c1384251cadee2fc77b1c3426204f9db079051e",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1828.5002353749987,
+      "state": "seed402-novel-v1",
+      "sha256": "9cc334b72aab9060470252accc692cb58632ea7337bdc853203095b202bea544",
+      "state_hash": "16538b2e8724bbc9d7a8ad78a457541101b70439db11657867de2f97289c6edd",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 1927.9298525419981,
+      "state": "seed402-novel-v2",
+      "sha256": "bdde28b9c34be686676e26dc8298c1a26823cfb9fe5e4cd75093e5fa39405994",
+      "state_hash": "63af4f72821be18c12df1a3124ab74159bd202758d30cc6e4e6b75951ba6ce33",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 2027.8387487090004,
+      "state": "seed402-bridged-v1",
+      "sha256": "2ed0b889abeadd1a45ba9635fdcd11eaf3090c2659d9dcc8223b368130c702ba",
+      "state_hash": "609d7e35dab0d2a0d0148611c3513b25783b679cb2c2541451a179dd550fdafd",
+      "bytes": 2624893
+    },
+    {
+      "kind": "checkpoint",
+      "elapsed": 2128.2011361669975,
+      "state": "seed402-bridged-v2",
+      "sha256": "5c1302bb72104df72798d238cadd0114b62ad3c7fa4fcfd55df7c36c4a43343b",
+      "state_hash": "79ba1daf434436e30abd0509c7ebea3d235b7ead305bd86368ce80ec25f35df1",
+      "bytes": 2624893
+    }
+  ]
+}

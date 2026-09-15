@@ -1,0 +1,236 @@
+{
+  "git": "c0e75431a78bb5e86b3d84f2cb3e87f4ed181cf2",
+  "trajectories": [
+    {
+      "seed": 401,
+      "arm": "novel",
+      "acquisition": {
+        "updates": 256,
+        "input_tokens": 22912,
+        "loss_tokens": 2048,
+        "seconds": 47.191038754037436,
+        "sources": {
+          "acquisition": 256
+        }
+      },
+      "acquisition_validation": {
+        "calls": 96,
+        "complete": 96,
+        "prompt_tokens": 7904,
+        "completion_tokens": 768,
+        "seconds": 26.69092858598742
+      },
+      "revision_training": {
+        "updates": 384,
+        "input_tokens": 34296,
+        "loss_tokens": 3072,
+        "seconds": 71.42517588605551,
+        "sources": {
+          "correction": 128,
+          "boundary": 128,
+          "history": 128
+        }
+      },
+      "recurring_use": {
+        "calls": 672,
+        "complete": 672,
+        "prompt_tokens": 55392,
+        "completion_tokens": 5376,
+        "seconds": 186.56212141098513
+      },
+      "current_adapter_bytes": 2624893,
+      "training_archive_records": 112,
+      "training_archive_bytes": 20901,
+      "training_archive_file": "seed401-novel-training-archive.json",
+      "history_records_scanned": 128,
+      "obsolete_records_excluded": 16,
+      "prior_revision_records_relabelled": 8,
+      "correction_label_updates": 128,
+      "boundary_updates": 128,
+      "rehearsal_updates": 128
+    },
+    {
+      "seed": 401,
+      "arm": "bridged",
+      "acquisition": {
+        "updates": 256,
+        "input_tokens": 22912,
+        "loss_tokens": 2048,
+        "seconds": 47.191038754037436,
+        "sources": {
+          "acquisition": 256
+        }
+      },
+      "acquisition_validation": {
+        "calls": 96,
+        "complete": 96,
+        "prompt_tokens": 7904,
+        "completion_tokens": 768,
+        "seconds": 26.69092858598742
+      },
+      "revision_training": {
+        "updates": 384,
+        "input_tokens": 34298,
+        "loss_tokens": 3072,
+        "seconds": 70.86559095196571,
+        "sources": {
+          "correction": 128,
+          "boundary": 128,
+          "history": 128
+        }
+      },
+      "recurring_use": {
+        "calls": 672,
+        "complete": 588,
+        "prompt_tokens": 55392,
+        "completion_tokens": 5376,
+        "seconds": 186.5911129969827
+      },
+      "current_adapter_bytes": 2624893,
+      "training_archive_records": 96,
+      "training_archive_bytes": 17917,
+      "training_archive_file": "seed401-bridged-training-archive.json",
+      "history_records_scanned": 128,
+      "obsolete_records_excluded": 16,
+      "prior_revision_records_relabelled": 8,
+      "correction_label_updates": 128,
+      "boundary_updates": 128,
+      "rehearsal_updates": 128
+    },
+    {
+      "seed": 402,
+      "arm": "novel",
+      "acquisition": {
+        "updates": 512,
+        "input_tokens": 45824,
+        "loss_tokens": 4096,
+        "seconds": 95.35012286599886,
+        "sources": {
+          "acquisition": 512
+        }
+      },
+      "acquisition_validation": {
+        "calls": 192,
+        "complete": 155,
+        "prompt_tokens": 15808,
+        "completion_tokens": 1475,
+        "seconds": 52.31521490699015
+      },
+      "revision_training": {
+        "updates": 384,
+        "input_tokens": 34296,
+        "loss_tokens": 3072,
+        "seconds": 70.93224041502981,
+        "sources": {
+          "correction": 128,
+          "boundary": 128,
+          "history": 128
+        }
+      },
+      "recurring_use": {
+        "calls": 672,
+        "complete": 587,
+        "prompt_tokens": 55392,
+        "completion_tokens": 5375,
+        "seconds": 186.60299816795305
+      },
+      "current_adapter_bytes": 2624893,
+      "training_archive_records": 112,
+      "training_archive_bytes": 20901,
+      "training_archive_file": "seed402-novel-training-archive.json",
+      "history_records_scanned": 128,
+      "obsolete_records_excluded": 16,
+      "prior_revision_records_relabelled": 8,
+      "correction_label_updates": 128,
+      "boundary_updates": 128,
+      "rehearsal_updates": 128
+    },
+    {
+      "seed": 402,
+      "arm": "bridged",
+      "acquisition": {
+        "updates": 512,
+        "input_tokens": 45824,
+        "loss_tokens": 4096,
+        "seconds": 95.35012286599886,
+        "sources": {
+          "acquisition": 512
+        }
+      },
+      "acquisition_validation": {
+        "calls": 192,
+        "complete": 155,
+        "prompt_tokens": 15808,
+        "completion_tokens": 1475,
+        "seconds": 52.31521490699015
+      },
+      "revision_training": {
+        "updates": 384,
+        "input_tokens": 34298,
+        "loss_tokens": 3072,
+        "seconds": 71.63390774299842,
+        "sources": {
+          "correction": 128,
+          "boundary": 128,
+          "history": 128
+        }
+      },
+      "recurring_use": {
+        "calls": 672,
+        "complete": 584,
+        "prompt_tokens": 55392,
+        "completion_tokens": 5378,
+        "seconds": 186.67272124102237
+      },
+      "current_adapter_bytes": 2624893,
+      "training_archive_records": 96,
+      "training_archive_bytes": 17917,
+      "training_archive_file": "seed402-bridged-training-archive.json",
+      "history_records_scanned": 128,
+      "obsolete_records_excluded": 16,
+      "prior_revision_records_relabelled": 8,
+      "correction_label_updates": 128,
+      "boundary_updates": 128,
+      "rehearsal_updates": 128
+    }
+  ],
+  "experimental_training": {
+    "updates": 2304,
+    "input_tokens": 205924,
+    "loss_tokens": 18432,
+    "seconds": 427.39807661608575,
+    "sources": {
+      "acquisition": 768,
+      "correction": 512,
+      "boundary": 512,
+      "history": 512
+    }
+  },
+  "experimental_inference": {
+    "calls": 3360,
+    "complete": 2513,
+    "prompt_tokens": 327248,
+    "completion_tokens": 28852,
+    "seconds": 1004.4093767509767
+  },
+  "finish": {
+    "kind": "finish",
+    "elapsed": 2200.2207197499993,
+    "status": "complete",
+    "wall_seconds": 2200.220717917,
+    "wait_seconds": 700.625022035998,
+    "peak_mlx_bytes": 9614556188
+  },
+  "base_weight_bytes": 8044982000,
+  "interpreter_function_bytes": 815,
+  "paid_experimental_model_calls": 0,
+  "accounting_notes": [
+    "A deployed candidate is one seed/arm trajectory; shared acquisitions are attributed to each candidate but counted once in experiment totals.",
+    "Recurring use includes a full pass and a repeated batch at each of versions 0, 1 and 2; duplicate deterministic calls are use events, not independent statistical samples.",
+    "Initial acquisition validation is charged separately; base diagnostics and other references are experimental-only.",
+    "Archive is an explicit serialization of all unique case/target pairs actually trained on, including obsolete labels. It is a disclosed sufficient representation, not a minimal storage lower bound.",
+    "128 scans and 16 exclusions are investigator-known validity operations across two revisions; eight earlier acquired labels are supplied in revised form at the second revision.",
+    "Formal-policy construction, correction authority, assistant orchestration and electricity are unpriced; zero paid experimental calls is not zero research cost.",
+    "Wall times are observational on shared hardware. Training/inference times exclude recorded resource waits; they do not include every setup/verification overhead."
+  ]
+}

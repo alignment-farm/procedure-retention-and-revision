@@ -1,0 +1,322 @@
+[
+  {
+    "state": "seed401-novel-v1",
+    "version": 1,
+    "group": "all",
+    "n": 168,
+    "before": 168,
+    "after": 168,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v1",
+    "version": 1,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 56,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 56,
+    "before": 56,
+    "after": 56,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v1",
+    "version": 1,
+    "group": "earlier-revision",
+    "n": 0,
+    "before": 0,
+    "after": 0,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v2",
+    "version": 2,
+    "group": "all",
+    "n": 168,
+    "before": 168,
+    "after": 168,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v2",
+    "version": 2,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 56,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v2",
+    "version": 2,
+    "group": "fresh",
+    "n": 56,
+    "before": 56,
+    "after": 56,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-novel-v2",
+    "version": 2,
+    "group": "earlier-revision",
+    "n": 24,
+    "before": 24,
+    "after": 24,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v1",
+    "version": 1,
+    "group": "all",
+    "n": 168,
+    "before": 168,
+    "after": 168,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v1",
+    "version": 1,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 56,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 56,
+    "before": 56,
+    "after": 56,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v1",
+    "version": 1,
+    "group": "earlier-revision",
+    "n": 0,
+    "before": 0,
+    "after": 0,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v2",
+    "version": 2,
+    "group": "all",
+    "n": 168,
+    "before": 168,
+    "after": 96,
+    "lost": 72,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v2",
+    "version": 2,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 32,
+    "lost": 24,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v2",
+    "version": 2,
+    "group": "fresh",
+    "n": 56,
+    "before": 56,
+    "after": 32,
+    "lost": 24,
+    "gained": 0
+  },
+  {
+    "state": "seed401-bridged-v2",
+    "version": 2,
+    "group": "earlier-revision",
+    "n": 24,
+    "before": 24,
+    "after": 0,
+    "lost": 24,
+    "gained": 0
+  },
+  {
+    "state": "seed402-novel-v1",
+    "version": 1,
+    "group": "all",
+    "n": 168,
+    "before": 168,
+    "after": 155,
+    "lost": 13,
+    "gained": 0
+  },
+  {
+    "state": "seed402-novel-v1",
+    "version": 1,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 52,
+    "lost": 4,
+    "gained": 0
+  },
+  {
+    "state": "seed402-novel-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 56,
+    "before": 56,
+    "after": 52,
+    "lost": 4,
+    "gained": 0
+  },
+  {
+    "state": "seed402-novel-v1",
+    "version": 1,
+    "group": "earlier-revision",
+    "n": 0,
+    "before": 0,
+    "after": 0,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed402-novel-v2",
+    "version": 2,
+    "group": "all",
+    "n": 168,
+    "before": 155,
+    "after": 108,
+    "lost": 60,
+    "gained": 13
+  },
+  {
+    "state": "seed402-novel-v2",
+    "version": 2,
+    "group": "acquired",
+    "n": 56,
+    "before": 52,
+    "after": 36,
+    "lost": 20,
+    "gained": 4
+  },
+  {
+    "state": "seed402-novel-v2",
+    "version": 2,
+    "group": "fresh",
+    "n": 56,
+    "before": 52,
+    "after": 36,
+    "lost": 20,
+    "gained": 4
+  },
+  {
+    "state": "seed402-novel-v2",
+    "version": 2,
+    "group": "earlier-revision",
+    "n": 24,
+    "before": 24,
+    "after": 12,
+    "lost": 12,
+    "gained": 0
+  },
+  {
+    "state": "seed402-bridged-v1",
+    "version": 1,
+    "group": "all",
+    "n": 168,
+    "before": 168,
+    "after": 156,
+    "lost": 12,
+    "gained": 0
+  },
+  {
+    "state": "seed402-bridged-v1",
+    "version": 1,
+    "group": "acquired",
+    "n": 56,
+    "before": 56,
+    "after": 52,
+    "lost": 4,
+    "gained": 0
+  },
+  {
+    "state": "seed402-bridged-v1",
+    "version": 1,
+    "group": "fresh",
+    "n": 56,
+    "before": 56,
+    "after": 52,
+    "lost": 4,
+    "gained": 0
+  },
+  {
+    "state": "seed402-bridged-v1",
+    "version": 1,
+    "group": "earlier-revision",
+    "n": 0,
+    "before": 0,
+    "after": 0,
+    "lost": 0,
+    "gained": 0
+  },
+  {
+    "state": "seed402-bridged-v2",
+    "version": 2,
+    "group": "all",
+    "n": 168,
+    "before": 155,
+    "after": 106,
+    "lost": 61,
+    "gained": 12
+  },
+  {
+    "state": "seed402-bridged-v2",
+    "version": 2,
+    "group": "acquired",
+    "n": 56,
+    "before": 51,
+    "after": 36,
+    "lost": 19,
+    "gained": 4
+  },
+  {
+    "state": "seed402-bridged-v2",
+    "version": 2,
+    "group": "fresh",
+    "n": 56,
+    "before": 52,
+    "after": 35,
+    "lost": 21,
+    "gained": 4
+  },
+  {
+    "state": "seed402-bridged-v2",
+    "version": 2,
+    "group": "earlier-revision",
+    "n": 24,
+    "before": 23,
+    "after": 0,
+    "lost": 23,
+    "gained": 0
+  }
+]

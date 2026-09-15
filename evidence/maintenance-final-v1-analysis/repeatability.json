@@ -1,0 +1,62 @@
+[
+  {
+    "state": "seed401-no-update",
+    "version": 0,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed401-novel-v1",
+    "version": 1,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed401-novel-v2",
+    "version": 2,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed401-bridged-v1",
+    "version": 1,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed401-bridged-v2",
+    "version": 2,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed402-no-update",
+    "version": 0,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed402-novel-v1",
+    "version": 1,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed402-novel-v2",
+    "version": 2,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed402-bridged-v1",
+    "version": 1,
+    "n": 32,
+    "identical": 32
+  },
+  {
+    "state": "seed402-bridged-v2",
+    "version": 2,
+    "n": 32,
+    "identical": 32
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "state": "seed401-no-update",
+    "version": 1,
+    "repeat": 0,
+    "n": 192,
+    "complete": 168,
+    "stale": 24,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed401-no-update",
+    "version": 2,
+    "repeat": 0,
+    "n": 192,
+    "complete": 144,
+    "stale": 24,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed401-no-update",
+    "version": 1,
+    "repeat": 1,
+    "n": 32,
+    "complete": 28,
+    "stale": 4,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed401-no-update",
+    "version": 2,
+    "repeat": 1,
+    "n": 32,
+    "complete": 24,
+    "stale": 4,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed402-no-update",
+    "version": 1,
+    "repeat": 0,
+    "n": 192,
+    "complete": 168,
+    "stale": 24,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed402-no-update",
+    "version": 2,
+    "repeat": 0,
+    "n": 192,
+    "complete": 144,
+    "stale": 24,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed402-no-update",
+    "version": 1,
+    "repeat": 1,
+    "n": 32,
+    "complete": 28,
+    "stale": 4,
+    "reuses_generation": true
+  },
+  {
+    "state": "seed402-no-update",
+    "version": 2,
+    "repeat": 1,
+    "n": 32,
+    "complete": 24,
+    "stale": 4,
+    "reuses_generation": true
+  }
+]

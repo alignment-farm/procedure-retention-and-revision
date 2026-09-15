@@ -84,3 +84,25 @@ so final model loading has not started during this wait. Fresh runtime budget is
 now about22 active minutes after retaining full primary evaluations but reducing
 redundant repeated queries. This is the study's last planned experimental model
 run, followed by saved-state/token audits; no correction search uses fresh results.
+
+Fresh execution completed in2,200.22 s wall, including700.63 s waiting; peak
+9,614,556,188 MLX bytes. The initial resource wait preceded model loading and no
+competing Python job was observed during final training/evaluation. Final has
+2,304 updates and3,360 work-order generations, including the preserved failed
+seed402 A256 readiness checkpoint and its predeclared A512 continuation.
+
+Coordination request/status: separate-process audits are now the only remaining
+model work. The first auditor PID6384 started before experience-selection PID6397,
+which began during audit initialization; the auditor yielded with weights resident.
+After that bounded sibling job clears, this study needs roughly two minutes for
+three sequential saved-state/token audits. A sleeping auditor can be waiting for
+hardware rather than finished. No new experimental training campaign is planned.
+
+Completion: the first auditor was interrupted to strengthen changed-scope probe
+coverage; its source and reason are in maintenance-audit-repair.json. Replacement
+and subsequent audits all completed, taking27.20,19.08 and41.21 seconds with zero
+recorded waits. They reproduced133 work-order and6 calibration probes. Combined
+experimental model runs used2,822.31 active seconds plus1,201.05 waiting seconds;
+completed audit time87.50 s is separate. The interrupted auditor's partial timer
+is not added to active totals. All experimental and audit model jobs owned by
+this study have ended. No further shared-hardware run is queued.

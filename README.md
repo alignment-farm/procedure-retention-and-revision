@@ -1,18 +1,24 @@
 # Procedure retention and revision
 
-**Status: Both earlier comparisons accepted; complete-procedure development finished and fresh comparison queued.**
+**Status: Two earlier comparisons accepted; third-phase findings published for root assessment.**
 
-The third phase now has a [fixed fresh protocol](protocol/maintenance-final-v1.md)
-and [recorded development decision](notes/maintenance-development-decision.md).
-All original and repaired development endpoints are preserved. Fresh model
-execution yields to active shared-hardware jobs; final findings will be published
-separately.
+## Complete-procedure maintenance
 
-The current [third-phase brief](MAINTENANCE.md) asks whether supported correction
-can revise familiar and unfamiliar applications while preserving complete
-unaffected behavior through repeated use. It extends beyond routing calibration
-and measures useful performance and maintenance costs against explicit memory.
-The investigator proceeds independently; the brief did not itself launch runs.
+One of four fixed treatment trajectories preserves all 192 complete work orders
+through two scoped corrections. The others finish at 120/192, 132/192 and 130/192.
+A maintained executable policy completes the matched 672-use sequence, with
+stronger investigator-supplied information and no model updates. Complete
+preservation is feasible in this bounded task but remains sensitive to acquired
+state and support. The broader research question remains open.
+
+[Third-phase findings](FINDINGS-MAINTENANCE.md) ·
+[Fixed methods](protocol/maintenance-final-v1.md) ·
+[Evidence](evidence/maintenance-final-v1-analysis/tables.md) ·
+[Completed audits](evidence/maintenance-phase-audit/report.json) ·
+[Reproduction](notes/maintenance-reproduction.md)
+
+The [commissioning brief](MAINTENANCE.md) and all development attempts are retained.
+Local publication and root acceptance are separate decisions.
 
 ## Accepted scope evidence and rehearsal follow-up
 

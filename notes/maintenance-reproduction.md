@@ -60,7 +60,8 @@ its trace conserves stock + reserved + shipped units at each step.
 Analysis rechecks every saved score, denominator, update schedule, common starting
 hash, acquisition sequence and frozen-base invariant. Separate-process audit
 retokenizes every prompt/target, decodes every response token record, and reloads
-saved adapters to reproduce outcome-diverse probes. Audit generations are excluded
+saved adapters to reproduce probes covering corrected familiar/fresh cases,
+withheld familiar cases, earlier waivers, acquisition transfer and output forms. Audit generations are excluded
 from accuracy denominators. Checkpoint-only persistence does not establish
 resistance to learning; the revision sequence provides that separate measurement.
 
@@ -92,5 +93,42 @@ uv run --no-sync python scripts/maintenance_audit.py evidence/NEW-MAINTENANCE-FI
 
 The formal-policy reference has already completed 672/672 fresh use events;
 its source, versioned policies, traces and native-unit costs are preserved in
-maintenance-final-explicit-v1. Final neural execution is queued/running. All
-final source and protocol snapshots are written before model loading.
+maintenance-final-explicit-v1. Final neural execution and separate-process audits are complete. All final
+source and protocol snapshots were written before model loading.
+
+
+## Completed whole-phase audit
+
+Final analysis records pre-update compliance under each new policy explicitly:
+all newly changed obligations were incorrect before their update. This descriptive
+check was added at `c0e7543`; it changes no endpoint, scoring rule or selection.
+
+The initial reload auditor was interrupted during a shared-resource wait because
+its output-form-only probe selection could omit revised conditions. Preserve its
+partial `maintenance-development-v1-audit` directory and
+[repair record](maintenance-audit-repair.json). The replacement selector at
+`49af5ee` is regression-tested for corrected familiar, withheld familiar, fresh,
+earlier-waiver and acquisition-transfer coverage. The completed replacement uses
+`maintenance-development-v1-audit-v2`; the other two audit names are unchanged.
+Every completed audit captures its exact sources and Git revision before loading.
+
+Completed checks verify 6,752 work-order response records, 32 routing-calibration
+records and 3,712 training-token counts. They reproduce 133 work-order probes
+and six routing probes across processes, including failed endpoints. All 320 final
+repeat outputs match their corresponding initial outputs, including failures.
+The three completed audits take 87.50 seconds; audit generations are separate
+from experimental accuracy denominators. The interrupted auditor's unseparated
+partial waiting timer is excluded from active-cost totals.
+
+Regenerate the whole-phase audit with corresponding new directories:
+
+```sh
+uv run --no-sync python scripts/maintenance_phase_audit.py --runs evidence/maintenance-development-v1 evidence/maintenance-boundary-diagnosis-v1 evidence/maintenance-final-v1 --final-run evidence/maintenance-final-v1 --formal evidence/maintenance-final-explicit-v1 --audits evidence/maintenance-development-v1-audit-v2 evidence/maintenance-boundary-diagnosis-v1-audit evidence/maintenance-final-v1-audit --output evidence/NEW-MAINTENANCE-PHASE-AUDIT
+```
+
+This CPU-only command verifies file hashes, sums every acquisition attempt and
+experimental cost, and checks that all four candidate use sequences match the
+formal-policy reference exactly. Numerical model-run totals exclude the separately
+recorded deterministic interpreter runs and verification calls. The updated cost
+ledger derives archive-maintenance counts from recorded operations; a temporary
+regression reproduced every original development cost total exactly.

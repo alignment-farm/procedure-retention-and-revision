@@ -8,14 +8,13 @@ import time
 import mlx.core as mx
 from runtime import Runtime, resource, sha
 import maintenance_task as t
-from maintenance_probe_selection import select
 
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
  a.output.mkdir(parents=True,exist_ok=False)
  start=time.monotonic();wait=0.
- for n in ['maintenance_audit.py','maintenance_probe_selection.py','maintenance_task.py','runtime.py','task.py']:(a.output/n).write_bytes(Path('scripts',n).read_bytes())
+ for n in ['maintenance_audit.py','maintenance_task.py','runtime.py','task.py']:(a.output/n).write_bytes(Path('scripts',n).read_bytes())
  (a.output/'revision.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
  def guard():
   nonlocal wait
@@ -28,7 +27,7 @@ def main():
  guard()
  for line in (a.run/'SHA256SUMS').read_text().splitlines():
   h,n=line.split('  ',1);assert sha(a.run/n)==h
- resource();guard();rt=Runtime()
+ resource();rt=Runtime()
  rows=[json.loads(l) for l in (a.run/'responses.jsonl').read_text().splitlines()]
  events=[json.loads(l) for l in (a.run/'events.jsonl').read_text().splitlines()]
  for r in rows:
@@ -56,11 +55,16 @@ def main():
  for e in events:
   if e['kind']!='checkpoint':continue
   guard();path=a.run/(e['state']+'.safetensors');assert sha(path)==e['sha256'];rt.restore(list(mx.load(str(path)).items()))
-  candidates=[r for r in rows if r['state'] in (e['state'],e['state']+'-new') and r['repeat']==0]
-  selected=select(candidates)
+  candidates=[r for r in rows if r['state']==e['state'] and r['repeat']==0]
+  # Distinct outcomes, and at least one changed condition when available.
+  selected=[];seen=set()
+  for r in candidates:
+   signature=(r['expected'],r['scores']['complete'])
+   if signature not in seen:selected.append(r);seen.add(signature)
+   if len(selected)>=5:break
   for r in selected:
    guard();result=rt.generate(r['prefix'],limit=40);assert result['ids']==r['ids'],e['state']
-   probes.append(dict(state=e['state'],version=r['version'],case=r['case'],ids=result['ids'],expected=r['expected'],recorded_raw=r['raw'],exact_match=True))
+   probes.append(dict(state=e['state'],case=r['case'],ids=result['ids'],exact_match=True))
  result=dict(rows_verified=len(rows),updates_verified=len(updates),probes=probes,calibration_rows_verified=len(calibration),calibration_probes=calibration_probes,seconds=time.monotonic()-start,wait_seconds=wait)
  (a.output/'audit.json').write_text(json.dumps(result,indent=2)+'\n')
  (a.output/'SHA256SUMS').write_text(''.join(f'{sha(f)}  {f.name}\n' for f in sorted(a.output.iterdir()) if f.is_file() and f.name!='SHA256SUMS'))

@@ -1,0 +1,13 @@
+{
+  "status": "First auditor interrupted; no completed audit result asserted",
+  "partial_directory": "evidence/maintenance-development-v1-audit",
+  "loaded_revision": "c0e75431a78bb5e86b3d84f2cb3e87f4ed181cf2",
+  "source_first_committed": "64893a9",
+  "pid": 6384,
+  "action": "SIGINT to own waiting auditor",
+  "reason": "Output-form-only selection could choose only unchanged copper/slow cases and miss revision behavior. The comment promising a changed-scope probe was not implemented.",
+  "replacement": "At most eight probes per checkpoint explicitly include positive-stock corrected first-two familiar, withheld familiar and fresh cases, an earlier-waiver case at revision 2, and acquisition transfer. Distinct output forms fill remaining slots.",
+  "effects": "Verification coverage changes only. No training, generation, primary scoring, selection or experimental endpoint changes.",
+  "resource_observation": "Interrupted at about 7m49s process elapsed while 0% CPU and a sibling learner was active; source snapshots retained. This incomplete timer is excluded from numerical active-cost sums.",
+  "replacement_directory": "evidence/maintenance-development-v1-audit-v2"
+}

@@ -67,3 +67,20 @@ class NegativeBoundary(unittest.TestCase):
    for (sn,cn),(sb,cb) in zip(novel,bridge):
     self.assertEqual(sn,sb)
     self.assertEqual({k:x for k,x in cn.items() if k!='entity'},{k:x for k,x in cb.items() if k!='entity'})
+
+class ReloadCoverage(unittest.TestCase):
+ def test_corrected_withheld_fresh_and_earlier_scope(self):
+  from maintenance_probe_selection import select
+  for version in (1,2):
+   rows=[dict(case=c,version=version,expected=t.oracle(c,version),scores={'complete':True}) for c in t.cases(t.ACQUIRED+t.TARGETS+t.DEV)]
+   picked=select(rows)
+   self.assertLessEqual(len(picked),8)
+   def changed(r):return t.oracle(r['case'],version)!=t.oracle(r['case'],version-1)
+   for entities in (t.ACQUIRED[:2],t.ACQUIRED[2:],t.DEV):
+    self.assertTrue(any(changed(r) and r['case']['stock']==1 and r['case']['entity'] in entities for r in picked))
+   if version==2:
+    self.assertTrue(any(r['case']['stock']==1 and t.oracle(r['case'],1)!=t.oracle(r['case'],0) for r in picked))
+ def test_acquisition_transfer_probe(self):
+  from maintenance_probe_selection import select
+  rows=[dict(case=c,version=0,expected=t.oracle(c,0),scores={'complete':True}) for c in t.cases(t.ACQUIRED+t.DEV)]
+  self.assertTrue(any(r['case']['entity'] in t.DEV for r in select(rows)))

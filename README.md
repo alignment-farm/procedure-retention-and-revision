@@ -1,16 +1,25 @@
 # Procedure retention and revision
 
-**Status: Three publications accepted; fourth-phase state/support investigation in progress, 15 September 2026.**
+**Status: Three publications accepted; fourth local publication complete, 15 September 2026.**
 
-Start with [STATE_SUPPORT.md](STATE_SUPPORT.md). The next investigation separates
-learning history from current support by crossing saved revision-1 states with
-revision-2 evidence. It asks why equally successful states differ in maintenance,
-with a bounded diagnostic comparison and fresh assessment of the developed claim.
-The ancillary investigator owns methods, resources and routine execution.
-The diagnostic crossing is complete; fresh acquisitions and assessment are in progress.
-See [development evidence](evidence/state-support-development-v1-analysis/tables.md),
-[decision](notes/state-support-development-decision.md), and
-[frozen fresh protocol](protocol/state-support-final-v1.md).
+## Learning history and current support
+
+The controlled crossing shows an interaction: current support has different value
+for different inherited states. Its prespecified direction recurs in two fresh
+acquisitions (+7 and +34 complete orders, versus +70 in diagnostic development).
+In seed 502, Novel support helps one history and harms the other. No combination
+preserves all 192 orders in that seed. The fresh starting states differ in initial
+accuracy, so the equal-accuracy result remains confined to the selected diagnostic.
+The broader research question remains open; root acceptance is separate.
+
+[Fourth-phase findings](FINDINGS-STATE-SUPPORT.md) ·
+[Fixed fresh methods](protocol/state-support-final-v1.md) ·
+[Complete evidence audit](evidence/state-support-phase-audit/report.json) ·
+[Reproduction](notes/state-support-reproduction.md)
+
+The [commission](STATE_SUPPORT.md), [development decision](notes/state-support-development-decision.md),
+both failed acquisition-readiness attempts and every crossed endpoint are retained.
+All experimental and audit model work is complete.
 
 ## Complete-procedure maintenance
 

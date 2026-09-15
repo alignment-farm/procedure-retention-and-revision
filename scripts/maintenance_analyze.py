@@ -3,6 +3,9 @@ import argparse
 from collections import Counter, defaultdict
 import hashlib
 import json
+import math
+import random
+import subprocess
 from pathlib import Path
 import maintenance_task as t
 
@@ -10,6 +13,8 @@ import maintenance_task as t
 def main():
  p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
  a.output.mkdir(parents=True,exist_ok=False)
+ for name in ['maintenance_analyze.py','maintenance_task.py']:(a.output/name).write_bytes(Path('scripts',name).read_bytes())
+ (a.output/'revision.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'],text=True))
  def write(n,d): (a.output/n).write_text(json.dumps(d,indent=2)+'\n')
  for line in (a.run/'SHA256SUMS').read_text().splitlines():
   h,n=line.split('  ',1);assert hashlib.sha256((a.run/n).read_bytes()).hexdigest()==h,n
@@ -33,8 +38,15 @@ def main():
    assert e['summary']=={k:v for k,v in found.items() if k not in ['state','version','repeat']}
  updates=defaultdict(list)
  for e in events:
-  if e['kind']=='update': updates[e['state']].append(e)
+  if e['kind']=='update':
+   assert math.isfinite(e['loss']) and math.isfinite(e['gradient_norm'])
+   updates[e['state']].append(e)
  for state,us in updates.items():
+  if state.endswith('-acquisition'):
+   rng=random.Random(int(state.split('-')[0][4:]));order=[]
+   for _ in range(16):
+    cycle=t.cases(t.ACQUIRED);rng.shuffle(cycle);order+=cycle
+   for i,u in enumerate(us):assert (u['index'],u['case'],u['version'])==(i+1,order[i],0)
   if '-v' in state:
    arm=state.split('-')[1];v=int(state[-1]);schedule=t.schedule(arm,v,design['blocks'],design.get('boundary_mode','all'))
    assert len(us)==len(schedule)
@@ -43,6 +55,13 @@ def main():
  for seed in design['seeds']:
   starts=[e['state_hash'] for e in events if e['kind']=='paired_start' and e['state'].startswith(f'seed{seed}-')]
   assert not starts or len(starts)==2 and len(set(starts))==1
+  selected=[e for e in events if e['kind']=='acquisition_criterion' and e['state'].startswith(f'seed{seed}-') and e['passed']]
+  if selected:
+   assert len(selected)==1
+   cp=next(e for e in events if e['kind']=='checkpoint' and e['state']==selected[0]['state'])
+   assert starts and starts[0]==cp['state_hash']
+  reused=[e for e in events if e['kind']=='reused_acquisition']
+  if reused:assert starts[0]==reused[0]['state_hash']
   inv=[e for e in events if e['kind']=='invariants' and e['seed']==seed]
   assert not starts or len(inv)==1 and inv[0]['base_unchanged'] and inv[0]['reset_max_logit_delta']==0
  paired=[];obligations=[];repeats=[]
@@ -91,6 +110,7 @@ def main():
  lines+=['','## Changed obligations','','| State | Group | Complete | Stale | Downstream complete |','|---|---|---:|---:|---:|']
  for r in obligations:lines.append(f"| {r['state']} | {r['group']} | {r['complete']}/{r['n']} | {r['stale']} | {r['downstream_complete']}/{r['downstream_n']} |")
  (a.output/'tables.md').write_text('\n'.join(lines)+'\n')
+ (a.output/'SHA256SUMS').write_text(''.join(f'{hashlib.sha256(f.read_bytes()).hexdigest()}  {f.name}\n' for f in sorted(a.output.iterdir()) if f.is_file() and f.name!='SHA256SUMS'))
  print(json.dumps(dict(responses=len(rows),updates=sum(map(len,updates.values())),finish=events[-1]),indent=2))
 
 if __name__=='__main__': main()
